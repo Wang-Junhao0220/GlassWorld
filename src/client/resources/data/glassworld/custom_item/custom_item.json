@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " W ",
+    "   "
+  ],
+  "key": {
+    "W": {
+      "tag": "minecraft:bedrock"
+    }
+  },
+  "result": {
+    "item": "glassworld:custom_item",
+    "count": 4
+  }
+}
