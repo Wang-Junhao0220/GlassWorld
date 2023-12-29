@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BAB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "tag": "minecraft:sand"
+    },
+    "B": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "glassworld:iron_sand",
+    "count": 16
+  }
+}

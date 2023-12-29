@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "glassworld:block/super_glass" }
+    "": {
+      "model": "glassworld:block/super_glass"
+    }
   }
 }
