@@ -1,5 +1,6 @@
 {
-  "item.glassworld.iron_sand": "Iron in Sand",
+  "item.glassworld.iron_sand": "Iron Sand",
   "block.glassworld.condensed_dirt": "Condensed Dirt",
-  "block.glassworld.super_glass": "Super Glass"
+  "block.glassworld.super_glass": "Super Glass",
+  "itemGroup.glassworld.super_glass": "Things about Super Glass"
 }

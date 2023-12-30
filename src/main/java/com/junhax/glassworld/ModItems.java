@@ -32,7 +32,7 @@ public class ModItems {
     }
     private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(IRON_SAND))
-            .displayName(Text.translatable("itemGroup.glassword.super_glass"))
+            .displayName(Text.translatable("itemGroup.glassworld.super_glass"))
             .entries((context, entries) -> {
                 entries.add(IRON_SAND);
                 entries.add(SUPER_GLASS);
@@ -41,7 +41,7 @@ public class ModItems {
     public static void initialize() {
         Registry.register(Registries.ITEM_GROUP, new Identifier("glassworld", "super_glass"), ITEM_GROUP);
         ItemGroupEvents
-                .modifyEntriesEvent(ItemGroups.INGREDIENTS)
+                .modifyEntriesEvent(ItemGroups.INVENTORY)
                 .register((itemGroup) -> itemGroup.add(ModItems.IRON_SAND));
     }
 }
