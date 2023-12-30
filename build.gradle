@@ -1,6 +1,7 @@
 plugins {
 	id 'fabric-loom' version '1.4-SNAPSHOT'
 	id 'maven-publish'
+	id "com.modrinth.minotaur" version "2.+"
 }
 
 version = project.mod_version
@@ -73,6 +74,23 @@ jar {
 	from("LICENSE") {
 		rename { "${it}_${project.base.archivesName.get()}"}
 	}
+}
+
+modrinth {
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
+	System.out.println("Input Modrinth token：")
+	token = br.readLine()  // 输入你从此教程的“基础”部分获取到的令牌。
+	projectId = "PebMtyJT" // 在这里输入你的 Modrinth 项目 ID。
+	System.out.println("Input version number：")
+	versionNumber = br.readLine()
+	System.out.println("Input version name：")
+	versionName = br.readLine()
+	uploadFile = remapJar
+	System.out.println("Input game versions minotaur docs）：")
+	gameVersions = [br.readLine()]
+	System.out.println("Enter changelog:")
+	changelog = br.readLine()
+	loaders = ["fabric"]
 }
 
 // configure the maven publication
