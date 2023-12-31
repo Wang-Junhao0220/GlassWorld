@@ -12,7 +12,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 import static com.junhax.glassworld.ModBlocks.SUPER_GLASS;
-//
 
 public class ModItems {
 
