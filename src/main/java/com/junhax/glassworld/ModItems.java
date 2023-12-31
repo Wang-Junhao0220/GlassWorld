@@ -22,19 +22,19 @@ public class ModItems {
             .snack()
             .hunger(10)
             .saturationModifier(10F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 60 * 60 * 20, 255), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 60 * 60 * 20, 99), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 60 * 60 * 20, 99), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 60 * 60 * 20, 99), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 60 * 60 * 20, 99), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 60 * 60 * 20, 99), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 60 * 60 * 20, 99), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 60 * 60 * 20, 99), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 60 * 60 * 20, 99), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 60 * 60 * 20, 99), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 60 * 60 * 20, 99), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 60 * 60 * 20, 99), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 60 * 60 * 20, 99), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 60 * 60 * 20, 99), 1.0F)
             .build())), "instant_health_apple");
     private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(IRON_SAND))
@@ -42,6 +42,7 @@ public class ModItems {
             .entries((context, entries) -> {
                 entries.add(IRON_SAND);
                 entries.add(SUPER_GLASS);
+                entries.add(INSTANT_HEALTH_APPLE);
             })
             .build();
 
