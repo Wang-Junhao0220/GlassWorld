@@ -40,6 +40,7 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modImplementation "com.ptsmods:devlogin:3.3"
 //	modImplementation "com.ptsmods:devlogin:3.3"
 	
 	// Uncomment the following line to enable the deprecated Fabric API modules. 
@@ -76,22 +77,6 @@ jar {
 	}
 }
 
-//modrinth {
-//	BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
-//	System.out.println("Input Modrinth token: ")
-//	token = br.readLine()  // 输入你从此教程的“基础”部分获取到的令牌。
-//	projectId = "PebMtyJT" // 在这里输入你的 Modrinth 项目 ID。
-//	System.out.println("Input version number: ")
-//	versionNumber = br.readLine()
-//	System.out.println("Input version name: ")
-//	versionName = br.readLine()
-//	uploadFile = remapJar
-//	System.out.println("Input game versions minotaur docs: ")
-//	gameVersions = [br.readLine()]
-//	System.out.println("Enter changelog: ")
-//	changelog = br.readLine()
-//	loaders = ["fabric"]
-//}
 
 // configure the maven publication
 publishing {
