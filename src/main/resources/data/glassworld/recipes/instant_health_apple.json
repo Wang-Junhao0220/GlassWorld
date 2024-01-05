@@ -3,14 +3,14 @@
   "pattern": [
     "ABA",
     "BAB",
-    "AB "
+    "ABA"
   ],
   "key": {
     "A": {
-      "tag": "minecraft:sand"
+      "tag": "minecraft:apple"
     },
     "B": {
-      "item": "minecraft:iron_nugget"
+      "item": "minecraft:golden_apple"
     }
   },
   "result": {
