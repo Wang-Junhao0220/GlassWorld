@@ -3,6 +3,7 @@
 # certain platforms or Java versions, and provides a first line of defence
 # against bad commits.
 # Junhax
+# Gradle
 
 name: build
 on: [pull_request, push]
@@ -17,7 +18,7 @@ jobs:
           21,    # Current Java LTS
         ]
         # and run on both Linux and Windows
-        os: [ubuntu-22.04, windows-2022, macos-latest, macos-13, windows-10]
+        os: [ubuntu-22.04, windows-2022, macos-latest, macos-13]
     runs-on: ${{ matrix.os }}
     steps:
       - name: checkout repository
