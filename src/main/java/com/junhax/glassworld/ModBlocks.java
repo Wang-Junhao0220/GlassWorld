@@ -29,10 +29,15 @@ public class ModBlocks {
             ), "condensed_dirt", true);
     public static final Block SUPER_GLASS = register(
             new Block(
-                    AbstractBlock.Settings.create().strength(100F,1145140114514F).sounds(BlockSoundGroup.GLASS).nonOpaque()
+                    AbstractBlock.Settings.create().strength(100F,1145140114514F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
             ), "super_glass", true);
 
-//    public static final Block SUPER_GLASS  = new Block(FabricBlockSettings.create().strength(50F,100F));
+    public static final Block SOFT_SUPER_GLASS = register(
+            new Block(
+                    AbstractBlock.Settings.create().strength(10F,1145140114514F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
+            ), "soft_super_glass", true);
+
+
 
 
 
@@ -40,6 +45,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemGroup) -> itemGroup.add(ModBlocks.CONDENSED_DIRT.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> itemGroup.add(ModBlocks.SUPER_GLASS.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> itemGroup.add(ModBlocks.SOFT_SUPER_GLASS.asItem()));
     }
 
 }

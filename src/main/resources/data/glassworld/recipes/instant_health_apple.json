@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BAB",
+    "AB "
+  ],
+  "key": {
+    "A": {
+      "tag": "minecraft:sand"
+    },
+    "B": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "glassworld:instant_health_apple",
+    "count": 16
+  }
+}
