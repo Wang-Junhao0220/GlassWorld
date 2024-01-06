@@ -3,18 +3,18 @@
   "pattern": [
     "ABA",
     "BAB",
-    "ABA"
+    "ABB"
   ],
   "key": {
     "A": {
-      "tag": "minecraft:apple"
+      "tag": "minecraft:sand"
     },
     "B": {
-      "item": "minecraft:golden_apple"
+      "item": "minecraft:iron_nugget"
     }
   },
   "result": {
     "item": "glassworld:instant_health_apple",
-    "count": 4
+    "count": 16
   }
 }
