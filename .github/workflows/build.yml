@@ -15,7 +15,6 @@ jobs:
         # Use these Java versions
         java: [
           17,    # Current Java LTS & minimum supported by Minecraft
-          20,    # Test
           21,    # Current Java LTS
         ]
         # and run on both Linux and Windows
