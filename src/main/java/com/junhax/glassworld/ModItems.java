@@ -14,35 +14,36 @@ import net.minecraft.util.Identifier;
 import static com.junhax.glassworld.ModBlocks.SUPER_GLASS;
 
 public class ModItems {
-    public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 8, 2F, new FabricItemSettings()), "guidite_sword");
+    public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 18, 2F, new FabricItemSettings()), "guidite_sword");
 
     public static final Item IRON_SAND = register(new Item(new FabricItemSettings()), "iron_sand");
 
     public static final Item INSTANT_HEALTH_APPLE = register(new Item(new FabricItemSettings().fireproof().food(new FoodComponent.Builder()
             .alwaysEdible()
             .snack()
-            .hunger(10)
-            .saturationModifier(10F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 10 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 10 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 10 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 10 * 60 * 60 * 20, 99), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 10 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 10 * 60 * 60 * 20, 20), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 10 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 10 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 10 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 10 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 10 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 10 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10 * 60 * 60 * 20, 255), 1.0F)
+            .hunger(20)
+            .saturationModifier(20F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1000 * 60 * 60 * 20, 255), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1000 * 60 * 60 * 20, 255), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 1000 * 60 * 60 * 20, 255), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 1000 * 60 * 60 * 20, 99), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 1000 * 60 * 60 * 20, 255), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 1000 * 60 * 60 * 20, 20), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1000 * 60 * 60 * 20, 255), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 1000 * 60 * 60 * 20, 255), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 1000 * 60 * 60 * 20, 255), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 1000 * 60 * 60 * 20, 255), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 1000 * 60 * 60 * 20, 255), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1000 * 60 * 60 * 20, 255), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 1000 * 60 * 60 * 20, 255), 1.0F)
             .build())), "instant_health_apple");
     private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(IRON_SAND))
             .displayName(Text.translatable("itemGroup.glassworld.super_glass"))
             .entries((context, entries) -> {
-                entries.add(IRON_SAND);
                 entries.add(SUPER_GLASS);
+                entries.add(IRON_SAND);
+
                 entries.add(INSTANT_HEALTH_APPLE);
             })
             .build();

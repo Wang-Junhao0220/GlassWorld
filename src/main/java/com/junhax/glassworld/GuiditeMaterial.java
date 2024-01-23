@@ -16,7 +16,7 @@ public class GuiditeMaterial implements ToolMaterial {
     }
     @Override
     public float getAttackDamage() {
-        return 8F;
+        return 18F;
     }
     @Override
     public int getMiningLevel() {
