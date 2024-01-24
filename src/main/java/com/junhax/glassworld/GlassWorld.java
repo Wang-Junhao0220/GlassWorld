@@ -6,11 +6,12 @@ import org.slf4j.LoggerFactory;
 
 public class GlassWorld implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("glassworld");
-	@Override
-	public void onInitialize() {
 
-		LOGGER.info("Hello Fabric world!");
-		ModItems.initialize();
-		ModBlocks.initialize();
-	}
+    @Override
+    public void onInitialize() {
+
+        LOGGER.info("Hello Fabric world!");
+        ModItems.initialize();
+        ModBlocks.initialize();
+    }
 }
