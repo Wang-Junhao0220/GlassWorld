@@ -5,7 +5,7 @@ import net.minecraft.recipe.Ingredient;
 
 public class GlassPickaxe implements ToolMaterial {
     // Your IDE should override the interface's methods for you.
-    public static final GuiditeMaterial INSTANCE = new GuiditeMaterial();
+    public static final GlassPickaxe INSTANCE = new GlassPickaxe();
     @Override
     public int getDurability() {
         return 114514;
