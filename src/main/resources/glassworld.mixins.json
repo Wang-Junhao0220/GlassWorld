@@ -4,7 +4,11 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "DamageEnchantmentMixin",
-    "EnchantmentMixin"
+    "EnchantmentMixin",
+    "LuckEnchantmentMixin",
+    "ProtectionEnchantmentMixin",
+    "QuickChargeEnchantmentMixin",
+    "UnbreakingEnchantmentMixin"
   ],
   "injectors": {
     "defaultRequire": 1

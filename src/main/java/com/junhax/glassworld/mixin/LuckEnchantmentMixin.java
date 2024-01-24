@@ -1,14 +1,14 @@
 package com.junhax.glassworld.mixin;
 
-import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.LuckEnchantment;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
-@Mixin(Enchantment.class)
-public abstract class EnchantmentMixin {
+@Mixin(LuckEnchantment.class)
+public class LuckEnchantmentMixin {
     /**
      * @author Junhax
-     * @reason Make enchantments more powerful
+     * @reason Make more drops in mining
      */
     @Overwrite
     public int getMaxLevel() {

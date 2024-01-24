@@ -1,14 +1,14 @@
 package com.junhax.glassworld.mixin;
 
-import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.QuickChargeEnchantment;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
-@Mixin(Enchantment.class)
-public abstract class EnchantmentMixin {
+@Mixin(QuickChargeEnchantment.class)
+public class QuickChargeEnchantmentMixin {
     /**
      * @author Junhax
-     * @reason Make enchantments more powerful
+     * @reason Shoot!
      */
     @Overwrite
     public int getMaxLevel() {

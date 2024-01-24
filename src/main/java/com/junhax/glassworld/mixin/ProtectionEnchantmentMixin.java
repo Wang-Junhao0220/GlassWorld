@@ -1,14 +1,14 @@
 package com.junhax.glassworld.mixin;
 
-import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.ProtectionEnchantment;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
-@Mixin(Enchantment.class)
-public abstract class EnchantmentMixin {
+@Mixin(ProtectionEnchantment.class)
+public class ProtectionEnchantmentMixin {
     /**
      * @author Junhax
-     * @reason Make enchantments more powerful
+     * @reason Make PROTECTION enchantment more powerful
      */
     @Overwrite
     public int getMaxLevel() {
