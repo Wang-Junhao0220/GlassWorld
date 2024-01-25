@@ -14,6 +14,6 @@ public class GlassWorld implements ModInitializer {
         ModItems.initialize();
         ModBlocks.initialize();
         ModEffect.initialize();
-        ModOre.initialize();
+//        ModOre.initialize();
     }
 }
