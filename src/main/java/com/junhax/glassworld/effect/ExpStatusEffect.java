@@ -23,7 +23,7 @@ public class ExpStatusEffect extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         if (entity instanceof PlayerEntity) {
-            ((PlayerEntity) entity).addExperience(20 << amplifier); // 更高的 amplifier 会加快给予经验的速度
+            ((PlayerEntity) entity).addExperience(30 << amplifier); // 更高的 amplifier 会加快给予经验的速度
         }
     }
 }
