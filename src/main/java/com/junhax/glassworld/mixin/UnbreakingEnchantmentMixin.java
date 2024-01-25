@@ -5,7 +5,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
 @Mixin(UnbreakingEnchantment.class)
-public class UnbreakingEnchantmentMixin {
+public abstract class UnbreakingEnchantmentMixin {
     /**
      * @author Junhax
      * @reason Unbreaking!

@@ -5,7 +5,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
 @Mixin(ProtectionEnchantment.class)
-public class ProtectionEnchantmentMixin {
+public abstract class ProtectionEnchantmentMixin {
     /**
      * @author Junhax
      * @reason Make PROTECTION enchantment more powerful

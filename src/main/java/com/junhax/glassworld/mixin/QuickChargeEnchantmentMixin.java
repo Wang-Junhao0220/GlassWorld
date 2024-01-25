@@ -5,7 +5,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
 @Mixin(QuickChargeEnchantment.class)
-public class QuickChargeEnchantmentMixin {
+public abstract class QuickChargeEnchantmentMixin {
     /**
      * @author Junhax
      * @reason Shoot!
