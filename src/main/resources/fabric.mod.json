@@ -8,7 +8,7 @@
     "Wang-Junhao0220@github"
   ],
   "contact": {
-    "homepage": "https://github.com/Wang-Junhao0220",
+    "homepage": "https://modrinth.com/mod/glassworld",
     "sources": "https://github.com/Wang-Junhao0220/GlassWorld"
   },
   "license": "GPL v3",
@@ -36,6 +36,6 @@
     "fabric-api": "*"
   },
   "suggests": {
-    "another-mod": "*"
+    "another-mod": "jei"
   }
 }
