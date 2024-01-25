@@ -5,5 +5,6 @@
   "block.glassworld.super_glass": "中国玻璃",
   "itemGroup.glassworld.super_glass": "中国玻璃相关物品",
   "block.glassworld.soft_super_glass": "软中国玻璃",
-  "item.glassworld.guidite_sword": "神剑"
+  "item.glassworld.guidite_sword": "神剑",
+  "effect.glassworld.exp": "经验+3"
 }

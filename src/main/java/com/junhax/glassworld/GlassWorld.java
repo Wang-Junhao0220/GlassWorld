@@ -13,5 +13,6 @@ public class GlassWorld implements ModInitializer {
         LOGGER.info("Hello Fabric world!");
         ModItems.initialize();
         ModBlocks.initialize();
+        ModEffect.initialize();
     }
 }

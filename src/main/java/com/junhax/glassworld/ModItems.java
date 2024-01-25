@@ -11,6 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import static com.junhax.glassworld.ModBlocks.SOFT_SUPER_GLASS;
 import static com.junhax.glassworld.ModBlocks.SUPER_GLASS;
 
 public class ModItems {
@@ -36,12 +37,14 @@ public class ModItems {
             .statusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 1000 * 60 * 60 * 20, 255), 1.0F)
             .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1000 * 60 * 60 * 20, 255), 1.0F)
             .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 1000 * 60 * 60 * 20, 255), 1.0F)
+            .statusEffect(new StatusEffectInstance(ModEffect.EXP, 1000 * 60 * 60 * 20, 255), 1.0F)
             .build())), "instant_health_apple");
     private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(IRON_SAND))
+            .icon(() -> new ItemStack(SUPER_GLASS))
             .displayName(Text.translatable("itemGroup.glassworld.super_glass"))
             .entries((context, entries) -> {
                 entries.add(SUPER_GLASS);
+                entries.add(SOFT_SUPER_GLASS);
                 entries.add(IRON_SAND);
                 entries.add(GUIDITE_SWORD);
                 entries.add(INSTANT_HEALTH_APPLE);
