@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "313",
+    "313",
+    "323"
+  ],
+  "key": {
+    "1": {
+      "tag": "minecraft:sand"
+    },
+    "2": {
+      "item": "minecraft:iron_nugget"
+    },
+    "3": {
+      "item": "glassworld:super_glass"
+    }
+  },
+  "result": {
+    "item": "glassworld:instant_health_apple",
+    "count": 16
+  }
+}
