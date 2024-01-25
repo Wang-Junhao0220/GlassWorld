@@ -19,7 +19,7 @@ public class GuiditeMaterial implements ToolMaterial {
 
     @Override
     public float getAttackDamage() {
-        return 36F;
+        return 72F;
     }
 
     @Override

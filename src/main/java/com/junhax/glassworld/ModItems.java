@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 import static com.junhax.glassworld.ModBlocks.SUPER_GLASS;
 
 public class ModItems {
-    public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 36, 10F, new FabricItemSettings()), "guidite_sword");
+    public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 72, 20F, new FabricItemSettings()), "guidite_sword");
 
     public static final Item IRON_SAND = register(new Item(new FabricItemSettings()), "iron_sand");
 
