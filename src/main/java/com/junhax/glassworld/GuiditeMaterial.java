@@ -9,17 +9,17 @@ public class GuiditeMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 114514;
+        return 1145140;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 25.0F;
+        return 1000F;
     }
 
     @Override
     public float getAttackDamage() {
-        return 18F;
+        return 36F;
     }
 
     @Override

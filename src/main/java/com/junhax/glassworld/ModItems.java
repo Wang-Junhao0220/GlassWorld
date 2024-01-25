@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 import static com.junhax.glassworld.ModBlocks.SUPER_GLASS;
 
 public class ModItems {
-    public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 18, 2F, new FabricItemSettings()), "guidite_sword");
+    public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 36, 10F, new FabricItemSettings()), "guidite_sword");
 
     public static final Item IRON_SAND = register(new Item(new FabricItemSettings()), "iron_sand");
 
@@ -43,7 +43,7 @@ public class ModItems {
             .entries((context, entries) -> {
                 entries.add(SUPER_GLASS);
                 entries.add(IRON_SAND);
-
+                entries.add(GUIDITE_SWORD);
                 entries.add(INSTANT_HEALTH_APPLE);
             })
             .build();
@@ -71,7 +71,7 @@ public class ModItems {
                 .register((itemGroup) -> itemGroup.add(ModItems.INSTANT_HEALTH_APPLE));
         ItemGroupEvents
                 // Register a "modify" event for the Tools item group.
-                .modifyEntriesEvent(ItemGroups.TOOLS)
+                .modifyEntriesEvent(ItemGroups.COMBAT)
                 // Add the item to the group when you get access to it.
                 .register((itemGroup) -> itemGroup.add(ModItems.GUIDITE_SWORD));
     }
