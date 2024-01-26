@@ -5,11 +5,11 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.player.PlayerEntity;
 
-public class ExpStatusEffect extends StatusEffect {
-    public ExpStatusEffect() {
+public class DyingStatusEffect extends StatusEffect {
+    public DyingStatusEffect() {
         super(
-                StatusEffectCategory.BENEFICIAL, // 药水效果是有益的还是有害的
-                0x98D982); // 显示的颜色
+                StatusEffectCategory.HARMFUL, // 药水效果是有益的还是有害的
+                0x000000); // 显示的颜色
     }
 
     // 这个方法在每个 tick 都会调用，以检查是否应应用药水效果
@@ -23,7 +23,8 @@ public class ExpStatusEffect extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         if (entity instanceof PlayerEntity) {
-            ((PlayerEntity) entity).addExperience(1 << amplifier); // 更高的 amplifier 会加快给予经验的速度
+
+            entity.setHealth((entity.getHealth()-1)); // 更高的 amplifier 会加快给予经验的速度
         }
     }
 }

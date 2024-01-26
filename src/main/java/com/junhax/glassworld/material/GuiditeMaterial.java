@@ -1,25 +1,26 @@
-package com.junhax.glassworld;
+package com.junhax.glassworld.material;
 
+import com.junhax.glassworld.block.ModBlocks;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class GlassPickaxe implements ToolMaterial {
+public class GuiditeMaterial implements ToolMaterial {
     // Your IDE should override the interface's methods for you.
-    public static final GlassPickaxe INSTANCE = new GlassPickaxe();
+    public static final GuiditeMaterial INSTANCE = new GuiditeMaterial();
 
     @Override
     public int getDurability() {
-        return 114514;
+        return 1145140;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 25.0F;
+        return 1000F;
     }
 
     @Override
     public float getAttackDamage() {
-        return 18F;
+        return 72F;
     }
 
     @Override
@@ -29,7 +30,7 @@ public class GlassPickaxe implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return 500;
+        return 50;
     }
 
     @Override

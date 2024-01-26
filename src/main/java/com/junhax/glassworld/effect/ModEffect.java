@@ -1,4 +1,4 @@
-package com.junhax.glassworld;
+package com.junhax.glassworld.effect;
 
 import com.junhax.glassworld.effect.ExpStatusEffect;
 import net.minecraft.entity.effect.StatusEffect;
@@ -8,8 +8,10 @@ import net.minecraft.util.Identifier;
 
 public class ModEffect {
     public static final StatusEffect EXP = new ExpStatusEffect();
+    public static final StatusEffect DYING = new DyingStatusEffect();
 
     public static void initialize() {
         Registry.register(Registries.STATUS_EFFECT, new Identifier("glassworld", "exp"), EXP);
+        Registry.register(Registries.STATUS_EFFECT, new Identifier("glassworld", "dying"), DYING);
     }
 }

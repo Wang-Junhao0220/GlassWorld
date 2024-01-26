@@ -1,5 +1,7 @@
-package com.junhax.glassworld;
+package com.junhax.glassworld.item;
 
+import com.junhax.glassworld.material.GuiditeMaterial;
+import com.junhax.glassworld.effect.ModEffect;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -11,8 +13,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-import static com.junhax.glassworld.ModBlocks.SOFT_SUPER_GLASS;
-import static com.junhax.glassworld.ModBlocks.SUPER_GLASS;
+import static com.junhax.glassworld.block.ModBlocks.SOFT_SUPER_GLASS;
+import static com.junhax.glassworld.block.ModBlocks.SUPER_GLASS;
 
 public class ModItems {
     public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 72, 20F, new FabricItemSettings()), "guidite_sword");
