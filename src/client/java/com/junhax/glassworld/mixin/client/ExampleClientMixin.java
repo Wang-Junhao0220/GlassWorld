@@ -7,7 +7,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import net.minecraft.client.gui.screen.TitleScreen;
 
 @Mixin(MinecraftClient.class)
 public class ExampleClientMixin {
@@ -16,5 +15,11 @@ public class ExampleClientMixin {
         // This code is injected into the start of MinecraftClient.run()V
         Logger LOGGER = LoggerFactory.getLogger("glassworld");
         LOGGER.info("----------------------------Hello from Fabric client Mixin!----------------------------");
+    }
+
+    @Inject(at = @At("HEAD"), method = "stop")
+    private void stop(CallbackInfo info) {
+        Logger LOGGER_MIXIN = LoggerFactory.getLogger("Client Mixin");
+        LOGGER_MIXIN.info("Minecraft will stop.");
     }
 }
