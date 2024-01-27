@@ -1,7 +1,8 @@
 package com.junhax.glassworld.item;
 
-import com.junhax.glassworld.material.GuiditeMaterial;
 import com.junhax.glassworld.effect.ModEffect;
+import com.junhax.glassworld.material.GuiditeMaterial;
+import com.junhax.glassworld.material.SuperGlassMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -18,6 +19,7 @@ import static com.junhax.glassworld.block.ModBlocks.SUPER_GLASS;
 
 public class ModItems {
     public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 72, 20F, new FabricItemSettings()), "guidite_sword");
+    public static final Item SUPER_PICKAXE = register(new PickaxeItem(SuperGlassMaterial.INSTANCE, 48,16F, new Item.Settings()), "super_pickaxe");
 
     public static final Item IRON_SAND = register(new Item(new FabricItemSettings()), "iron_sand");
 
