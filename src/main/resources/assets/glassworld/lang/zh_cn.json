@@ -1,10 +1,11 @@
 {
-  "item.glassworld.iron_sand": "铁砂",
-  "item.glassworld.instant_health_apple": "超级苹果",
   "block.glassworld.condensed_dirt": "Condensed Dirt",
-  "block.glassworld.super_glass": "中国玻璃",
-  "itemGroup.glassworld.super_glass": "中国玻璃相关物品",
   "block.glassworld.soft_super_glass": "软中国玻璃",
+  "block.glassworld.super_glass": "中国玻璃",
+  "effect.glassworld.exp": "经验加成",
   "item.glassworld.guidite_sword": "神剑",
-  "effect.glassworld.exp": "经验加成"
+  "item.glassworld.instant_health_apple": "超级苹果",
+  "item.glassworld.iron_sand": "铁砂",
+  "item.glassworld.super_pickaxe": "中国玻璃稿",
+  "itemGroup.glassworld.super_glass": "中国玻璃相关物品"
 }

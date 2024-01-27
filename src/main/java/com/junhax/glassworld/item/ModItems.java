@@ -19,7 +19,7 @@ import static com.junhax.glassworld.block.ModBlocks.SUPER_GLASS;
 
 public class ModItems {
     public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 72, 20F, new FabricItemSettings()), "guidite_sword");
-    public static final Item SUPER_PICKAXE = register(new PickaxeItem(SuperGlassMaterial.INSTANCE, 48,16F, new Item.Settings()), "super_pickaxe");
+    public static final Item SUPER_PICKAXE = register(new PickaxeItem(SuperGlassMaterial.INSTANCE, 48,16F, new FabricItemSettings()), "super_pickaxe");
 
     public static final Item IRON_SAND = register(new Item(new FabricItemSettings()), "iron_sand");
 
@@ -51,6 +51,7 @@ public class ModItems {
                 entries.add(SOFT_SUPER_GLASS);
                 entries.add(IRON_SAND);
                 entries.add(GUIDITE_SWORD);
+                entries.add(SUPER_PICKAXE);
                 entries.add(INSTANT_HEALTH_APPLE);
             })
             .build();
@@ -81,5 +82,8 @@ public class ModItems {
                 .modifyEntriesEvent(ItemGroups.COMBAT)
                 // Add the item to the group when you get access to it.
                 .register((itemGroup) -> itemGroup.add(ModItems.GUIDITE_SWORD));
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_PICKAXE));
     }
 }

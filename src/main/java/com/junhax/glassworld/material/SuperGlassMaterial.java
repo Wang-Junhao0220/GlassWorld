@@ -10,7 +10,7 @@ public class SuperGlassMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 114514;
+        return 1145140;
     }
 
     @Override
