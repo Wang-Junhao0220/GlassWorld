@@ -18,10 +18,10 @@ import static com.junhax.glassworld.block.ModBlocks.SOFT_SUPER_GLASS;
 import static com.junhax.glassworld.block.ModBlocks.SUPER_GLASS;
 
 public class ModItems {
-    public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 72, 20F, new FabricItemSettings()), "guidite_sword");
-    public static final Item SUPER_PICKAXE = register(new PickaxeItem(SuperGlassMaterial.INSTANCE, 48,16F, new FabricItemSettings()), "super_pickaxe");
+    public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 72, 20F, new FabricItemSettings().fireproof()), "guidite_sword");
+    public static final Item SUPER_PICKAXE = register(new PickaxeItem(SuperGlassMaterial.INSTANCE, 48,16F, new FabricItemSettings().fireproof()), "super_pickaxe");
 
-    public static final Item IRON_SAND = register(new Item(new FabricItemSettings()), "iron_sand");
+    public static final Item IRON_SAND = register(new Item(new FabricItemSettings().fireproof()), "iron_sand");
 
     public static final Item INSTANT_HEALTH_APPLE = register(new Item(new FabricItemSettings().fireproof().food(new FoodComponent.Builder()
             .alwaysEdible()
