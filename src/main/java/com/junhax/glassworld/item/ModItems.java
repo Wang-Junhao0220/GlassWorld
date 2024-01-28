@@ -73,6 +73,15 @@ public class ModItems {
                 entries.add(GUIDITE_SWORD);
                 entries.add(SUPER_PICKAXE);
                 entries.add(INSTANT_HEALTH_APPLE);
+                entries.add(SUPER_AXE);
+                entries.add(SUPER_HOE);
+                entries.add(SUPER_SHOVEL);
+                entries.add(SUPER_SWORD);
+                entries.add(ANCIENT_AXE);
+                entries.add(ANCIENT_HOE);
+                entries.add(ANCIENT_PICKAXE);
+                entries.add(ANCIENT_SHOVEL);
+                entries.add(ANCIENT_SWORD);
             })
             .build();
 
