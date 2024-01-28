@@ -15,8 +15,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-import static com.junhax.glassworld.block.ModBlocks.SOFT_SUPER_GLASS;
-import static com.junhax.glassworld.block.ModBlocks.SUPER_GLASS;
+import static com.junhax.glassworld.block.ModBlocks.*;
 
 public class ModItems {
     public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 72, 20F, new FabricItemSettings().fireproof()), "guidite_sword");
@@ -69,10 +68,12 @@ public class ModItems {
             .entries((context, entries) -> {
                 entries.add(SUPER_GLASS);
                 entries.add(SOFT_SUPER_GLASS);
+                entries.add(ANCIENT_GLASS);
+                entries.add(SOFT_ANCIENT_GLASS);
                 entries.add(IRON_SAND);
+                entries.add(INSTANT_HEALTH_APPLE);
                 entries.add(GUIDITE_SWORD);
                 entries.add(SUPER_PICKAXE);
-                entries.add(INSTANT_HEALTH_APPLE);
                 entries.add(SUPER_AXE);
                 entries.add(SUPER_HOE);
                 entries.add(SUPER_SHOVEL);
