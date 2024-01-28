@@ -29,7 +29,7 @@ public class ModItems {
 
     public static final Item SUPER_PICKAXE = register(new PickaxeItem(SuperGlassMaterial.INSTANCE, 48, 16F, new FabricItemSettings().fireproof()), "super_pickaxe");
 
-    public static final Item SUPER_AXE = register(new AxeItem(SuperGlassMaterial.INSTANCE, 40, 8F, new FabricItemSettings().fireproof()), "super_pickaxe");
+    public static final Item SUPER_AXE = register(new AxeItem(SuperGlassMaterial.INSTANCE, 40, 8F, new FabricItemSettings().fireproof()), "super_axe");
 
     public static final Item ANCIENT_PICKAXE = register(new PickaxeItem(AncientGlassMaterial.INSTANCE, 50, 18F, new FabricItemSettings().fireproof()), "ancient_pickaxe");
 
