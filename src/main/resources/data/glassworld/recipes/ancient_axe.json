@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "332",
+    "212",
+    "212"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "minecraft:black_dye"
+    },
+    "3": {
+      "item": "glassworld:ancient_glass"
+    }
+  },
+  "result": {
+    "item": "glassworld:ancient_axe",
+    "count": 1
+  }
+}
