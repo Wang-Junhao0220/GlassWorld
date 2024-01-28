@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "glassworld:super_glass"
+    "glassworld:super_glass",
+    "glassworld:ancient_glass",
+    "minecraft:bedrock"
   ]
 }

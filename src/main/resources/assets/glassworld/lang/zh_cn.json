@@ -3,9 +3,18 @@
   "block.glassworld.soft_super_glass": "软中国玻璃",
   "block.glassworld.super_glass": "中国玻璃",
   "effect.glassworld.exp": "经验加成",
+  "item.glassworld.ancient_axe": "Ancient Glass Axe",
+  "item.glassworld.ancient_hoe": "Ancient Glass Hoe",
+  "item.glassworld.ancient_pickaxe": "Ancient Glass Pickaxe",
+  "item.glassworld.ancient_shovel": "Ancient Glass Shovel",
+  "item.glassworld.ancient_sword": "Ancient Glass Sword",
   "item.glassworld.guidite_sword": "神剑",
   "item.glassworld.instant_health_apple": "超级苹果",
   "item.glassworld.iron_sand": "铁砂",
+  "item.glassworld.super_axe": "Super Glass Axe",
+  "item.glassworld.super_hoe": "Super Glass Hoe",
   "item.glassworld.super_pickaxe": "中国玻璃稿",
+  "item.glassworld.super_shovel": "Super Glass Shovel",
+  "item.glassworld.super_sword": "Super Glass Sword",
   "itemGroup.glassworld.super_glass": "中国玻璃相关物品"
 }

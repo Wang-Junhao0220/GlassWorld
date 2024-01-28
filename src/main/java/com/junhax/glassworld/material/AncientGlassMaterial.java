@@ -4,37 +4,37 @@ import com.junhax.glassworld.block.ModBlocks;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class SuperGlassMaterial implements ToolMaterial {
+public class AncientGlassMaterial implements ToolMaterial {
     // Your IDE should override the interface's methods for you.
-    public static final SuperGlassMaterial INSTANCE = new SuperGlassMaterial();
+    public static final AncientGlassMaterial INSTANCE = new AncientGlassMaterial();
 
     @Override
     public int getDurability() {
-        return 3350;
+        return 13350;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 25.0F;
+        return 40F;
     }
 
     @Override
     public float getAttackDamage() {
-        return 18F;
+        return 25F;
     }
 
     @Override
     public int getMiningLevel() {
-        return 10;
+        return 15;
     }
 
     @Override
     public int getEnchantability() {
-        return 500;
+        return 800;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModBlocks.SUPER_GLASS, ModBlocks.SOFT_SUPER_GLASS);
+        return Ingredient.ofItems(ModBlocks.ANCIENT_GLASS, ModBlocks.SOFT_ANCIENT_GLASS);
     }
 }

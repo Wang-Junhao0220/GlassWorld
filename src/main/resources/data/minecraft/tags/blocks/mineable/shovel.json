@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "glassworld:super_glass",
-    "glassworld:soft_super_glass"
+    "glassworld:soft_super_glass",
+    "glassworld:soft_ancient_glass",
+    "glassworld:ancient_glass"
   ]
 }

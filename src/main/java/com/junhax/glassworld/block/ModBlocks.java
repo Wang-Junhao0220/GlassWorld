@@ -24,6 +24,14 @@ public class ModBlocks {
             new Block(
                     AbstractBlock.Settings.create().strength(10F, 1145140114514F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
             ), "soft_super_glass", true);
+    public static final Block SOFT_ANCIENT_GLASS = register(
+            new Block(
+                    AbstractBlock.Settings.create().strength(10F, 1145140114514F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
+            ), "soft_ancient_glass", true);
+    public static final Block ANCIENT_GLASS = register(
+            new Block(
+                    AbstractBlock.Settings.create().strength(100F, 1145140114514F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
+            ), "ancient_glass", true);
 //    public static final SuperChest SUPER_CHEST = register(
 //            new SuperChest(
 //                    AbstractBlock.Settings.create().strength(5F, 54188F).requiresTool().sounds(BlockSoundGroup.WOOD)
@@ -49,6 +57,8 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemGroup) -> itemGroup.add(ModBlocks.CONDENSED_DIRT.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> itemGroup.add(ModBlocks.SUPER_GLASS.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> itemGroup.add(ModBlocks.ANCIENT_GLASS.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> itemGroup.add(ModBlocks.SOFT_ANCIENT_GLASS.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> itemGroup.add(ModBlocks.SOFT_SUPER_GLASS.asItem()));
 //        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INVENTORY).register((itemGroup) -> itemGroup.add(ModBlocks.SUPER_CHEST.asItem()));
     }

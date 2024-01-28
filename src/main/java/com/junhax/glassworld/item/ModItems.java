@@ -1,6 +1,7 @@
 package com.junhax.glassworld.item;
 
 import com.junhax.glassworld.effect.ModEffect;
+import com.junhax.glassworld.material.AncientGlassMaterial;
 import com.junhax.glassworld.material.GuiditeMaterial;
 import com.junhax.glassworld.material.SuperGlassMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -19,7 +20,26 @@ import static com.junhax.glassworld.block.ModBlocks.SUPER_GLASS;
 
 public class ModItems {
     public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 72, 20F, new FabricItemSettings().fireproof()), "guidite_sword");
-    public static final Item SUPER_PICKAXE = register(new PickaxeItem(SuperGlassMaterial.INSTANCE, 48,16F, new FabricItemSettings().fireproof()), "super_pickaxe");
+
+    public static final Item SUPER_SWORD = register(new SwordItem(SuperGlassMaterial.INSTANCE, 72, 20F, new FabricItemSettings().fireproof()), "super_sword");
+
+    public static final Item SUPER_HOE = register(new HoeItem(SuperGlassMaterial.INSTANCE, 38, 10F, new FabricItemSettings().fireproof()), "super_hoe");
+
+    public static final Item SUPER_SHOVEL = register(new ShovelItem(SuperGlassMaterial.INSTANCE, 40, 12F, new FabricItemSettings().fireproof()), "super_shovel");
+
+    public static final Item SUPER_PICKAXE = register(new PickaxeItem(SuperGlassMaterial.INSTANCE, 48, 16F, new FabricItemSettings().fireproof()), "super_pickaxe");
+
+    public static final Item SUPER_AXE = register(new AxeItem(SuperGlassMaterial.INSTANCE, 40, 8F, new FabricItemSettings().fireproof()), "super_pickaxe");
+
+    public static final Item ANCIENT_PICKAXE = register(new PickaxeItem(AncientGlassMaterial.INSTANCE, 50, 18F, new FabricItemSettings().fireproof()), "ancient_pickaxe");
+
+    public static final Item ANCIENT_SWORD = register(new SwordItem(AncientGlassMaterial.INSTANCE, 100, 30F, new FabricItemSettings().fireproof()), "ancient_sword");
+
+    public static final Item ANCIENT_AXE = register(new AxeItem(AncientGlassMaterial.INSTANCE, 60, 10F, new FabricItemSettings().fireproof()), "ancient_axe");
+
+    public static final Item ANCIENT_SHOVEL = register(new ShovelItem(AncientGlassMaterial.INSTANCE, 50, 12F, new FabricItemSettings().fireproof()), "ancient_shovel");
+
+    public static final Item ANCIENT_HOE = register(new HoeItem(AncientGlassMaterial.INSTANCE, 45, 14F, new FabricItemSettings().fireproof()), "ancient_hoe");
 
     public static final Item IRON_SAND = register(new Item(new FabricItemSettings().fireproof()), "iron_sand");
 
