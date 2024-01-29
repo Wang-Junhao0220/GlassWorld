@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "TTT",
-    "TPT",
-    "TTT"
+    "TTA",
+    "TPA",
+    "TAA"
   ],
   "key": {
     "T": {
@@ -11,6 +11,9 @@
     },
     "P": {
       "item": "minecraft:apple"
+    },
+    "A": {
+      "item": "glassworld.soft_ancient_glass"
     }
   },
   "result": {
