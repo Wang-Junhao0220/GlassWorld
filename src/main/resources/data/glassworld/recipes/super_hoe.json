@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "33 ",
+    "212",
+    "212"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "minecraft:blue_dye"
+    },
+    "3": {
+      "item": "glassworld:super_glass"
+    }
+  },
+  "result": {
+    "item": "glassworld:super_hoe",
+    "count": 1
+  }
+}

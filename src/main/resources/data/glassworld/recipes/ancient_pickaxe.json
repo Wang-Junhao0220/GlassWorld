@@ -1,1 +1,15 @@
-
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "glassworld:ancient_glass"
+  },
+  "base": {
+    "item": "glassworld:super_pickaxe"
+  },
+  "result": {
+    "item": "glassworld:ancient_pickaxe"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}
