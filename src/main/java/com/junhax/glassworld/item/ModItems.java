@@ -62,6 +62,7 @@ public class ModItems {
             .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 1000 * 60 * 60 * 20, 255), 1.0F)
             .statusEffect(new StatusEffectInstance(ModEffect.EXP, 1000 * 60 * 60 * 20, 255), 1.0F)
             .build())), "instant_health_apple");
+//    public static final Item ANCIENT_GLASS_UPGRADE_TEMPLATE= register(new SmithingTemplateItem(),"ancient_glass_upgrade_template");
     private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(SUPER_GLASS))
             .displayName(Text.translatable("itemGroup.glassworld.super_glass"))

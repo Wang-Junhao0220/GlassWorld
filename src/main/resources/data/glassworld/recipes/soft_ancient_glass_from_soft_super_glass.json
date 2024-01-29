@@ -7,14 +7,14 @@
   ],
   "key": {
     "1": {
-      "item": "glassworld:super_glass"
+      "item": "glassworld:soft_super_glass"
     },
     "2": {
       "item": "minecraft:netherite_ingot"
     }
   },
   "result": {
-    "item": "glassworld:ancient_glass",
+    "item": "glassworld:soft_ancient_glass",
     "count": 8
   }
 }
