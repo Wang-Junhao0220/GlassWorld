@@ -18,7 +18,5 @@
   "item.glassworld.ancient_sword": "Ancient Glass Sword",
   "item.glassworld.ancient_shovel": "Ancient Glass Shovel",
   "item.glassworld.ancient_hoe": "Ancient Glass Hoe",
-  "itemGroup.glassworld.super_glass": "Things about Super Glass",
-  "item.minecraft.smithing_template.netherite_upgrade.base_slot_description": "Add diamond or Super Glass armor, weapon, or tool",
-  "item.minecraft.smithing_template.netherite_upgrade.additions_slot_description": "Add Netherite Ingot or Ancient Glass"
+  "itemGroup.glassworld.super_glass": "Things about Super Glass"
 }
