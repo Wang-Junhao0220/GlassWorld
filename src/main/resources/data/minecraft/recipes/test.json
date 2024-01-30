@@ -1,15 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "crafting_shaped",
   "pattern": [
-    "AAA",
-    "ABA",
-    "AAA"
+    "111",
+    "121",
+    "111"
   ],
   "key": {
-    "A": {
-      "tag": "minecraft:netherrack"
+    "1": {
+      "item": "minecraft:netherrack"
     },
-    "B": {
+    "2": {
       "item": "minecraft:diamond"
     }
   },
