@@ -41,3 +41,5 @@ jobs:
         with:
           name: ArtifactsGlassWorldFabric
           path: build/libs/
+      - name: celebrate finishing
+        run: echo FINISHED!
