@@ -1,7 +1,6 @@
 package com.junhax.glassworld.material;
 
 import com.junhax.glassworld.block.ModBlocks;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -10,7 +9,7 @@ import net.minecraft.sound.SoundEvents;
 
 public class SuperGlassArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
-    private static final int[] PROTECTION_VALUES = new int[]{3, 6, 8, 3};
+    private static final int[] PROTECTION_VALUES = new int[]{13, 16, 18, 13};
 
     public static final SuperGlassArmorMaterial INSTANCE = new SuperGlassArmorMaterial();
     @Override
