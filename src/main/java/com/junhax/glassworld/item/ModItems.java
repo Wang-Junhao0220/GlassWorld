@@ -3,6 +3,7 @@ package com.junhax.glassworld.item;
 import com.junhax.glassworld.effect.ModEffect;
 import com.junhax.glassworld.material.AncientGlassMaterial;
 import com.junhax.glassworld.material.GuiditeMaterial;
+import com.junhax.glassworld.material.SuperGlassArmorMaterial;
 import com.junhax.glassworld.material.SuperGlassMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -42,6 +43,12 @@ public class ModItems {
 
     public static final Item IRON_SAND = register(new Item(new FabricItemSettings().fireproof()), "iron_sand");
 
+    public static final Item SUPER_GLASS_HELMET = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()), "super_helmet");
+    public static final Item SUPER_GLASS_CHESTPLATE = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()), "super_chestplate");
+    public static final Item SUPER_GLASS_BOOTS = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()), "super_boots");
+    public static final Item SUPER_GLASS_LEGGINGS = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()), "super_leggings");
+
+
     public static final Item INSTANT_HEALTH_APPLE = register(new Item(new FabricItemSettings().fireproof().food(new FoodComponent.Builder()
             .alwaysEdible()
             .snack()
@@ -62,7 +69,7 @@ public class ModItems {
             .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 1000 * 60 * 60 * 20, 255), 1.0F)
             .statusEffect(new StatusEffectInstance(ModEffect.EXP, 1000 * 60 * 60 * 20, 255), 1.0F)
             .build())), "instant_health_apple");
-//    public static final Item ANCIENT_GLASS_UPGRADE_TEMPLATE= register(new SmithingTemplateItem(),"ancient_glass_upgrade_template");
+    //    public static final Item ANCIENT_GLASS_UPGRADE_TEMPLATE= register(new SmithingTemplateItem(),"ancient_glass_upgrade_template");
     private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(SUPER_GLASS))
             .displayName(Text.translatable("itemGroup.glassworld.super_glass"))
@@ -73,17 +80,21 @@ public class ModItems {
                 entries.add(SOFT_ANCIENT_GLASS);
                 entries.add(IRON_SAND);
                 entries.add(INSTANT_HEALTH_APPLE);
-                entries.add(GUIDITE_SWORD);
+                entries.add(SUPER_SHOVEL);
                 entries.add(SUPER_PICKAXE);
                 entries.add(SUPER_AXE);
                 entries.add(SUPER_HOE);
-                entries.add(SUPER_SHOVEL);
                 entries.add(SUPER_SWORD);
+                entries.add(ANCIENT_SHOVEL);
+                entries.add(ANCIENT_PICKAXE);
                 entries.add(ANCIENT_AXE);
                 entries.add(ANCIENT_HOE);
-                entries.add(ANCIENT_PICKAXE);
-                entries.add(ANCIENT_SHOVEL);
                 entries.add(ANCIENT_SWORD);
+                entries.add(SUPER_GLASS_HELMET);
+                entries.add(SUPER_GLASS_CHESTPLATE);
+                entries.add(SUPER_GLASS_BOOTS);
+                entries.add(SUPER_GLASS_LEGGINGS);
+
             })
             .build();
 
@@ -103,18 +114,56 @@ public class ModItems {
     public static void initialize() {
         Registry.register(Registries.ITEM_GROUP, new Identifier("glassworld", "super_glass"), ITEM_GROUP);
         ItemGroupEvents
-                .modifyEntriesEvent(ItemGroups.INVENTORY)
+                .modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register((itemGroup) -> itemGroup.add(ModItems.IRON_SAND));
         ItemGroupEvents
                 .modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
                 .register((itemGroup) -> itemGroup.add(ModItems.INSTANT_HEALTH_APPLE));
         ItemGroupEvents
-                // Register a "modify" event for the Tools item group.
-                .modifyEntriesEvent(ItemGroups.COMBAT)
-                // Add the item to the group when you get access to it.
-                .register((itemGroup) -> itemGroup.add(ModItems.GUIDITE_SWORD));
+                .modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_SHOVEL));
         ItemGroupEvents
                 .modifyEntriesEvent(ItemGroups.TOOLS)
                 .register((itemGroup) -> itemGroup.add(ModItems.SUPER_PICKAXE));
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_AXE));
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_HOE));
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.COMBAT)
+                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_SWORD));
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(ModItems.ANCIENT_SHOVEL));
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(ModItems.ANCIENT_PICKAXE));
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(ModItems.ANCIENT_AXE));
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(ModItems.ANCIENT_HOE));
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.COMBAT)
+                .register((itemGroup) -> itemGroup.add(ModItems.ANCIENT_SWORD));
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.COMBAT)
+                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_GLASS_HELMET));
+
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.COMBAT)
+                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_GLASS_CHESTPLATE));
+
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.COMBAT)
+                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_GLASS_LEGGINGS));
+
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.COMBAT)
+                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_GLASS_BOOTS));
+
     }
 }

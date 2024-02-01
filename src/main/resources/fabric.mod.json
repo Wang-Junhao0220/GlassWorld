@@ -15,6 +15,9 @@
   "icon": "assets/glassworld/icon.png",
   "environment": "*",
   "entrypoints": {
+    "fabric-datagen": [
+      "com.junhax.glassworld.GlassWorldDataGeneration"
+    ],
     "main": [
       "com.junhax.glassworld.GlassWorld"
     ],
