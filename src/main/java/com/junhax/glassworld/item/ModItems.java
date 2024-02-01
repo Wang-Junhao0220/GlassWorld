@@ -1,10 +1,7 @@
 package com.junhax.glassworld.item;
 
 import com.junhax.glassworld.effect.ModEffect;
-import com.junhax.glassworld.material.AncientGlassMaterial;
-import com.junhax.glassworld.material.GuiditeMaterial;
-import com.junhax.glassworld.material.SuperGlassArmorMaterial;
-import com.junhax.glassworld.material.SuperGlassMaterial;
+import com.junhax.glassworld.material.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -48,6 +45,11 @@ public class ModItems {
     public static final Item SUPER_GLASS_BOOTS = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()), "super_boots");
     public static final Item SUPER_GLASS_LEGGINGS = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()), "super_leggings");
 
+
+    public static final Item ANCIENT_GLASS_HELMET = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()), "ancient_helmet");
+    public static final Item ANCIENT_GLASS_CHESTPLATE = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()), "ancient_chestplate");
+    public static final Item ANCIENT_GLASS_BOOTS = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()), "ancient_boots");
+    public static final Item ANCIENT_GLASS_LEGGINGS = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()), "ancient_leggings");
 
     public static final Item INSTANT_HEALTH_APPLE = register(new Item(new FabricItemSettings().fireproof().food(new FoodComponent.Builder()
             .alwaysEdible()
@@ -94,6 +96,7 @@ public class ModItems {
                 entries.add(SUPER_GLASS_CHESTPLATE);
                 entries.add(SUPER_GLASS_BOOTS);
                 entries.add(SUPER_GLASS_LEGGINGS);
+                //TODO:add ancients
 
             })
             .build();
@@ -164,6 +167,7 @@ public class ModItems {
         ItemGroupEvents
                 .modifyEntriesEvent(ItemGroups.COMBAT)
                 .register((itemGroup) -> itemGroup.add(ModItems.SUPER_GLASS_BOOTS));
+        //TODO:add ancients & textures, layers
 
     }
 }
