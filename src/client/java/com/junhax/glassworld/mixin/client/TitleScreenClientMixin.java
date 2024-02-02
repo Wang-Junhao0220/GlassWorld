@@ -13,10 +13,8 @@ public class TitleScreenClientMixin {
 
     @Inject(at = @At("HEAD"), method = "init")
     private void init(CallbackInfo info) {
-        Logger LOGGER_MIXIN = LoggerFactory.getLogger("Client Init");
+        Logger LOGGER_MIXIN = LoggerFactory.getLogger("Client Init Mixin");
         LOGGER_MIXIN.info("Welcome to Minecraft! Enjoy!");
-        LOGGER_MIXIN.error("Failed when loading minecraft core package! Exiting if reload is failed.");
-        LOGGER_MIXIN.info("Successfully reloaded.");
 
     }
 }
