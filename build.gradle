@@ -18,15 +18,15 @@ repositories {
     maven {
         url 'https://repository.hanbings.io/proxy'
     }
-	maven {
-		url = 'https://jitpack.io'
-	}
-	maven {
-		url "https://maven.shedaniel.me/"
-	}
-	maven {
-		url "https://maven.terraformersmc.com/releases/"
-	}
+//	maven {
+//		url = 'https://jitpack.io'
+//	}
+//	maven {
+//		url "https://maven.shedaniel.me/"
+//	}
+//	maven {
+//		url "https://maven.terraformersmc.com/releases/"
+//	}
 }
 
 loom {
@@ -60,21 +60,21 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modImplementation "com.ptsmods:devlogin:3.3"
-	modImplementation "com.github.CrimsonDawn45:Fabric-Shield-Lib:v${project.fabric_shield_lib_version}"
-	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_version}") {
-		exclude(group: "net.fabricmc.fabric-api")
-	}
-	include("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_version}")
-
-	modCompileOnly modRuntimeOnly ("com.terraformersmc:modmenu:${project.mod_menu_version}"), {
-		exclude(group: "net.fabricmc.fabric-api")
-	}
-
-	modImplementation("com.github.Chocohead:Fabric-ASM:v${project.fabric_asm_version}") {
-		exclude (group: "net.fabricmc.fabric-api")
-	}
-	include("com.github.Chocohead:Fabric-ASM:v${project.fabric_asm_version}")
+//	modImplementation "com.ptsmods:devlogin:3.3"
+//	modImplementation "com.github.CrimsonDawn45:Fabric-Shield-Lib:v${project.fabric_shield_lib_version}"
+//	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_version}") {
+//		exclude(group: "net.fabricmc.fabric-api")
+//	}
+//	include("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_version}")
+//
+//	modCompileOnly modRuntimeOnly ("com.terraformersmc:modmenu:${project.mod_menu_version}"), {
+//		exclude(group: "net.fabricmc.fabric-api")
+//	}
+//
+//	modImplementation("com.github.Chocohead:Fabric-ASM:v${project.fabric_asm_version}") {
+//		exclude (group: "net.fabricmc.fabric-api")
+//	}
+//	include("com.github.Chocohead:Fabric-ASM:v${project.fabric_asm_version}")
 
 //	modImplementation "com.ptsmods:devlogin:3.3"
 	

@@ -1,11 +1,16 @@
 package com.junhax.glassworld;
 
+//import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
 import com.junhax.glassworld.block.ModBlocks;
 import com.junhax.glassworld.effect.ModEffect;
 import com.junhax.glassworld.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.Items;
+//import net.minecraft.registry.Registries;
+//import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
@@ -21,10 +26,12 @@ public class GlassWorld implements ModInitializer {
     public static final RegistryKey<PlacedFeature> GOLD_BLOCK_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("glassworld", "gold_block"));
     public static final RegistryKey<PlacedFeature> ANCIENT_DEBRIS_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("glassworld", "ancient_debris"));
     public static final RegistryKey<PlacedFeature> EMERALD_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("glassworld", "emerald_ore"));
+//    public static final Item NETHERITE_SHIELD = new FabricShieldItem(new Item.Settings().maxDamage(2500),10, 13, Items.NETHERITE_INGOT); // FabricShieldItem(settings.maxDamage(durability), cooldownTicks, enchantability, repairItems)
 
     @Override
     public void onInitialize() {
 
+//        Registry.register(Registries.ITEM, new Identifier("glassworld", "netherite_shield"), NETHERITE_SHIELD);
         LOGGER.info("Hello Fabric world!");
         try {
             ModItems.initialize();
