@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "glassworld:ancient_glass"
+  },
+  "base": {
+    "item": "glassworld:super_leggings"
+  },
+  "result": {
+    "item": "glassworld:ancient_leggings"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

@@ -94,12 +94,12 @@ public class ModItems {
                 entries.add(ANCIENT_SWORD);
                 entries.add(SUPER_GLASS_HELMET);
                 entries.add(SUPER_GLASS_CHESTPLATE);
-                entries.add(SUPER_GLASS_BOOTS);
                 entries.add(SUPER_GLASS_LEGGINGS);
+                entries.add(SUPER_GLASS_BOOTS);
                 entries.add(ANCIENT_GLASS_HELMET);
                 entries.add(ANCIENT_GLASS_CHESTPLATE);
-                entries.add(ANCIENT_GLASS_BOOTS);
                 entries.add(ANCIENT_GLASS_LEGGINGS);
+                entries.add(ANCIENT_GLASS_BOOTS);
 
             })
             .build();
