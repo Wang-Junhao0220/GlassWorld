@@ -51,6 +51,6 @@ public class AncientGlassArmorMaterial implements ArmorMaterial {
     }
     @Override
     public float getKnockbackResistance() {
-        return 10F;
+        return 2F;
     }
 }

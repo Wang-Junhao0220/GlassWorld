@@ -1,6 +1,5 @@
 package com.junhax.glassworld.effect;
 
-import com.junhax.glassworld.effect.ExpStatusEffect;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

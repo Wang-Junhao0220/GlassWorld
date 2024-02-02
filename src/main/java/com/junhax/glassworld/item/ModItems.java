@@ -170,7 +170,6 @@ public class ModItems {
         ItemGroupEvents
                 .modifyEntriesEvent(ItemGroups.COMBAT)
                 .register((itemGroup) -> itemGroup.add(ModItems.SUPER_GLASS_BOOTS));
-        //TODO:add ancients & textures, layers
         ItemGroupEvents
                 .modifyEntriesEvent(ItemGroups.COMBAT)
                 .register((itemGroup) -> itemGroup.add(ModItems.ANCIENT_GLASS_HELMET));

@@ -51,6 +51,6 @@ public class SuperGlassArmorMaterial implements ArmorMaterial {
     }
     @Override
     public float getKnockbackResistance() {
-        return 5F;
+        return 1F;
     }
 }
