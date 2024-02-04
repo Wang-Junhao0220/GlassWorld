@@ -1,5 +1,6 @@
 package com.junhax.glassworld.item;
 
+import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
 import com.junhax.glassworld.effect.ModEffect;
 import com.junhax.glassworld.material.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -51,6 +52,7 @@ public class ModItems {
     public static final Item ANCIENT_GLASS_BOOTS = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()), "ancient_boots");
     public static final Item ANCIENT_GLASS_LEGGINGS = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()), "ancient_leggings");
 
+//    public static final Item NETHERITE_SHIELD = new FabricShieldItem(new FabricItemSettings().maxDamage(2500), 10, 13, Items.NETHERITE_INGOT);
     public static final Item INSTANT_HEALTH_APPLE = register(new Item(new FabricItemSettings().fireproof().food(new FoodComponent.Builder()
             .alwaysEdible()
             .snack()

@@ -1,6 +1,7 @@
 package com.junhax.glassworld;
 
 //import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
+import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
 import com.junhax.glassworld.block.ModBlocks;
 import com.junhax.glassworld.effect.ModEffect;
 import com.junhax.glassworld.item.ModItems;
@@ -11,6 +12,12 @@ import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 //import net.minecraft.item.Items;
 //import net.minecraft.registry.Registries;
 //import net.minecraft.registry.Registry;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
@@ -21,6 +28,7 @@ import org.slf4j.LoggerFactory;
 
 public class GlassWorld implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("glassworld");
+    public static final Item NETHERITE_SHIELD = new FabricShieldItem(new Item.Settings().maxDamage(2500), 10, 13, Items.NETHERITE_INGOT);
     public static final RegistryKey<PlacedFeature> CUSTOM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("glassworld", "ore_custom"));
     public static final RegistryKey<PlacedFeature> DIAMOND_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("glassworld", "diamond_ore"));
     public static final RegistryKey<PlacedFeature> GOLD_BLOCK_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("glassworld", "gold_block"));
@@ -55,6 +63,10 @@ public class GlassWorld implements ModInitializer {
             LOGGER.error("Failed when trying to add a custom ore!");
             System.out.println("Failed when trying to add a custom ore!");
         }
+        Registry.register(Registries.ITEM, new Identifier("glassworld", "netherite_shield"), NETHERITE_SHIELD);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.add(NETHERITE_SHIELD);
+        });
 //        ModOre.initialize();
     }
 }
