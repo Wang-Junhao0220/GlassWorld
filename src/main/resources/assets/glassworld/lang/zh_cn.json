@@ -26,5 +26,6 @@
   "item.glassworld.super_pickaxe": "中国玻璃稿",
   "item.glassworld.super_shovel": "中国玻璃铲",
   "item.glassworld.super_sword": "中国玻璃剑",
-  "itemGroup.glassworld.super_glass": "中国玻璃相关物品"
+  "itemGroup.glassworld.super_glass": "中国玻璃相关物品",
+  "enchantment.glassworld.super_kill": "秒杀"
 }

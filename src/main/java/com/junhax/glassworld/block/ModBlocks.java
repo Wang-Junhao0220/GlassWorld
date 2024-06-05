@@ -4,6 +4,9 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.MapColor;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -16,10 +19,12 @@ public class ModBlocks {
             new Block(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRASS)
             ), "condensed_dirt", true);
-    public static final Block SUPER_GLASS = register(
-            new Block(
-                    AbstractBlock.Settings.create().strength(100F, 1145140114514F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
-            ), "super_glass", true);
+//    public static final Block SUPER_GLASS = register(
+//            new Block(
+//                    AbstractBlock.Settings.create().strength(100F, 1145140114514F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
+//                            .allowsSpawning(Blocks::never).solidBlock(Blocks::never)
+//                            .suffocates(Blocks::never).blockVision(Blocks::never))
+//    ), "super_glass",true);
     public static final Block SOFT_SUPER_GLASS = register(
             new Block(
                     AbstractBlock.Settings.create().strength(10F, 1145140114514F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
@@ -32,6 +37,27 @@ public class ModBlocks {
             new Block(
                     AbstractBlock.Settings.create().strength(100F, 1145140114514F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
             ), "ancient_glass", true);
+    public static final Block SUPER_GLASS = new Block(
+            AbstractBlock.Settings.create().instrument(Instrument.HAT)
+                    .strength(100F, 1145140114514F).sounds(BlockSoundGroup.GLASS).nonOpaque()
+                    .allowsSpawning(Blocks::never).solidBlock(Blocks::never)
+                    .suffocates(Blocks::never).blockVision(Blocks::never));
+//
+//    public static final Block GLASS_STAIRS = new GlassStairsBlock(
+//            AbstractBlock.Settings.create().instrument(Instrument.HAT)
+//                    .strength(0.3F).sounds(BlockSoundGroup.GLASS).nonOpaque()
+//                    .allowsSpawning(Blocks::never).solidBlock(Blocks::never)
+//                    .suffocates(Blocks::never).blockVision(Blocks::never));
+
+//    public static final Block TINTED_GLASS_SLAB = new TintedGlassSlabBlock(
+//            AbstractBlock.Settings.copy(Blocks.GLASS).mapColor(MapColor.GRAY)
+//                    .nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never)
+//                    .suffocates(Blocks::never).blockVision(Blocks::never));
+//
+//    public static final Block TINTED_GLASS_STAIRS = new TintedGlassStairsBlock(
+//            AbstractBlock.Settings.copy(Blocks.GLASS).mapColor(MapColor.GRAY)
+//                    .nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never)
+//                    .suffocates(Blocks::never).blockVision(Blocks::never));
 //    public static final SuperChest SUPER_CHEST = register(
 //            new SuperChest(
 //                    AbstractBlock.Settings.create().strength(5F, 54188F).requiresTool().sounds(BlockSoundGroup.WOOD)

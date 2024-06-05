@@ -26,5 +26,6 @@
   "item.glassworld.super_pickaxe": "Super Glass Pickaxe",
   "item.glassworld.super_shovel": "Super Glass Shovel",
   "item.glassworld.super_sword": "Super Glass Sword",
-  "itemGroup.glassworld.super_glass": "Things about Super Glass"
+  "itemGroup.glassworld.super_glass": "Things about Super Glass",
+  "enchantment.glassworld.super_kill": "Super Kill"
 }
