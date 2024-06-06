@@ -39,7 +39,7 @@ public class ModBlocks {
             ), "ancient_glass", true);
     public static final Block SUPER_GLASS = new Block(
             AbstractBlock.Settings.create().instrument(Instrument.HAT)
-                    .strength(100F, 1145140114514F).sounds(BlockSoundGroup.GLASS).nonOpaque()
+                    .strength(100F, 1145140114514F).sounds(BlockSoundGroup.GLASS).of(Material.GLASS).nonOpaque()
                     .allowsSpawning(Blocks::never).solidBlock(Blocks::never)
                     .suffocates(Blocks::never).blockVision(Blocks::never));
 //
