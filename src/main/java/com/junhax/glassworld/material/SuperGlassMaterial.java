@@ -10,17 +10,17 @@ public class SuperGlassMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 3350;
+        return 1250;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 25.0F;
+        return 10F;
     }
 
     @Override
     public float getAttackDamage() {
-        return 18F;
+        return 1F;
     }
 
     @Override
@@ -30,11 +30,11 @@ public class SuperGlassMaterial implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return 500;
+        return 80;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModBlocks.SUPER_GLASS, ModBlocks.SOFT_SUPER_GLASS);
+        return Ingredient.ofItems(ModBlocks.SUPER_GLASS);
     }
 }

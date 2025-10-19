@@ -1,6 +1,6 @@
 package com.junhax.glassworld.item;
 
-import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
+
 import com.junhax.glassworld.effect.ModEffect;
 import com.junhax.glassworld.material.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -17,34 +17,25 @@ import net.minecraft.util.Identifier;
 import static com.junhax.glassworld.block.ModBlocks.*;
 
 public class ModItems {
-    public static final Item GUIDITE_SWORD = register(new SwordItem(GuiditeMaterial.INSTANCE, 72, 20F, new FabricItemSettings().fireproof()), "guidite_sword");
 
-    public static final Item SUPER_SWORD = register(new SwordItem(SuperGlassMaterial.INSTANCE, 72, 20F, new FabricItemSettings().fireproof()), "super_sword");
+    public static final Item SUPER_SWORD = register(new SwordItem(SuperGlassMaterial.INSTANCE, 10, 8F, new FabricItemSettings()), "super_sword");
+    public static final Item SUPER_HOE = register(new HoeItem(SuperGlassMaterial.INSTANCE, 6, 7F, new FabricItemSettings()), "super_hoe");
+    public static final Item SUPER_SHOVEL = register(new ShovelItem(SuperGlassMaterial.INSTANCE, 8, 5F, new FabricItemSettings()), "super_shovel");
+    public static final Item SUPER_PICKAXE = register(new PickaxeItem(SuperGlassMaterial.INSTANCE, 8, 5F, new FabricItemSettings()), "super_pickaxe");
+    public static final Item SUPER_AXE = register(new AxeItem(SuperGlassMaterial.INSTANCE, 14, 6F, new FabricItemSettings()), "super_axe");
 
-    public static final Item SUPER_HOE = register(new HoeItem(SuperGlassMaterial.INSTANCE, 38, 10F, new FabricItemSettings().fireproof()), "super_hoe");
+    public static final Item ANCIENT_PICKAXE = register(new PickaxeItem(AncientGlassMaterial.INSTANCE, 15, 10F, new FabricItemSettings().fireproof()), "ancient_pickaxe");
+    public static final Item ANCIENT_SWORD = register(new SwordItem(AncientGlassMaterial.INSTANCE, 8, 8F, new FabricItemSettings().fireproof()), "ancient_sword");
+    public static final Item ANCIENT_AXE = register(new AxeItem(AncientGlassMaterial.INSTANCE, 10, 7F, new FabricItemSettings().fireproof()), "ancient_axe");
+    public static final Item ANCIENT_SHOVEL = register(new ShovelItem(AncientGlassMaterial.INSTANCE, 10, 7F, new FabricItemSettings().fireproof()), "ancient_shovel");
+    public static final Item ANCIENT_HOE = register(new HoeItem(AncientGlassMaterial.INSTANCE, 18, 8F, new FabricItemSettings().fireproof()), "ancient_hoe");
 
-    public static final Item SUPER_SHOVEL = register(new ShovelItem(SuperGlassMaterial.INSTANCE, 40, 12F, new FabricItemSettings().fireproof()), "super_shovel");
+    public static final Item IRON_SAND = register(new Item(new FabricItemSettings()), "iron_sand");
 
-    public static final Item SUPER_PICKAXE = register(new PickaxeItem(SuperGlassMaterial.INSTANCE, 48, 16F, new FabricItemSettings().fireproof()), "super_pickaxe");
-
-    public static final Item SUPER_AXE = register(new AxeItem(SuperGlassMaterial.INSTANCE, 40, 8F, new FabricItemSettings().fireproof()), "super_axe");
-
-    public static final Item ANCIENT_PICKAXE = register(new PickaxeItem(AncientGlassMaterial.INSTANCE, 50, 18F, new FabricItemSettings().fireproof()), "ancient_pickaxe");
-
-    public static final Item ANCIENT_SWORD = register(new SwordItem(AncientGlassMaterial.INSTANCE, 100, 30F, new FabricItemSettings().fireproof()), "ancient_sword");
-
-    public static final Item ANCIENT_AXE = register(new AxeItem(AncientGlassMaterial.INSTANCE, 60, 10F, new FabricItemSettings().fireproof()), "ancient_axe");
-
-    public static final Item ANCIENT_SHOVEL = register(new ShovelItem(AncientGlassMaterial.INSTANCE, 50, 12F, new FabricItemSettings().fireproof()), "ancient_shovel");
-
-    public static final Item ANCIENT_HOE = register(new HoeItem(AncientGlassMaterial.INSTANCE, 45, 14F, new FabricItemSettings().fireproof()), "ancient_hoe");
-
-    public static final Item IRON_SAND = register(new Item(new FabricItemSettings().fireproof()), "iron_sand");
-
-    public static final Item SUPER_GLASS_HELMET = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()), "super_helmet");
-    public static final Item SUPER_GLASS_CHESTPLATE = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()), "super_chestplate");
-    public static final Item SUPER_GLASS_BOOTS = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()), "super_boots");
-    public static final Item SUPER_GLASS_LEGGINGS = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()), "super_leggings");
+    public static final Item SUPER_GLASS_HELMET = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.HELMET, new FabricItemSettings()), "super_helmet");
+    public static final Item SUPER_GLASS_CHESTPLATE = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()), "super_chestplate");
+    public static final Item SUPER_GLASS_BOOTS = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings()), "super_boots");
+    public static final Item SUPER_GLASS_LEGGINGS = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()), "super_leggings");
 
 
     public static final Item ANCIENT_GLASS_HELMET = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()), "ancient_helmet");
@@ -52,28 +43,26 @@ public class ModItems {
     public static final Item ANCIENT_GLASS_BOOTS = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()), "ancient_boots");
     public static final Item ANCIENT_GLASS_LEGGINGS = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()), "ancient_leggings");
 
-//    public static final Item NETHERITE_SHIELD = new FabricShieldItem(new FabricItemSettings().maxDamage(2500), 10, 13, Items.NETHERITE_INGOT);
     public static final Item INSTANT_HEALTH_APPLE = register(new Item(new FabricItemSettings().fireproof().food(new FoodComponent.Builder()
             .alwaysEdible()
-            .snack()
-            .hunger(20)
-            .saturationModifier(20F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1000 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1000 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 1000 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 1000 * 60 * 60 * 20, 99), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 1000 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 1000 * 60 * 60 * 20, 20), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1000 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 1000 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 1000 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 1000 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 1000 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1000 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 1000 * 60 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(ModEffect.EXP, 1000 * 60 * 60 * 20, 255), 1.0F)
+            .hunger(5)
+            .saturationModifier(2F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 2 * 60 * 20, 5), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 10 * 60 * 20, 5), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 40 * 60 * 20, 5), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 10 * 60 * 20, 30), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 10 * 60 * 20, 5), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 60 * 20, 1), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 20 * 60 * 20, 10), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 2 * 60 * 20, 6), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 5 * 60 * 20, 5), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 5 * 60 * 20, 5), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 40 * 60 * 20, 10), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 10 * 60 * 20, 15), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10 * 60 * 20, 255), 1.0F)
+            .statusEffect(new StatusEffectInstance(ModEffect.EXP, 5 * 60 * 20, 5), 1.0F)
             .build())), "instant_health_apple");
-    //    public static final Item ANCIENT_GLASS_UPGRADE_TEMPLATE= register(new SmithingTemplateItem(),"ancient_glass_upgrade_template");
+
     private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(SUPER_GLASS))
             .displayName(Text.translatable("itemGroup.glassworld.super_glass"))

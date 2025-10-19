@@ -12,6 +12,6 @@ public abstract class LuckEnchantmentMixin {
      */
     @Overwrite
     public int getMaxLevel() {
-        return 10;
+        return 5;
     }
 }

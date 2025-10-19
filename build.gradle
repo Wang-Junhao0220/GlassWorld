@@ -68,13 +68,6 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "com.github.CrimsonDawn45:Fabric-Shield-Lib:v${project.fabric_shield_lib_version}"
-
-	modImplementation "com.terraformersmc:modmenu:${project.mod_menu_version}"
-
-	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
-
-	modImplementation "com.github.Chocohead:Fabric-ASM:v${project.fabricasm_version}"
 	
 	// Uncomment the following line to enable the deprecated Fabric API modules. 
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.

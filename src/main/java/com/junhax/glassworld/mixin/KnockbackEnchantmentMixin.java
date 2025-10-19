@@ -13,6 +13,6 @@ public abstract class KnockbackEnchantmentMixin {
      */
     @Overwrite
     public int getMaxLevel() {
-        return 10;
+        return 5;
     }
 }

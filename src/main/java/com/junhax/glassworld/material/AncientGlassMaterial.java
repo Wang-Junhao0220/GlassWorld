@@ -10,17 +10,17 @@ public class AncientGlassMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 13350;
+        return 2350;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 40F;
+        return 15F;
     }
 
     @Override
     public float getAttackDamage() {
-        return 25F;
+        return 2F;
     }
 
     @Override
@@ -30,11 +30,11 @@ public class AncientGlassMaterial implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return 800;
+        return 80;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModBlocks.ANCIENT_GLASS, ModBlocks.SOFT_ANCIENT_GLASS);
+        return Ingredient.ofItems(ModBlocks.ANCIENT_GLASS);
     }
 }

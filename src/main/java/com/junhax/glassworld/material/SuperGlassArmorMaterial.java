@@ -14,7 +14,7 @@ public class SuperGlassArmorMaterial implements ArmorMaterial {
     public static final SuperGlassArmorMaterial INSTANCE = new SuperGlassArmorMaterial();
     @Override
     public int getEnchantability() {
-        return 500;
+        return 50;
     }
 
     @Override
@@ -33,11 +33,11 @@ public class SuperGlassArmorMaterial implements ArmorMaterial {
         // Replace X with a multiplier that you see fit!
         // For reference, diamond uses a multiplier of 33, whilst
         // leather uses 11.
-        return BASE_DURABILITY[type.getEquipmentSlot().getEntitySlotId()] * 3350;
+        return BASE_DURABILITY[type.getEquipmentSlot().getEntitySlotId()] * 350;
     }
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModBlocks.SUPER_GLASS,ModBlocks.SOFT_ANCIENT_GLASS);
+        return Ingredient.ofItems(ModBlocks.SUPER_GLASS);
     }
 
     @Override
