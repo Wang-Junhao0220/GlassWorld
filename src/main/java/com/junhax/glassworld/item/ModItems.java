@@ -60,7 +60,7 @@ public class ModItems {
             .statusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 40 * 60 * 20, 10), 1.0F)
             .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 10 * 60 * 20, 15), 1.0F)
             .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(ModEffect.EXP, 5 * 60 * 20, 5), 1.0F)
+            .statusEffect(new StatusEffectInstance(ModEffect.EXP, 20 * 20, 3), 0.4F)
             .build())), "instant_health_apple");
 
     private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()

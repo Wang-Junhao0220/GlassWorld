@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.GlassBlock;
 import net.minecraft.block.enums.Instrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroups;
@@ -16,23 +17,39 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block SOFT_SUPER_GLASS = register(
-            new Block(
-                    AbstractBlock.Settings.create().strength(8F, 100F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
+            new GlassBlock(
+                    AbstractBlock.Settings.create()
+                            .strength(8F, 100F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
+                            .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
+                            .suffocates(Blocks::never).blockVision(Blocks::never)
             ), "soft_super_glass", true);
     public static final Block SOFT_ANCIENT_GLASS = register(
-            new Block(
-                    AbstractBlock.Settings.create().strength(10F, 100F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
+            new GlassBlock(
+                    AbstractBlock.Settings.create()
+                            .strength(10F, 100F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
+                            .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
+                            .suffocates(Blocks::never).blockVision(Blocks::never)
             ), "soft_ancient_glass", true);
     public static final Block ANCIENT_GLASS = register(
-            new Block(
-                    AbstractBlock.Settings.create().strength(40F, 100F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
+            new GlassBlock(
+                    AbstractBlock.Settings.create()
+                            .strength(40F, 100F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
+                            .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
+                            .suffocates(Blocks::never).blockVision(Blocks::never)
             ), "ancient_glass", true);
-    public static final Block SUPER_GLASS = new Block(
-            AbstractBlock.Settings.create().instrument(Instrument.HAT)
-                    .strength(30F, 100F).sounds(BlockSoundGroup.GLASS).nonOpaque()
-                    .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
-                    .suffocates(Blocks::never).blockVision(Blocks::never));
 
+    public static final Block SUPER_GLASS = register(
+            new GlassBlock(
+                    AbstractBlock.Settings.create().instrument(Instrument.HAT)
+                            .strength(30F, 100F).sounds(BlockSoundGroup.GLASS).nonOpaque()
+                            .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
+                            .suffocates(Blocks::never).blockVision(Blocks::never)
+            ), "super_glass", true);
+//    public static final Block SUPER_GLASS = new Block(
+//            AbstractBlock.Settings.create().instrument(Instrument.HAT)
+//                    .strength(30F, 100F).sounds(BlockSoundGroup.GLASS).nonOpaque()
+//                    .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
+//                    .suffocates(Blocks::never).blockVision(Blocks::never));
 
     public static <T extends Block> T register(T block, String name, boolean shouldRegisterItem) {
         Identifier id = new Identifier("glassworld", name);
