@@ -18,30 +18,30 @@ import static com.junhax.glassworld.block.ModBlocks.*;
 
 public class ModItems {
 
-    public static final Item SUPER_SWORD = register(new SwordItem(SuperGlassMaterial.INSTANCE, 10, 8F, new FabricItemSettings()), "super_sword");
-    public static final Item SUPER_HOE = register(new HoeItem(SuperGlassMaterial.INSTANCE, 6, 7F, new FabricItemSettings()), "super_hoe");
-    public static final Item SUPER_SHOVEL = register(new ShovelItem(SuperGlassMaterial.INSTANCE, 8, 5F, new FabricItemSettings()), "super_shovel");
-    public static final Item SUPER_PICKAXE = register(new PickaxeItem(SuperGlassMaterial.INSTANCE, 8, 5F, new FabricItemSettings()), "super_pickaxe");
-    public static final Item SUPER_AXE = register(new AxeItem(SuperGlassMaterial.INSTANCE, 14, 6F, new FabricItemSettings()), "super_axe");
+    public static final Item DIAMOND_SWORD = register(new SwordItem(DiamondGlassMaterial.INSTANCE, 10, 8F, new FabricItemSettings()), "diamond_glass_sword");
+    public static final Item DIAMOND_HOE = register(new HoeItem(DiamondGlassMaterial.INSTANCE, 6, 7F, new FabricItemSettings()), "diamond_glass_hoe");
+    public static final Item DIAMOND_SHOVEL = register(new ShovelItem(DiamondGlassMaterial.INSTANCE, 8, 5F, new FabricItemSettings()), "diamond_glass_shovel");
+    public static final Item DIAMOND_PICKAXE = register(new PickaxeItem(DiamondGlassMaterial.INSTANCE, 8, 5F, new FabricItemSettings()), "diamond_glass_pickaxe");
+    public static final Item DIAMOND_AXE = register(new AxeItem(DiamondGlassMaterial.INSTANCE, 14, 6F, new FabricItemSettings()), "diamond_glass_axe");
 
-    public static final Item ANCIENT_PICKAXE = register(new PickaxeItem(AncientGlassMaterial.INSTANCE, 15, 10F, new FabricItemSettings().fireproof()), "ancient_pickaxe");
-    public static final Item ANCIENT_SWORD = register(new SwordItem(AncientGlassMaterial.INSTANCE, 8, 8F, new FabricItemSettings().fireproof()), "ancient_sword");
-    public static final Item ANCIENT_AXE = register(new AxeItem(AncientGlassMaterial.INSTANCE, 10, 7F, new FabricItemSettings().fireproof()), "ancient_axe");
-    public static final Item ANCIENT_SHOVEL = register(new ShovelItem(AncientGlassMaterial.INSTANCE, 10, 7F, new FabricItemSettings().fireproof()), "ancient_shovel");
-    public static final Item ANCIENT_HOE = register(new HoeItem(AncientGlassMaterial.INSTANCE, 18, 8F, new FabricItemSettings().fireproof()), "ancient_hoe");
+    public static final Item ANCIENT_PICKAXE = register(new PickaxeItem(AncientGlassMaterial.INSTANCE, 15, 10F, new FabricItemSettings().fireproof()), "ancient_glass_pickaxe");
+    public static final Item ANCIENT_SWORD = register(new SwordItem(AncientGlassMaterial.INSTANCE, 8, 8F, new FabricItemSettings().fireproof()), "ancient_glass_sword");
+    public static final Item ANCIENT_AXE = register(new AxeItem(AncientGlassMaterial.INSTANCE, 10, 7F, new FabricItemSettings().fireproof()), "ancient_glass_axe");
+    public static final Item ANCIENT_SHOVEL = register(new ShovelItem(AncientGlassMaterial.INSTANCE, 10, 7F, new FabricItemSettings().fireproof()), "ancient_glass_shovel");
+    public static final Item ANCIENT_HOE = register(new HoeItem(AncientGlassMaterial.INSTANCE, 18, 8F, new FabricItemSettings().fireproof()), "ancient_glass_hoe");
 
     public static final Item IRON_SAND = register(new Item(new FabricItemSettings()), "iron_sand");
 
-    public static final Item SUPER_GLASS_HELMET = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.HELMET, new FabricItemSettings()), "super_helmet");
-    public static final Item SUPER_GLASS_CHESTPLATE = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()), "super_chestplate");
-    public static final Item SUPER_GLASS_BOOTS = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings()), "super_boots");
-    public static final Item SUPER_GLASS_LEGGINGS = register(new ArmorItem(SuperGlassArmorMaterial.INSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()), "super_leggings");
+    public static final Item SUPER_GLASS_HELMET = register(new ArmorItem(DiamondGlassArmorMaterial.INSTANCE, ArmorItem.Type.HELMET, new FabricItemSettings()), "diamond_glass_helmet");
+    public static final Item SUPER_GLASS_CHESTPLATE = register(new ArmorItem(DiamondGlassArmorMaterial.INSTANCE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()), "diamond_glass_chestplate");
+    public static final Item SUPER_GLASS_BOOTS = register(new ArmorItem(DiamondGlassArmorMaterial.INSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings()), "diamond_glass_boots");
+    public static final Item SUPER_GLASS_LEGGINGS = register(new ArmorItem(DiamondGlassArmorMaterial.INSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()), "diamond_glass_leggings");
 
 
-    public static final Item ANCIENT_GLASS_HELMET = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()), "ancient_helmet");
-    public static final Item ANCIENT_GLASS_CHESTPLATE = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()), "ancient_chestplate");
-    public static final Item ANCIENT_GLASS_BOOTS = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()), "ancient_boots");
-    public static final Item ANCIENT_GLASS_LEGGINGS = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()), "ancient_leggings");
+    public static final Item ANCIENT_GLASS_HELMET = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()), "ancient_glass_helmet");
+    public static final Item ANCIENT_GLASS_CHESTPLATE = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()), "ancient_glass_chestplate");
+    public static final Item ANCIENT_GLASS_BOOTS = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()), "ancient_glass_boots");
+    public static final Item ANCIENT_GLASS_LEGGINGS = register(new ArmorItem(AncientGlassArmorMaterial.INSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()), "ancient_glass_leggings");
 
     public static final Item INSTANT_HEALTH_APPLE = register(new Item(new FabricItemSettings().fireproof().food(new FoodComponent.Builder()
             .alwaysEdible()
@@ -64,20 +64,20 @@ public class ModItems {
             .build())), "instant_health_apple");
 
     private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(SUPER_GLASS))
-            .displayName(Text.translatable("itemGroup.glassworld.super_glass"))
+            .icon(() -> new ItemStack(DIAMOND_GLASS))
+            .displayName(Text.translatable("itemGroup.glassworld.more_glass"))
             .entries((context, entries) -> {
-                entries.add(SUPER_GLASS);
-                entries.add(SOFT_SUPER_GLASS);
+                entries.add(DIAMOND_GLASS);
+                entries.add(SOFT_DIAMOND_GLASS);
                 entries.add(ANCIENT_GLASS);
                 entries.add(SOFT_ANCIENT_GLASS);
                 entries.add(IRON_SAND);
                 entries.add(INSTANT_HEALTH_APPLE);
-                entries.add(SUPER_SHOVEL);
-                entries.add(SUPER_PICKAXE);
-                entries.add(SUPER_AXE);
-                entries.add(SUPER_HOE);
-                entries.add(SUPER_SWORD);
+                entries.add(DIAMOND_SHOVEL);
+                entries.add(DIAMOND_PICKAXE);
+                entries.add(DIAMOND_AXE);
+                entries.add(DIAMOND_HOE);
+                entries.add(DIAMOND_SWORD);
                 entries.add(ANCIENT_SHOVEL);
                 entries.add(ANCIENT_PICKAXE);
                 entries.add(ANCIENT_AXE);
@@ -109,7 +109,7 @@ public class ModItems {
     }
 
     public static void initialize() {
-        Registry.register(Registries.ITEM_GROUP, new Identifier("glassworld", "super_glass"), ITEM_GROUP);
+        Registry.register(Registries.ITEM_GROUP, new Identifier("glassworld", "more_glass"), ITEM_GROUP);
         ItemGroupEvents
                 .modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register((itemGroup) -> itemGroup.add(ModItems.IRON_SAND));
@@ -118,19 +118,19 @@ public class ModItems {
                 .register((itemGroup) -> itemGroup.add(ModItems.INSTANT_HEALTH_APPLE));
         ItemGroupEvents
                 .modifyEntriesEvent(ItemGroups.TOOLS)
-                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_SHOVEL));
+                .register((itemGroup) -> itemGroup.add(ModItems.DIAMOND_SHOVEL));
         ItemGroupEvents
                 .modifyEntriesEvent(ItemGroups.TOOLS)
-                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_PICKAXE));
+                .register((itemGroup) -> itemGroup.add(ModItems.DIAMOND_PICKAXE));
         ItemGroupEvents
                 .modifyEntriesEvent(ItemGroups.TOOLS)
-                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_AXE));
+                .register((itemGroup) -> itemGroup.add(ModItems.DIAMOND_AXE));
         ItemGroupEvents
                 .modifyEntriesEvent(ItemGroups.TOOLS)
-                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_HOE));
+                .register((itemGroup) -> itemGroup.add(ModItems.DIAMOND_HOE));
         ItemGroupEvents
                 .modifyEntriesEvent(ItemGroups.COMBAT)
-                .register((itemGroup) -> itemGroup.add(ModItems.SUPER_SWORD));
+                .register((itemGroup) -> itemGroup.add(ModItems.DIAMOND_SWORD));
         ItemGroupEvents
                 .modifyEntriesEvent(ItemGroups.TOOLS)
                 .register((itemGroup) -> itemGroup.add(ModItems.ANCIENT_SHOVEL));

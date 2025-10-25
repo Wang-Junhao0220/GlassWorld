@@ -1,0 +1,56 @@
+package com.junhax.glassworld.material;
+
+import com.junhax.glassworld.block.ModBlocks;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterial;
+import net.minecraft.recipe.Ingredient;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
+
+public class DiamondGlassArmorMaterial implements ArmorMaterial {
+    private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
+    private static final int[] PROTECTION_VALUES = new int[]{13, 16, 18, 13};
+
+    public static final DiamondGlassArmorMaterial INSTANCE = new DiamondGlassArmorMaterial();
+    @Override
+    public int getEnchantability() {
+        return 50;
+    }
+
+    @Override
+    public int getProtection(ArmorItem.Type type) {
+        // This will get the protection value for the slot from
+        // our array.
+        return PROTECTION_VALUES[type.getEquipmentSlot().getEntitySlotId()];
+    }
+    @Override
+    public SoundEvent getEquipSound() {
+        return SoundEvents.ITEM_ARMOR_EQUIP_GENERIC;
+    }
+
+    @Override
+    public int getDurability(ArmorItem.Type type) {
+        // Replace X with a multiplier that you see fit!
+        // For reference, diamond uses a multiplier of 33, whilst
+        // leather uses 11.
+        return BASE_DURABILITY[type.getEquipmentSlot().getEntitySlotId()] * 350;
+    }
+    @Override
+    public Ingredient getRepairIngredient() {
+        return Ingredient.ofItems(ModBlocks.DIAMOND_GLASS);
+    }
+
+    @Override
+    public String getName() {
+        // Must be all lowercase
+        return "diamond_glass";
+    }
+    @Override
+    public float getToughness() {
+        return 5F;
+    }
+    @Override
+    public float getKnockbackResistance() {
+        return 1F;
+    }
+}

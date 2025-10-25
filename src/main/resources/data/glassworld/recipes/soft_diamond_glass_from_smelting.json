@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 15,
+  "group": "zer",
+  "ingredient": {
+    "item": "glassworld:diamond_glass"
+  },
+  "result": "glassworld:soft_diamond_glass"
+}

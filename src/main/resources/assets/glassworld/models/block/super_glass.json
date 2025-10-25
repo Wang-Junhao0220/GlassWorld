@@ -1,7 +1,0 @@
-{
-  "parent": "glassworld:block/cube_all",
-  "textures": {
-    "all": "glassworld:block/super_glass"
-  },
-  "render_type": "cutout"
-}

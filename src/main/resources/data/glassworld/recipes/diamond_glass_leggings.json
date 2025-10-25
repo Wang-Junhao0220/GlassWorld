@@ -2,19 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "111",
-    "121",
-    "111"
+    "1 1",
+    "1 1"
   ],
   "key": {
     "1": {
       "item": "glassworld:diamond_glass"
-    },
-    "2": {
-      "item": "minecraft:netherite_ingot"
     }
   },
   "result": {
-    "item": "glassworld:ancient_glass",
-    "count": 8
+    "item": "glassworld:diamond_glass_leggings",
+    "count": 1
   }
 }

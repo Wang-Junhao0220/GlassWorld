@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 3 ",
+    "212",
+    "212"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "minecraft:blue_dye"
+    },
+    "3": {
+      "item": "glassworld:diamond_glass"
+    }
+  },
+  "result": {
+    "item": "glassworld:diamond_glass_shovel",
+    "count": 1
+  }
+}

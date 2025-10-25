@@ -16,13 +16,14 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block SOFT_SUPER_GLASS = register(
+    public static final Block SOFT_DIAMOND_GLASS = register(
             new GlassBlock(
                     AbstractBlock.Settings.create()
                             .strength(8F, 100F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
                             .suffocates(Blocks::never).blockVision(Blocks::never)
-            ), "soft_super_glass", true);
+            ), "soft_diamond_glass", true);
+
     public static final Block SOFT_ANCIENT_GLASS = register(
             new GlassBlock(
                     AbstractBlock.Settings.create()
@@ -30,6 +31,7 @@ public class ModBlocks {
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
                             .suffocates(Blocks::never).blockVision(Blocks::never)
             ), "soft_ancient_glass", true);
+
     public static final Block ANCIENT_GLASS = register(
             new GlassBlock(
                     AbstractBlock.Settings.create()
@@ -38,18 +40,13 @@ public class ModBlocks {
                             .suffocates(Blocks::never).blockVision(Blocks::never)
             ), "ancient_glass", true);
 
-    public static final Block SUPER_GLASS = register(
+    public static final Block DIAMOND_GLASS = register(
             new GlassBlock(
                     AbstractBlock.Settings.create().instrument(Instrument.HAT)
                             .strength(30F, 100F).sounds(BlockSoundGroup.GLASS).nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
                             .suffocates(Blocks::never).blockVision(Blocks::never)
-            ), "super_glass", true);
-//    public static final Block SUPER_GLASS = new Block(
-//            AbstractBlock.Settings.create().instrument(Instrument.HAT)
-//                    .strength(30F, 100F).sounds(BlockSoundGroup.GLASS).nonOpaque()
-//                    .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
-//                    .suffocates(Blocks::never).blockVision(Blocks::never));
+            ), "diamond_glass", true);
 
     public static <T extends Block> T register(T block, String name, boolean shouldRegisterItem) {
         Identifier id = new Identifier("glassworld", name);
@@ -64,10 +61,10 @@ public class ModBlocks {
 
 
     public static void initialize() {
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> itemGroup.add(ModBlocks.SUPER_GLASS.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> itemGroup.add(ModBlocks.DIAMOND_GLASS.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> itemGroup.add(ModBlocks.ANCIENT_GLASS.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> itemGroup.add(ModBlocks.SOFT_ANCIENT_GLASS.asItem()));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> itemGroup.add(ModBlocks.SOFT_SUPER_GLASS.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> itemGroup.add(ModBlocks.SOFT_DIAMOND_GLASS.asItem()));
     }
 
 }

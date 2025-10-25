@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "glassworld:item/guidite_sword"
-  }
-}
