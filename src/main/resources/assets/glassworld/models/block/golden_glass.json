@@ -1,0 +1,7 @@
+{
+  "parent": "glassworld:block/cube_all",
+  "textures": {
+    "all": "glassworld:block/golden_glass"
+  },
+  "render_type": "cutout"
+}
