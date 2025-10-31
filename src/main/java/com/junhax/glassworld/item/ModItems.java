@@ -67,10 +67,22 @@ public class ModItems {
             .icon(() -> new ItemStack(DIAMOND_GLASS))
             .displayName(Text.translatable("itemGroup.glassworld.more_glass"))
             .entries((context, entries) -> {
+                entries.add(PURIFIED_GLASS);
                 entries.add(DIAMOND_GLASS);
                 entries.add(SOFT_DIAMOND_GLASS);
                 entries.add(ANCIENT_GLASS);
                 entries.add(SOFT_ANCIENT_GLASS);
+                entries.add(GOLDEN_GLASS);
+                entries.add(SOFT_GOLDEN_GLASS);
+                entries.add(REDSTONE_GLASS);
+                entries.add(SOFT_REDSTONE_GLASS);
+                entries.add(IRON_GLASS);
+                entries.add(SOFT_IRON_GLASS);
+                entries.add(EMERALD_GLASS);
+                entries.add(SOFT_EMERALD_GLASS);
+                entries.add(COPPER_GLASS);
+                entries.add(SOFT_COPPER_GLASS);
+                // Items
                 entries.add(IRON_SAND);
                 entries.add(INSTANT_HEALTH_APPLE);
                 entries.add(DIAMOND_SHOVEL);
