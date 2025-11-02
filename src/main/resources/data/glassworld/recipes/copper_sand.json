@@ -10,11 +10,11 @@
       "tag": "minecraft:sand"
     },
     "B": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:copper_ingot"
     }
   },
   "result": {
-    "item": "glassworld:iron_sand",
+    "item": "glassworld:copper_sand",
     "count": 8
   }
 }

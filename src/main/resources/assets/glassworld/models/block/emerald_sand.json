@@ -1,0 +1,6 @@
+{
+  "parent": "glassworld:block/cube_all",
+  "textures": {
+    "all": "glassworld:block/emerald_sand"
+  }
+}

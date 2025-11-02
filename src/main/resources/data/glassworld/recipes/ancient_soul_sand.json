@@ -7,14 +7,14 @@
   ],
   "key": {
     "A": {
-      "tag": "minecraft:sand"
+      "tag": "minecraft:soul_sand"
     },
     "B": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:netherite_scrap"
     }
   },
   "result": {
-    "item": "glassworld:iron_sand",
+    "item": "glassworld:ancient_soul_sand",
     "count": 8
   }
 }

@@ -16,4 +16,12 @@ public class BlockId {
     public static final String SOFT_EMERALD_GLASS = "soft_emerald_glass";
     public static final String COPPER_GLASS = "copper_glass";
     public static final String SOFT_COPPER_GLASS = "soft_copper_glass";
+
+    public static final String IRON_SAND = "iron_sand";
+    public static final String COPPER_SAND = "copper_sand";
+    public static final String GOLDEN_SAND = "golden_sand";
+    public static final String REDSTONE_SAND = "redstone_sand";
+    public static final String EMERALD_SAND = "emerald_sand";
+    public static final String DIAMOND_SAND = "diamond_sand";
+    public static final String ANCIENT_SOUL_SAND = "ancient_soul_sand";
 }

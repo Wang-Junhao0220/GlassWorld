@@ -2,6 +2,12 @@
   "replace": false,
   "values": [
     "glassworld:diamond_glass",
-    "glassworld:ancient_glass"
+    "glassworld:ancient_glass",
+    "glassworld:copper_glass",
+    "glassworld:golden_glass",
+    "glassworld:iron_glass",
+    "glassworld:emerald_glass",
+    "glassworld:redstone_glass",
+    "glassworld:purified_glass"
   ]
 }

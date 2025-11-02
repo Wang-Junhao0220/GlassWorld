@@ -2,10 +2,10 @@
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 125,
-  "experience": 30,
+  "experience": 10,
   "group": "zer",
   "ingredient": {
-    "item": "glassworld:ancient_glass"
+    "item": "glassworld:iron_sand"
   },
-  "result": "glassworld:soft_ancient_glass"
+  "result": "glassworld:iron_glass"
 }

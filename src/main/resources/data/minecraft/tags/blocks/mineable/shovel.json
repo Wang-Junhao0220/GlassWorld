@@ -1,9 +1,12 @@
 {
   "replace": false,
   "values": [
-    "glassworld:diamond_glass",
-    "glassworld:soft_diamond_glass",
-    "glassworld:soft_ancient_glass",
-    "glassworld:ancient_glass"
+    "glassworld:diamond_sand",
+    "glassworld:golden_sand",
+    "glassworld:iron_sand",
+    "glassworld:emerald_sand",
+    "glassworld:copper_sand",
+    "glassworld:redstone_sand",
+    "glassworld:ancient_soul_sand"
   ]
 }

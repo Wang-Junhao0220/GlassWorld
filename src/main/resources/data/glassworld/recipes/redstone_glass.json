@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 65,
+  "experience": 15,
+  "group": "zer",
+  "ingredient": {
+    "item": "glassworld:redstone_sand"
+  },
+  "result": "glassworld:redstone_glass"
+}

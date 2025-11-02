@@ -1,8 +1,8 @@
 {
-  "type": "minecraft:smelting",
+  "type": "minecraft:blasting",
   "category": "misc",
-  "cookingtime": 150,
-  "experience": 25,
+  "cookingtime": 65,
+  "experience": 15,
   "group": "zer",
   "ingredient": {
     "item": "glassworld:ancient_glass"

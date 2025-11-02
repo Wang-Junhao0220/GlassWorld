@@ -2,8 +2,19 @@
   "replace": false,
   "values": [
     "glassworld:diamond_glass",
+    "glassworld:ancient_glass",
+    "glassworld:copper_glass",
+    "glassworld:golden_glass",
+    "glassworld:iron_glass",
+    "glassworld:emerald_glass",
+    "glassworld:redstone_glass",
+    "glassworld:purified_glass",
     "glassworld:soft_diamond_glass",
     "glassworld:soft_ancient_glass",
-    "glassworld:ancient_glass"
+    "glassworld:soft_copper_glass",
+    "glassworld:soft_golden_glass",
+    "glassworld:soft_iron_glass",
+    "glassworld:soft_emerald_glass",
+    "glassworld:soft_redstone_glass"
   ]
 }

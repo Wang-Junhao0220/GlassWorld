@@ -3,14 +3,12 @@ package com.junhax.glassworld.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.Instrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import com.junhax.glassworld.block.BlockId;
 
 public class ModBlocks {
 
@@ -132,6 +130,51 @@ public class ModBlocks {
                             .suffocates(Blocks::never).blockVision(Blocks::never)
             ), BlockId.SOFT_COPPER_GLASS, true);
 
+    // Iron Sand
+    public static final Block IRON_SAND = register(
+            new Block(
+                    AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND).mapColor(MapColor.PALE_YELLOW)
+                            .strength(0.6F).requiresTool()
+            ), BlockId.IRON_SAND, true);
+
+    public static final Block COPPER_SAND = register(
+            new Block(
+                    AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).mapColor(MapColor.PALE_YELLOW)
+                            .strength(0.6F).requiresTool()
+            ), BlockId.COPPER_SAND, true);
+
+    public static final Block GOLDEN_SAND = register(
+            new Block(
+                    AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND).mapColor(MapColor.PALE_YELLOW)
+                            .strength(0.6F).requiresTool()
+            ), BlockId.GOLDEN_SAND, true);
+
+    public static final Block REDSTONE_SAND = register(
+            new RedstoneSand(
+                    AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND).mapColor(MapColor.PALE_YELLOW)
+                            .strength(0.6F).requiresTool()
+            ), BlockId.REDSTONE_SAND, true);
+
+    public static final Block EMERALD_SAND = register(
+            new Block(
+                    AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND).mapColor(MapColor.PALE_YELLOW)
+                            .strength(0.6F).requiresTool()
+            ), BlockId.EMERALD_SAND, true);
+
+    public static final Block DIAMOND_SAND = register(
+            new Block(
+                    AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND).mapColor(MapColor.PALE_YELLOW)
+                            .strength(0.6F).requiresTool()
+            ), BlockId.DIAMOND_SAND, true);
+
+    public static final Block ANCIENT_SOUL_SAND = register(
+            new SoulSandBlock(
+                    AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND).mapColor(MapColor.BROWN)
+                            .strength(0.6F).velocityMultiplier(0.4f).requiresTool()
+                            .allowsSpawning(Blocks::always).solidBlock(Blocks::always).
+                            blockVision(Blocks::always).suffocates(Blocks::always)
+            ), BlockId.ANCIENT_SOUL_SAND, true);
+
     public static <T extends Block> T register(T block, String name, boolean shouldRegisterItem) {
         Identifier id = new Identifier("glassworld", name);
 
@@ -161,6 +204,13 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register((itemGroup) -> itemGroup.addAfter(ModBlocks.SOFT_REDSTONE_GLASS.asItem(), ModBlocks.SOFT_IRON_GLASS.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register((itemGroup) -> itemGroup.addAfter(ModBlocks.SOFT_IRON_GLASS.asItem(), ModBlocks.SOFT_EMERALD_GLASS.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register((itemGroup) -> itemGroup.addAfter(ModBlocks.SOFT_EMERALD_GLASS.asItem(), ModBlocks.SOFT_COPPER_GLASS.asItem()));
+        // Sand
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemGroup) -> itemGroup.addAfter(Blocks.SAND.asItem(), ModBlocks.IRON_SAND.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemGroup) -> itemGroup.addAfter(ModBlocks.IRON_SAND.asItem(), ModBlocks.COPPER_SAND.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemGroup) -> itemGroup.addAfter(ModBlocks.COPPER_SAND.asItem(), ModBlocks.GOLDEN_SAND.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemGroup) -> itemGroup.addAfter(ModBlocks.GOLDEN_SAND.asItem(), ModBlocks.REDSTONE_SAND.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemGroup) -> itemGroup.addAfter(ModBlocks.REDSTONE_SAND.asItem(), ModBlocks.EMERALD_SAND.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemGroup) -> itemGroup.addAfter(ModBlocks.EMERALD_SAND.asItem(), ModBlocks.DIAMOND_SAND.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemGroup) -> itemGroup.addAfter(Blocks.SOUL_SAND.asItem(), ModBlocks.ANCIENT_SOUL_SAND.asItem()));
     }
-
 }
