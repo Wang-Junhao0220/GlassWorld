@@ -12,8 +12,9 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
+    // Vanilla Glass Strength: 0.3F
     public static final Block SOFT_DIAMOND_GLASS = register(
-            new GlassBlock(
+            new DiamondGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.DIAMOND_BLUE)
                             .strength(2.5F, 100F).requiresTool().sounds(BlockSoundGroup.GLASS).nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
@@ -21,7 +22,7 @@ public class ModBlocks {
             ), BlockId.SOFT_DIAMOND_GLASS, true);
 
     public static final Block DIAMOND_GLASS = register(
-            new GlassBlock(
+            new DiamondGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.DIAMOND_BLUE)
                             .strength(4F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
@@ -29,7 +30,7 @@ public class ModBlocks {
             ), BlockId.DIAMOND_GLASS, true);
 
     public static final Block ANCIENT_GLASS = register(
-            new GlassBlock(
+            new AncientGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.BLACK)
                             .strength(40F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
@@ -37,7 +38,7 @@ public class ModBlocks {
             ), BlockId.ANCIENT_GLASS, true);
 
     public static final Block SOFT_ANCIENT_GLASS = register(
-            new GlassBlock(
+            new AncientGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.BLACK)
                             .strength(20F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
@@ -45,7 +46,7 @@ public class ModBlocks {
             ), BlockId.SOFT_ANCIENT_GLASS, true);
 
     public static final Block GOLDEN_GLASS = register(
-            new GlassBlock(
+            new GoldenGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.GOLD)
                             .strength(4F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
@@ -53,7 +54,7 @@ public class ModBlocks {
             ), BlockId.GOLDEN_GLASS, true);
 
     public static final Block SOFT_GOLDEN_GLASS = register(
-            new GlassBlock(
+            new GoldenGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.GOLD)
                             .strength(2.5F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
@@ -61,14 +62,14 @@ public class ModBlocks {
             ), BlockId.SOFT_GOLDEN_GLASS, true);
 
     public static final Block REDSTONE_GLASS = register(
-            new RedstoneGlass(
+            new RedstoneGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.BRIGHT_RED)
                             .strength(4F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
                             .suffocates(Blocks::never).blockVision(Blocks::never)
             ), BlockId.REDSTONE_GLASS, true);
     public static final Block SOFT_REDSTONE_GLASS = register(
-            new RedstoneGlass(
+            new RedstoneGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.BRIGHT_RED)
                             .strength(1F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
@@ -76,7 +77,7 @@ public class ModBlocks {
             ), BlockId.SOFT_REDSTONE_GLASS, true);
 
     public static final Block IRON_GLASS = register(
-            new GlassBlock(
+            new IronGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.IRON_GRAY)
                             .strength(3F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
@@ -84,7 +85,7 @@ public class ModBlocks {
             ), BlockId.IRON_GLASS, true);
 
     public static final Block SOFT_IRON_GLASS = register(
-            new GlassBlock(
+            new IronGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.IRON_GRAY)
                             .strength(1F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
@@ -92,7 +93,7 @@ public class ModBlocks {
             ), BlockId.SOFT_IRON_GLASS, true);
 
     public static final Block EMERALD_GLASS = register(
-            new GlassBlock(
+            new EmeraldGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.EMERALD_GREEN)
                             .strength(3F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
@@ -100,7 +101,7 @@ public class ModBlocks {
             ), BlockId.EMERALD_GLASS, true);
 
     public static final Block SOFT_EMERALD_GLASS = register(
-            new GlassBlock(
+            new EmeraldGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.EMERALD_GREEN)
                             .strength(1F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
@@ -108,14 +109,15 @@ public class ModBlocks {
             ),BlockId.SOFT_EMERALD_GLASS, true);
 
     public static final Block PURIFIED_GLASS = register(
-            new GlassBlock(
+            new PurifiedGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS)
                             .strength(1F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
                             .suffocates(Blocks::never).blockVision(Blocks::never)
             ),BlockId.PURIFIED_GLASS, true);
+
     public static final Block COPPER_GLASS = register(
-            new GlassBlock(
+            new CopperGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.ORANGE)
                             .strength(2F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
@@ -123,7 +125,7 @@ public class ModBlocks {
             ), BlockId.COPPER_GLASS, true);
 
     public static final Block SOFT_COPPER_GLASS = register(
-            new GlassBlock(
+            new CopperGlassBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.GLASS).mapColor(MapColor.ORANGE)
                             .strength(0.8F, 100F).requiresTool().nonOpaque()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
@@ -150,7 +152,7 @@ public class ModBlocks {
             ), BlockId.GOLDEN_SAND, true);
 
     public static final Block REDSTONE_SAND = register(
-            new RedstoneSand(
+            new RedstoneSandBlock(
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND).mapColor(MapColor.PALE_YELLOW)
                             .strength(0.6F).requiresTool()
             ), BlockId.REDSTONE_SAND, true);
