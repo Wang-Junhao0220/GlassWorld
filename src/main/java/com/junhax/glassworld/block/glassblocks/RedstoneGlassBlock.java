@@ -1,5 +1,6 @@
-package com.junhax.glassworld.block;
+package com.junhax.glassworld.block.glassblocks;
 
+import com.junhax.glassworld.block.ModBlocks;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.*;

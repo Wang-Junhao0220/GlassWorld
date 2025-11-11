@@ -1,12 +1,11 @@
-package com.junhax.glassworld.block;
+package com.junhax.glassworld.block.glassblocks;
 
+import com.junhax.glassworld.block.ModBlocks;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.GlassBlock;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.world.BlockView;
 
 public class DiamondGlassBlock extends GlassBlock {
     public DiamondGlassBlock(Settings settings) {

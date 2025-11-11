@@ -24,4 +24,6 @@ public class BlockId {
     public static final String EMERALD_SAND = "emerald_sand";
     public static final String DIAMOND_SAND = "diamond_sand";
     public static final String ANCIENT_SOUL_SAND = "ancient_soul_sand";
+
+    public static final String IRON_GLASS_SLAB = "iron_glass_slab";
 }

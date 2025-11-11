@@ -1,4 +1,4 @@
-package com.junhax.glassworld.block;
+package com.junhax.glassworld.block.sandblocks;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.RedstoneOreBlock;

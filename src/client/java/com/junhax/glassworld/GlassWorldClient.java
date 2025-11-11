@@ -27,5 +27,7 @@ public class GlassWorldClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SOFT_IRON_GLASS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SOFT_EMERALD_GLASS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SOFT_COPPER_GLASS, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.IRON_GLASS_SLAB, RenderLayer.getCutout());
     }
 }
