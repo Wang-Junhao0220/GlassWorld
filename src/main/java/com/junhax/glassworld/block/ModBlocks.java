@@ -1,7 +1,6 @@
 package com.junhax.glassworld.block;
 
 import com.junhax.glassworld.block.glassblocks.*;
-import com.junhax.glassworld.block.glassslabs.IronGlassSlabBlock;
 import com.junhax.glassworld.block.sandblocks.RedstoneSandBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
