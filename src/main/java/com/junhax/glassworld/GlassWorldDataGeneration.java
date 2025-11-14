@@ -13,7 +13,7 @@ public class GlassWorldDataGeneration implements DataGeneratorEntrypoint {
 
         pack.addProvider(ModBlockTagsProvider::new);
         pack.addProvider(ModEnUsLangProvider::new);
-        pack.addProvider(ModLootTableProvider::new);
+        pack.addProvider(ModLootTableProvider::new); // didn't work
         pack.addProvider(ModModelsProvider::new);
         pack.addProvider(ModZhCnLangProvider::new);
         pack.addProvider(ModRecipesProvider::new);
