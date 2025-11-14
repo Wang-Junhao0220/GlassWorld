@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "glassworld:block/redstone_glass"
+    }
+  }
+}

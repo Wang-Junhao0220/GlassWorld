@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "glassworld:block/soft_redstone_glass"
+  }
+}
