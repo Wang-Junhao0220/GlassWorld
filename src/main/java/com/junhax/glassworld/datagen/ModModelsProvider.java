@@ -65,6 +65,5 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DIAMOND_GLASS_SWORD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.INSTANT_HEALTH_APPLE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.DIAMOND_GLASS_AXE, Models.GENERATED);
     }
 }

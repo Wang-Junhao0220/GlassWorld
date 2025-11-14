@@ -1,5 +1,5 @@
 {
-  "parent": "glassworld:block/cube_all",
+  "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "glassworld:block/ancient_soul_sand"
   }

@@ -1,7 +1,6 @@
 {
-  "parent": "glassworld:block/cube_all",
+  "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "glassworld:block/redstone_glass"
-  },
-  "render_type": "cutout"
+  }
 }
