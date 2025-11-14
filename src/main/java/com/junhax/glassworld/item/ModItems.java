@@ -1,7 +1,7 @@
 package com.junhax.glassworld.item;
 
 
-import com.junhax.glassworld.effect.ModEffect;
+import com.junhax.glassworld.effect.ModEffects;
 import com.junhax.glassworld.material.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -57,7 +57,7 @@ public class ModItems {
             .statusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 40 * 60 * 20, 10), 1.0F)
             .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 10 * 60 * 20, 15), 1.0F)
             .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10 * 60 * 20, 255), 1.0F)
-            .statusEffect(new StatusEffectInstance(ModEffect.EXP, 20 * 20, 3), 0.4F)
+            .statusEffect(new StatusEffectInstance(ModEffects.EXP, 20 * 20, 3), 0.4F)
             .build())), ItemId.INSTANT_HEALTH_APPLE);
 
 

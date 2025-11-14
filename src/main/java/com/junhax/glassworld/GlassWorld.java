@@ -1,7 +1,7 @@
 package com.junhax.glassworld;
 
 import com.junhax.glassworld.block.ModBlocks;
-import com.junhax.glassworld.effect.ModEffect;
+import com.junhax.glassworld.effect.ModEffects;
 import com.junhax.glassworld.enchantment.SuperKillEnchantment;
 import com.junhax.glassworld.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -36,7 +36,7 @@ public class GlassWorld implements ModInitializer {
         LOGGER.warn("Initializing Blocks");
         ModBlocks.initialize();
         LOGGER.warn("Initializing Effects");
-        ModEffect.initialize();
+        ModEffects.initialize();
         LOGGER.warn("Initializing Ores");
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, DIAMOND_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, GOLD_BLOCK_PLACED_KEY);

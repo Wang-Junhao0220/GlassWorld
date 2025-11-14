@@ -5,7 +5,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class ModEffect {
+public class ModEffects {
     public static final StatusEffect EXP = new ExpStatusEffect();
     public static final StatusEffect DYING = new DyingStatusEffect();
 
