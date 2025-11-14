@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 25,
+  "experience": 0.7,
+  "group": "soft_iron_glass",
+  "ingredient": {
+    "item": "glassworld:iron_glass"
+  },
+  "result": "glassworld:soft_iron_glass"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 50,
+  "experience": 0.8,
+  "group": "copper_glass",
+  "ingredient": {
+    "item": "glassworld:copper_sand"
+  },
+  "result": "glassworld:copper_glass"
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ancient_glass": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "glassworld:ancient_glass"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:soft_ancient_glass_from_blasting_ancient_glass"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_ancient_glass",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:soft_ancient_glass_from_blasting_ancient_glass"
+    ]
+  },
+  "sends_telemetry_event": false
+}

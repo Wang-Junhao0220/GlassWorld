@@ -1,12 +1,8 @@
 package com.junhax.glassworld;
 
+import com.junhax.glassworld.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import com.junhax.glassworld.datagen.ModEnUsLangProvider;
-import com.junhax.glassworld.datagen.ModBlockTagsProvider;
-import com.junhax.glassworld.datagen.ModLootTableProvider;
-import com.junhax.glassworld.datagen.ModModelsProvider;
-import com.junhax.glassworld.datagen.ModZhCnLangProvider;
 
 
 public class GlassWorldDataGeneration implements DataGeneratorEntrypoint {
@@ -20,6 +16,6 @@ public class GlassWorldDataGeneration implements DataGeneratorEntrypoint {
         pack.addProvider(ModLootTableProvider::new);
         pack.addProvider(ModModelsProvider::new);
         pack.addProvider(ModZhCnLangProvider::new);
-
+        pack.addProvider(ModRecipesProvider::new);
     }
 }

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 60,
+  "experience": 0.5,
+  "group": "soft_emerald_glass",
+  "ingredient": {
+    "item": "glassworld:emerald_glass"
+  },
+  "result": "glassworld:soft_emerald_glass"
+}

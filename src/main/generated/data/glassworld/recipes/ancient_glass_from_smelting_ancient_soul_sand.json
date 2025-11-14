@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "ancient_glass",
+  "ingredient": {
+    "item": "glassworld:ancient_soul_sand"
+  },
+  "result": "glassworld:ancient_glass"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "glassworld:ancient_glass"
+    },
+    "@": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "@",
+    "@"
+  ],
+  "result": {
+    "item": "glassworld:ancient_glass_shovel"
+  },
+  "show_notification": true
+}

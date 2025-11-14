@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 50,
+  "experience": 0.8,
+  "group": "iron_glass",
+  "ingredient": {
+    "item": "glassworld:iron_sand"
+  },
+  "result": "glassworld:iron_glass"
+}

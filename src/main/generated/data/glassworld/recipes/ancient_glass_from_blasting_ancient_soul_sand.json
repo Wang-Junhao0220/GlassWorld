@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.8,
+  "group": "ancient_glass",
+  "ingredient": {
+    "item": "glassworld:ancient_soul_sand"
+  },
+  "result": "glassworld:ancient_glass"
+}

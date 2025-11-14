@@ -20,6 +20,7 @@ import org.slf4j.LoggerFactory;
 
 public class GlassWorld implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("glassworld");
+    public static final String MOD_ID = "glassworld";
     public static Enchantment SUPER_KILL = new SuperKillEnchantment();
     public static final RegistryKey<PlacedFeature> DIAMOND_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("glassworld", "diamond_ore"));
     public static final RegistryKey<PlacedFeature> GOLD_BLOCK_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("glassworld", "gold_block"));

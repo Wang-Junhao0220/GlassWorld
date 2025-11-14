@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 25,
+  "experience": 0.5,
+  "group": "soft_golden_glass",
+  "ingredient": {
+    "item": "glassworld:golden_glass"
+  },
+  "result": "glassworld:soft_golden_glass"
+}

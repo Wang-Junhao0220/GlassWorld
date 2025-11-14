@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "copper_glass",
+  "ingredient": {
+    "item": "glassworld:copper_sand"
+  },
+  "result": "glassworld:copper_glass"
+}

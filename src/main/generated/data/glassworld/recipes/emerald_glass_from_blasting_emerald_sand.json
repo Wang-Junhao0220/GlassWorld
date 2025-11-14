@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 60,
+  "experience": 0.8,
+  "group": "emerald_glass",
+  "ingredient": {
+    "item": "glassworld:emerald_sand"
+  },
+  "result": "glassworld:emerald_glass"
+}

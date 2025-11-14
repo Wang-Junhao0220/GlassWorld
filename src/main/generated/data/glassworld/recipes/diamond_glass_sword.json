@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "glassworld:diamond_glass"
+    },
+    "@": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "@"
+  ],
+  "result": {
+    "item": "glassworld:diamond_glass_sword"
+  },
+  "show_notification": true
+}
