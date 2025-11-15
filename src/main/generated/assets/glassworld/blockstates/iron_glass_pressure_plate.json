@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "glassworld:block/iron_glass_pressure_plate"
+    },
+    "powered=true": {
+      "model": "glassworld:block/iron_glass_pressure_plate_down"
+    }
+  }
+}

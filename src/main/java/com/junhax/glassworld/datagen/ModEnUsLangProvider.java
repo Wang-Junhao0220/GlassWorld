@@ -37,6 +37,16 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.DIAMOND_SAND, "Diamond Sand");
         translationBuilder.add(ModBlocks.ANCIENT_SOUL_SAND, "Ancient Soul Sand");
 
+        translationBuilder.add(ModBlocks.IRON_GLASS_STAIRS, "Iron Glass Stairs");
+        translationBuilder.add(ModBlocks.IRON_GLASS_SLAB, "Iron Glass Slab");
+        translationBuilder.add(ModBlocks.IRON_GLASS_BUTTON, "Iron Glass Button");
+        translationBuilder.add(ModBlocks.IRON_GLASS_PRESSURE_PLATE, "Iron Glass Pressure Plate");
+        translationBuilder.add(ModBlocks.IRON_GLASS_FENCE, "Iron Glass Fence");
+        translationBuilder.add(ModBlocks.IRON_GLASS_FENCE_GATE, "Iron Glass Fence Gate");
+        translationBuilder.add(ModBlocks.IRON_GLASS_WALL, "Iron Glass Wall");
+        translationBuilder.add(ModBlocks.IRON_GLASS_DOOR, "Iron Glass Door");
+        translationBuilder.add(ModBlocks.IRON_GLASS_TRAPDOOR, "Iron Glass Trapdoor");
+
         // 添加物品翻译
         translationBuilder.add(ModItems.DIAMOND_GLASS_SWORD, "Diamond Glass Sword");
         translationBuilder.add(ModItems.DIAMOND_GLASS_HOE, "Diamond Glass Hoe");

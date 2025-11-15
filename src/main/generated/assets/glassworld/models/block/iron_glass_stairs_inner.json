@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "glassworld:block/iron_glass",
+    "side": "glassworld:block/iron_glass",
+    "top": "glassworld:block/iron_glass"
+  }
+}

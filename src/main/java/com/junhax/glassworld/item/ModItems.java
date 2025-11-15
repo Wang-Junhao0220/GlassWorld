@@ -77,11 +77,20 @@ public class ModItems {
                 entries.add(SOFT_REDSTONE_GLASS);
                 entries.add(IRON_GLASS);
                 entries.add(SOFT_IRON_GLASS);
+                entries.add(IRON_GLASS_STAIRS);
+                entries.add(IRON_GLASS_SLAB);
+                entries.add(IRON_GLASS_WALL);
+                entries.add(IRON_GLASS_DOOR);
+                entries.add(IRON_GLASS_TRAPDOOR);
+                entries.add(IRON_GLASS_PRESSURE_PLATE);
+                entries.add(IRON_GLASS_BUTTON);
+                entries.add(IRON_GLASS_FENCE);
+                entries.add(IRON_GLASS_FENCE_GATE);
                 entries.add(EMERALD_GLASS);
                 entries.add(SOFT_EMERALD_GLASS);
                 entries.add(COPPER_GLASS);
                 entries.add(SOFT_COPPER_GLASS);
-                // Items
+                // Sand blocks
                 entries.add(IRON_SAND);
                 entries.add(COPPER_SAND);
                 entries.add(GOLDEN_SAND);

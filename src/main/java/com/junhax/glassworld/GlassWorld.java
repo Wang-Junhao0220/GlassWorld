@@ -2,14 +2,11 @@ package com.junhax.glassworld;
 
 import com.junhax.glassworld.block.ModBlocks;
 import com.junhax.glassworld.effect.ModEffects;
-import com.junhax.glassworld.enchantment.SuperKillEnchantment;
+import com.junhax.glassworld.enchantment.ModEnchantments;
 import com.junhax.glassworld.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
@@ -21,7 +18,6 @@ import org.slf4j.LoggerFactory;
 public class GlassWorld implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("glassworld");
     public static final String MOD_ID = "glassworld";
-    public static Enchantment SUPER_KILL = new SuperKillEnchantment();
     public static final RegistryKey<PlacedFeature> DIAMOND_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("glassworld", "diamond_ore"));
     public static final RegistryKey<PlacedFeature> GOLD_BLOCK_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("glassworld", "gold_block"));
     public static final RegistryKey<PlacedFeature> ANCIENT_DEBRIS_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("glassworld", "ancient_debris"));
@@ -31,7 +27,7 @@ public class GlassWorld implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.warn("Initializing Enchantments");
-        Registry.register(Registries.ENCHANTMENT, new Identifier("glassworld", "super_kill"), SUPER_KILL);
+        ModEnchantments.initialize();
         LOGGER.warn("Initializing Items");
         ModItems.initialize();
         LOGGER.warn("Initializing Blocks");

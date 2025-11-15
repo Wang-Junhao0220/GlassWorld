@@ -25,5 +25,74 @@ public class BlockId {
     public static final String DIAMOND_SAND = "diamond_sand";
     public static final String ANCIENT_SOUL_SAND = "ancient_soul_sand";
 
+    // Types: Stairs Slab Button PressurePlate Fence FenceGate Wall Door Trapdoor
+    public static final String IRON_GLASS_STAIRS = "iron_glass_stairs";
     public static final String IRON_GLASS_SLAB = "iron_glass_slab";
+    public static final String IRON_GLASS_BUTTON = "iron_glass_button";
+    public static final String IRON_GLASS_PRESSURE_PLATE = "iron_glass_pressure_plate";
+    public static final String IRON_GLASS_FENCE = "iron_glass_fence";
+    public static final String IRON_GLASS_WALL = "iron_glass_wall";
+    public static final String IRON_GLASS_DOOR = "iron_glass_door";
+    public static final String IRON_GLASS_TRAPDOOR = "iron_glass_trapdoor";
+    public static final String IRON_GLASS_FENCE_GATE = "iron_glass_fence_gate";
+
+    public static final String COPPER_GLASS_STAIRS = "copper_glass_stairs";
+    public static final String COPPER_GLASS_SLAB = "copper_glass_slab";
+    public static final String COPPER_GLASS_BUTTON = "copper_glass_button";
+    public static final String COPPER_GLASS_PRESSURE_PLATE = "copper_glass_pressure_plate";
+    public static final String COPPER_GLASS_FENCE = "copper_glass_fence";
+    public static final String COPPER_GLASS_WALL = "copper_glass_wall";
+    public static final String COPPER_GLASS_DOOR = "copper_glass_door";
+    public static final String COPPER_GLASS_TRAPDOOR = "copper_glass_trapdoor";
+    public static final String COPPER_GLASS_FENCE_GATE = "copper_glass_fence_gate";
+
+    public static final String GOLDEN_GLASS_STAIRS = "golden_glass_stairs";
+    public static final String GOLDEN_GLASS_SLAB = "golden_glass_slab";
+    public static final String GOLDEN_GLASS_BUTTON = "golden_glass_button";
+    public static final String GOLDEN_GLASS_PRESSURE_PLATE = "golden_glass_pressure_plate";
+    public static final String GOLDEN_GLASS_FENCE = "golden_glass_fence";
+    public static final String GOLDEN_GLASS_WALL = "golden_glass_wall";
+    public static final String GOLDEN_GLASS_DOOR = "golden_glass_door";
+    public static final String GOLDEN_GLASS_TRAPDOOR = "golden_glass_trapdoor";
+    public static final String GOLDEN_GLASS_FENCE_GATE = "golden_glass_fence_gate";
+
+    public static final String REDSTONE_GLASS_STAIRS = "redstone_glass_stairs";
+    public static final String REDSTONE_GLASS_SLAB = "redstone_glass_slab";
+    public static final String REDSTONE_GLASS_BUTTON = "redstone_glass_button";
+    public static final String REDSTONE_GLASS_PRESSURE_PLATE = "redstone_glass_pressure_plate";
+    public static final String REDSTONE_GLASS_FENCE = "redstone_glass_fence";
+    public static final String REDSTONE_GLASS_WALL = "redstone_glass_wall";
+    public static final String REDSTONE_GLASS_DOOR = "redstone_glass_door";
+    public static final String REDSTONE_GLASS_TRAPDOOR = "redstone_glass_trapdoor";
+    public static final String REDSTONE_GLASS_FENCE_GATE = "redstone_glass_fence_gate";
+
+    public static final String EMERALD_GLASS_STAIRS = "emerald_glass_stairs";
+    public static final String EMERALD_GLASS_SLAB = "emerald_glass_slab";
+    public static final String EMERALD_GLASS_BUTTON = "emerald_glass_button";
+    public static final String EMERALD_GLASS_PRESSURE_PLATE = "emerald_glass_pressure_plate";
+    public static final String EMERALD_GLASS_FENCE = "emerald_glass_fence";
+    public static final String EMERALD_GLASS_WALL = "emerald_glass_wall";
+    public static final String EMERALD_GLASS_DOOR = "emerald_glass_door";
+    public static final String EMERALD_GLASS_TRAPDOOR = "emerald_glass_trapdoor";
+    public static final String EMERALD_GLASS_FENCE_GATE = "emerald_glass_fence_gate";
+
+    public static final String DIAMOND_GLASS_STAIRS = "diamond_glass_stairs";
+    public static final String DIAMOND_GLASS_SLAB = "diamond_glass_slab";
+    public static final String DIAMOND_GLASS_BUTTON = "diamond_glass_button";
+    public static final String DIAMOND_GLASS_PRESSURE_PLATE = "diamond_glass_pressure_plate";
+    public static final String DIAMOND_GLASS_FENCE = "diamond_glass_fence";
+    public static final String DIAMOND_GLASS_WALL = "diamond_glass_wall";
+    public static final String DIAMOND_GLASS_DOOR = "diamond_glass_door";
+    public static final String DIAMOND_GLASS_TRAPDOOR = "diamond_glass_trapdoor";
+    public static final String DIAMOND_GLASS_FENCE_GATE = "diamond_glass_fence_gate";
+
+    public static final String ANCIENT_GLASS_STAIRS = "ancient_glass_stairs";
+    public static final String ANCIENT_GLASS_SLAB = "ancient_glass_slab";
+    public static final String ANCIENT_GLASS_BUTTON = "ancient_glass_button";
+    public static final String ANCIENT_GLASS_PRESSURE_PLATE = "ancient_glass_pressure_plate";
+    public static final String ANCIENT_GLASS_FENCE = "ancient_glass_fence";
+    public static final String ANCIENT_GLASS_WALL = "ancient_glass_wall";
+    public static final String ANCIENT_GLASS_DOOR = "ancient_glass_door";
+    public static final String ANCIENT_GLASS_TRAPDOOR = "ancient_glass_trapdoor";
+    public static final String ANCIENT_GLASS_FENCE_GATE = "ancient_glass_fence_gate";
 }
