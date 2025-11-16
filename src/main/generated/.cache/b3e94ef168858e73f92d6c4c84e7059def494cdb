@@ -1,3 +1,15 @@
-// 1.20.1	2025-11-15T16:45:35.6181552	GlassWorld/Tags for minecraft:block
+// 1.20.1	2025-11-16T14:10:41.6959943	GlassWorld/Tags for minecraft:block
+fc01cefa25876a1078b2594e57206101803b90b9 data\minecraft\tags\blocks\trapdoors.json
+88e33923f0dc5318983b5457cd06eab3814e5e1e data\minecraft\tags\blocks\pressure_plates.json
+be7d56789f04ec34f5e8f53028c400f6d92d4367 data\glassworld\tags\blocks\glass_slab_tag.json
+9c0045c6264b410b9e1098c037b1fbb4c1f48102 data\minecraft\tags\blocks\doors.json
+dbd3e26aa166b370c0ca59aead8e2cda6ad60cf9 data\glassworld\tags\blocks\glass_stairs_tag.json
+be7d56789f04ec34f5e8f53028c400f6d92d4367 data\minecraft\tags\blocks\slabs.json
 6ec45a42042fb99cc939af0c7d168b32249c2af5 data\minecraft\tags\blocks\mineable\shovel.json
+27c1942b287e4f82ad7d29ffd9ed44039973f832 data\minecraft\tags\blocks\buttons.json
 e74fa5546907152dbec5861c36b9f74279812167 data\minecraft\tags\blocks\mineable\pickaxe.json
+c97e11a6f27d6f110ce2dd22e1780f7ee5a948d1 data\glassworld\tags\blocks\glass_block_tag.json
+dbd3e26aa166b370c0ca59aead8e2cda6ad60cf9 data\minecraft\tags\blocks\stairs.json
+368667b5710401368e664535a173e6c550183e87 data\minecraft\tags\blocks\fences.json
+6bbb684267adafd0e1b0c572bcee85cc3bc6edff data\minecraft\tags\blocks\fence_gates.json
+e55df15abb27cacbc83e1bdb51718d2f2f8d22a0 data\minecraft\tags\blocks\walls.json

@@ -15,15 +15,6 @@ public class RedstoneGlassBlock extends GlassBlock {
     }
 
     @Override
-    @Environment(EnvType.CLIENT)
-    public boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
-        if(stateFrom.getBlock() == ModBlocks.REDSTONE_GLASS || stateFrom.getBlock() == ModBlocks.SOFT_REDSTONE_GLASS)
-            return true;
-
-        return super.isSideInvisible(state, stateFrom, direction);
-    }
-
-    @Override
     public boolean emitsRedstonePower(BlockState state) {
         return true;
     }

@@ -1,5 +1,6 @@
 package com.junhax.glassworld.datagen;
 
+import com.junhax.glassworld.ModTags;
 import com.junhax.glassworld.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -16,6 +17,24 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+
+        getOrCreateTagBuilder(ModTags.GLASS_BLOCK_TAG)
+                .add(Blocks.GLASS)
+                .add(ModBlocks.PURIFIED_GLASS)
+                .add(ModBlocks.IRON_GLASS)
+                .add(ModBlocks.COPPER_GLASS)
+                .add(ModBlocks.GOLDEN_GLASS)
+                .add(ModBlocks.EMERALD_GLASS)
+                .add(ModBlocks.DIAMOND_GLASS)
+                .add(ModBlocks.REDSTONE_GLASS)
+                .add(ModBlocks.ANCIENT_GLASS)
+                .add(ModBlocks.SOFT_IRON_GLASS)
+                .add(ModBlocks.SOFT_EMERALD_GLASS)
+                .add(ModBlocks.SOFT_DIAMOND_GLASS)
+                .add(ModBlocks.SOFT_COPPER_GLASS)
+                .add(ModBlocks.SOFT_GOLDEN_GLASS)
+                .add(ModBlocks.SOFT_REDSTONE_GLASS)
+                .add(ModBlocks.SOFT_ANCIENT_GLASS);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(ModBlocks.IRON_SAND)
@@ -45,5 +64,38 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SOFT_COPPER_GLASS)
                 .add(ModBlocks.SOFT_REDSTONE_GLASS)
                 .add(ModBlocks.SOFT_ANCIENT_GLASS);
+
+        getOrCreateTagBuilder(BlockTags.SLABS)
+                .add(ModBlocks.IRON_GLASS_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.STAIRS)
+                .add(ModBlocks.IRON_GLASS_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.IRON_GLASS_WALL);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.IRON_GLASS_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.IRON_GLASS_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
+                .add(ModBlocks.IRON_GLASS_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+                .add(ModBlocks.IRON_GLASS_BUTTON);
+
+        getOrCreateTagBuilder(BlockTags.DOORS)
+                .add(ModBlocks.IRON_GLASS_DOOR);
+
+        getOrCreateTagBuilder(BlockTags.TRAPDOORS)
+                .add(ModBlocks.IRON_GLASS_TRAPDOOR);
+
+        getOrCreateTagBuilder(ModTags.GLASS_SLAB_TAG)
+                .add(ModBlocks.IRON_GLASS_SLAB);
+
+        getOrCreateTagBuilder(ModTags.GLASS_STAIRS_TAG)
+                .add(ModBlocks.IRON_GLASS_STAIRS);
     }
 }

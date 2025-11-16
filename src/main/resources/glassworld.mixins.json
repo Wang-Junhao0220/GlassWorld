@@ -9,7 +9,8 @@
     "LuckEnchantmentMixin",
     "ProtectionEnchantmentMixin",
     "QuickChargeEnchantmentMixin",
-    "UnbreakingEnchantmentMixin"
+    "UnbreakingEnchantmentMixin",
+    "GlassBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1

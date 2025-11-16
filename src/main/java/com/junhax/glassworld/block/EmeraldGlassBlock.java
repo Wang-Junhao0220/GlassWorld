@@ -1,5 +1,6 @@
 package com.junhax.glassworld.block;
 
+import com.junhax.glassworld.ModTags;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.BlockState;
@@ -10,13 +11,12 @@ public class EmeraldGlassBlock extends GlassBlock {
     public EmeraldGlassBlock(Settings settings) {
         super(settings);
     }
-
-    @Override
-    @Environment(EnvType.CLIENT)
-    public boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
-        if(stateFrom.getBlock() == ModBlocks.EMERALD_GLASS || stateFrom.getBlock() == ModBlocks.SOFT_EMERALD_GLASS)
-            return true;
-
-        return super.isSideInvisible(state, stateFrom, direction);
-    }
+//    @Override
+//    public boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
+//        if (state.isIn(ModTags.GLASS_BLOCK_TAG)) {
+//            return true;
+//        }
+//        return super.isSideInvisible(state, stateFrom, direction);
+//    }
+    // todo:BUG! ALL INVISIBLE!
 }
