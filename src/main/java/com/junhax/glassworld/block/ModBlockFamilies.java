@@ -27,12 +27,6 @@ public class ModBlockFamilies {
     public static final BlockFamily IRON_GLASS = register(ModBlocks.IRON_GLASS)
             .slab(ModBlocks.IRON_GLASS_SLAB)
             .stairs(ModBlocks.IRON_GLASS_STAIRS)
-            .wall(ModBlocks.IRON_GLASS_WALL)
-            .fence(ModBlocks.IRON_GLASS_FENCE)
-            .fenceGate(ModBlocks.IRON_GLASS_FENCE_GATE)
-            .pressurePlate(ModBlocks.IRON_GLASS_PRESSURE_PLATE)
-            .trapdoor(ModBlocks.IRON_GLASS_TRAPDOOR)
             .door(ModBlocks.IRON_GLASS_DOOR)
-            .button(ModBlocks.IRON_GLASS_BUTTON)
             .build();
 }

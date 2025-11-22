@@ -66,6 +66,7 @@ public class ModItems {
             .displayName(Text.translatable("itemGroup.glassworld.more_glass"))
             .entries((context, entries) -> {
                 // Blocks
+                entries.add(GLASS_STAIRS);
                 entries.add(PURIFIED_GLASS);
                 entries.add(DIAMOND_GLASS);
                 entries.add(SOFT_DIAMOND_GLASS);
@@ -79,13 +80,7 @@ public class ModItems {
                 entries.add(SOFT_IRON_GLASS);
                 entries.add(IRON_GLASS_STAIRS);
                 entries.add(IRON_GLASS_SLAB);
-                entries.add(IRON_GLASS_WALL);
                 entries.add(IRON_GLASS_DOOR);
-                entries.add(IRON_GLASS_TRAPDOOR);
-                entries.add(IRON_GLASS_PRESSURE_PLATE);
-                entries.add(IRON_GLASS_BUTTON);
-                entries.add(IRON_GLASS_FENCE);
-                entries.add(IRON_GLASS_FENCE_GATE);
                 entries.add(EMERALD_GLASS);
                 entries.add(SOFT_EMERALD_GLASS);
                 entries.add(COPPER_GLASS);

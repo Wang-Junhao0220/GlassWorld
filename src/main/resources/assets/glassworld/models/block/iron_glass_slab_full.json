@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "glassworld:block/iron_glass",
+    "top": "glassworld:block/iron_glass",
+    "side": "glassworld:block/iron_glass_side"
+  },
+  "render_type": "cutout"
+}

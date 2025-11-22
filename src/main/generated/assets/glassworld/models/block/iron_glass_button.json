@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/button",
-  "textures": {
-    "texture": "glassworld:block/iron_glass"
-  }
-}

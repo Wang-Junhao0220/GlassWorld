@@ -37,6 +37,12 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.DIAMOND_SAND, "钻砂");
         translationBuilder.add(ModBlocks.ANCIENT_SOUL_SAND, "远古灵魂沙");
 
+        translationBuilder.add(ModBlocks.IRON_GLASS_STAIRS, "钢化玻璃楼梯");
+        translationBuilder.add(ModBlocks.IRON_GLASS_SLAB, "钢化玻璃台阶");
+        translationBuilder.add(ModBlocks.IRON_GLASS_DOOR, "钢化玻璃门");
+
+        translationBuilder.add(ModBlocks.GLASS_STAIRS, "玻璃台阶");
+
         // 物品翻译
         translationBuilder.add(ModItems.DIAMOND_GLASS_SWORD, "钻石玻璃剑");
         translationBuilder.add(ModItems.DIAMOND_GLASS_HOE, "钻石玻璃锄");

@@ -71,26 +71,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(ModBlocks.IRON_GLASS_STAIRS);
 
-        getOrCreateTagBuilder(BlockTags.WALLS)
-                .add(ModBlocks.IRON_GLASS_WALL);
-
-        getOrCreateTagBuilder(BlockTags.FENCES)
-                .add(ModBlocks.IRON_GLASS_FENCE);
-
-        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
-                .add(ModBlocks.IRON_GLASS_FENCE_GATE);
-
-        getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
-                .add(ModBlocks.IRON_GLASS_PRESSURE_PLATE);
-
-        getOrCreateTagBuilder(BlockTags.BUTTONS)
-                .add(ModBlocks.IRON_GLASS_BUTTON);
-
         getOrCreateTagBuilder(BlockTags.DOORS)
                 .add(ModBlocks.IRON_GLASS_DOOR);
-
-        getOrCreateTagBuilder(BlockTags.TRAPDOORS)
-                .add(ModBlocks.IRON_GLASS_TRAPDOOR);
 
         getOrCreateTagBuilder(ModTags.GLASS_SLAB_TAG)
                 .add(ModBlocks.IRON_GLASS_SLAB);

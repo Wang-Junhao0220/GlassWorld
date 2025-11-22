@@ -25,16 +25,13 @@ public class BlockId {
     public static final String DIAMOND_SAND = "diamond_sand";
     public static final String ANCIENT_SOUL_SAND = "ancient_soul_sand";
 
+    public static final String GLASS_STAIRS = "glass_stairs";
+    public static final String GLASS_SLAB = "glass_slab";
+
     // Types: Stairs Slab Button PressurePlate Fence FenceGate Wall Door Trapdoor
     public static final String IRON_GLASS_STAIRS = "iron_glass_stairs";
     public static final String IRON_GLASS_SLAB = "iron_glass_slab";
-    public static final String IRON_GLASS_BUTTON = "iron_glass_button";
-    public static final String IRON_GLASS_PRESSURE_PLATE = "iron_glass_pressure_plate";
-    public static final String IRON_GLASS_FENCE = "iron_glass_fence";
-    public static final String IRON_GLASS_WALL = "iron_glass_wall";
     public static final String IRON_GLASS_DOOR = "iron_glass_door";
-    public static final String IRON_GLASS_TRAPDOOR = "iron_glass_trapdoor";
-    public static final String IRON_GLASS_FENCE_GATE = "iron_glass_fence_gate";
 
     public static final String COPPER_GLASS_STAIRS = "copper_glass_stairs";
     public static final String COPPER_GLASS_SLAB = "copper_glass_slab";

@@ -3,11 +3,11 @@
     "type=bottom": {
       "model": "glassworld:block/iron_glass_slab"
     },
-    "type=double": {
-      "model": "glassworld:block/iron_glass"
-    },
     "type=top": {
       "model": "glassworld:block/iron_glass_slab_top"
+    },
+    "type=double": {
+      "model": "glassworld:block/iron_glass_slab_full"
     }
   }
 }

@@ -27,6 +27,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_GOLDEN_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REDSTONE_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_REDSTONE_GLASS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IRON_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_IRON_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EMERALD_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_EMERALD_GLASS);
@@ -41,12 +42,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DIAMOND_SAND);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ANCIENT_SOUL_SAND);
 
-        ModBlockFamilies.getFamilies()
-                .filter(BlockFamily::shouldGenerateModels)
-                .forEach(family ->
-                        blockStateModelGenerator.
-                                registerCubeAllModelTexturePool(family.getBaseBlock())
-                                .family(family));
+        blockStateModelGenerator.registerDoor(ModBlocks.IRON_GLASS_DOOR);
     }
 
     @Override

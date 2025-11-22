@@ -107,7 +107,7 @@ public class ModBlocks {
                             .strength(1F, 100F).nonOpaque().requiresTool()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
                             .suffocates(Blocks::never).blockVision(Blocks::never)
-            ),BlockId.SOFT_EMERALD_GLASS, true);
+            ), BlockId.SOFT_EMERALD_GLASS, true);
 
     public static final Block PURIFIED_GLASS = register(
             new PurifiedGlassBlock(
@@ -115,7 +115,7 @@ public class ModBlocks {
                             .strength(0.3F, 100F).nonOpaque().requiresTool()
                             .allowsSpawning(Blocks::always).solidBlock(Blocks::never)
                             .suffocates(Blocks::never).blockVision(Blocks::never)
-            ),BlockId.PURIFIED_GLASS, true);
+            ), BlockId.PURIFIED_GLASS, true);
 
     public static final Block COPPER_GLASS = register(
             new CopperGlassBlock(
@@ -178,53 +178,25 @@ public class ModBlocks {
                             blockVision(Blocks::always).suffocates(Blocks::always)
             ), BlockId.ANCIENT_SOUL_SAND, true);
 
-    // No Soft XXX Glass
-    // Types: Stairs Slab Button PressurePlate Fence FenceGate Wall Door Trapdoor
+    public static final Block GLASS_STAIRS = register(
+            new GlassStairsBlock(
+                    Blocks.GLASS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.GLASS)
+            ), BlockId.GLASS_STAIRS, true);
 
     public static final Block IRON_GLASS_STAIRS = register(
-            new StairsBlock(
+            new IronGlassStairBlock(
                     IRON_GLASS.getDefaultState(), AbstractBlock.Settings.copy(IRON_GLASS)
-            ),BlockId.IRON_GLASS_STAIRS,true);
+            ), BlockId.IRON_GLASS_STAIRS, true);
 
     public static final Block IRON_GLASS_SLAB = register(
-            new SlabBlock(
+            new IronGlassSlabBlock(
                     AbstractBlock.Settings.copy(IRON_GLASS)
-            ),BlockId.IRON_GLASS_SLAB,true);
-
-    public static final Block IRON_GLASS_BUTTON = register(
-            new ButtonBlock(
-                    AbstractBlock.Settings.copy(IRON_GLASS), BlockSetType.IRON, 10, false
-            ),BlockId.IRON_GLASS_BUTTON,true);
-
-    public static final Block IRON_GLASS_PRESSURE_PLATE = register(
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING, AbstractBlock.Settings.copy(IRON_GLASS), BlockSetType.IRON
-            ),BlockId.IRON_GLASS_PRESSURE_PLATE,true);
-
-    public static final Block IRON_GLASS_FENCE = register(
-            new FenceBlock(
-                    AbstractBlock.Settings.copy(IRON_GLASS)
-            ),BlockId.IRON_GLASS_FENCE,true);
-
-    public static final Block IRON_GLASS_FENCE_GATE = register(
-            new FenceGateBlock(
-                    AbstractBlock.Settings.copy(IRON_GLASS), WoodType.OAK
-            ),BlockId.IRON_GLASS_FENCE_GATE,true);
-
-    public static final Block IRON_GLASS_WALL = register(
-            new WallBlock(
-                    AbstractBlock.Settings.copy(IRON_GLASS)
-            ),BlockId.IRON_GLASS_WALL,true);
+            ), BlockId.IRON_GLASS_SLAB, true);
 
     public static final Block IRON_GLASS_DOOR = register(
             new DoorBlock(
                     AbstractBlock.Settings.copy(IRON_GLASS), BlockSetType.IRON
-            ),BlockId.IRON_GLASS_DOOR,true);
-
-    public static final Block IRON_GLASS_TRAPDOOR = register(
-            new TrapdoorBlock(
-                    AbstractBlock.Settings.copy(IRON_GLASS), BlockSetType.IRON
-            ),BlockId.IRON_GLASS_TRAPDOOR,true);
+            ), BlockId.IRON_GLASS_DOOR, true);
 
     public static <T extends Block> T register(T block, String name, boolean shouldRegisterItem) {
         Identifier id = new Identifier("glassworld", name);
