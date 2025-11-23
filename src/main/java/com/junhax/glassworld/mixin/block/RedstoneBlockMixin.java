@@ -7,16 +7,17 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Overwrite;
 
 @SuppressWarnings("deprecation")
 @Mixin(RedstoneBlock.class)
-public class RedstoneBlockMixin extends Block {
-    public RedstoneBlockMixin(Settings settings) {
-        super(settings);
-    }
-
-    @Override
+public class RedstoneBlockMixin {
+    /**
+     * @author Junhax
+     * @reason Longer distance!
+     */
+    @Overwrite
     public int getWeakRedstonePower(BlockState state, BlockView world, BlockPos pos, Direction direction) {
-        return 114514;
+        return 115514;
     }
 }
