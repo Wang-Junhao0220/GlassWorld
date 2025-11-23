@@ -2,7 +2,7 @@
   "parent": "minecraft:block/slab_top",
   "textures": {
     "bottom": "glassworld:block/iron_glass",
-    "side": "glassworld:block/iron_glass",
+    "side": "glassworld:block/iron_glass_slab",
     "top": "glassworld:block/iron_glass"
   }
 }

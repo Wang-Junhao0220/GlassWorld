@@ -67,6 +67,7 @@ public class ModItems {
             .entries((context, entries) -> {
                 // Blocks
                 entries.add(GLASS_STAIRS);
+                entries.add(GLASS_SLAB);
                 entries.add(PURIFIED_GLASS);
                 entries.add(DIAMOND_GLASS);
                 entries.add(SOFT_DIAMOND_GLASS);

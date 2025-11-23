@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:glass",
+    "glassworld:glass_slab",
+    "glassworld:glass_stairs",
+    "glassworld:purified_glass",
+    "glassworld:iron_glass",
+    "glassworld:iron_glass_slab",
+    "glassworld:iron_glass_stairs",
+    "glassworld:iron_glass_door",
+    "glassworld:copper_glass",
+    "glassworld:golden_glass",
+    "glassworld:emerald_glass",
+    "glassworld:diamond_glass",
+    "glassworld:redstone_glass",
+    "glassworld:ancient_glass",
+    "glassworld:soft_iron_glass",
+    "glassworld:soft_emerald_glass",
+    "glassworld:soft_diamond_glass",
+    "glassworld:soft_copper_glass",
+    "glassworld:soft_golden_glass",
+    "glassworld:soft_redstone_glass",
+    "glassworld:soft_ancient_glass"
+  ]
+}

@@ -1,5 +1,11 @@
 package com.junhax.glassworld.block;
 
+import com.junhax.glassworld.block.typeblock.*;
+import com.junhax.glassworld.block.typeblock.door.IronGlassDoorBlock;
+import com.junhax.glassworld.block.typeblock.slab.GlassSlabBlock;
+import com.junhax.glassworld.block.typeblock.slab.IronGlassSlabBlock;
+import com.junhax.glassworld.block.typeblock.stairs.GlassStairsBlock;
+import com.junhax.glassworld.block.typeblock.stairs.IronGlassStairBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
@@ -183,6 +189,11 @@ public class ModBlocks {
                     Blocks.GLASS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.GLASS)
             ), BlockId.GLASS_STAIRS, true);
 
+    public static final Block GLASS_SLAB = register(
+            new GlassSlabBlock(
+                    AbstractBlock.Settings.copy(Blocks.GLASS)
+            ), BlockId.GLASS_SLAB, true);
+
     public static final Block IRON_GLASS_STAIRS = register(
             new IronGlassStairBlock(
                     IRON_GLASS.getDefaultState(), AbstractBlock.Settings.copy(IRON_GLASS)
@@ -194,7 +205,7 @@ public class ModBlocks {
             ), BlockId.IRON_GLASS_SLAB, true);
 
     public static final Block IRON_GLASS_DOOR = register(
-            new DoorBlock(
+            new IronGlassDoorBlock(
                     AbstractBlock.Settings.copy(IRON_GLASS), BlockSetType.IRON
             ), BlockId.IRON_GLASS_DOOR, true);
 

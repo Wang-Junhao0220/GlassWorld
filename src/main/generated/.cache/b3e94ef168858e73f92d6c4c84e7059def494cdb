@@ -1,9 +1,9 @@
-// 1.20.1	2025-11-22T14:50:05.8251106	GlassWorld/Tags for minecraft:block
+// 1.20.1	2025-11-23T12:51:10.9175311	GlassWorld/Tags for minecraft:block
 6ec45a42042fb99cc939af0c7d168b32249c2af5 data\minecraft\tags\blocks\mineable\shovel.json
-e74fa5546907152dbec5861c36b9f74279812167 data\minecraft\tags\blocks\mineable\pickaxe.json
-be7d56789f04ec34f5e8f53028c400f6d92d4367 data\glassworld\tags\blocks\glass_slab_tag.json
+9222e11fb4fec3935593c18102232cda7f157f5e data\minecraft\tags\blocks\mineable\pickaxe.json
+81be8ad23bd0955da54b45be6bf8e143b27e7d1b data\glassworld\tags\blocks\glass_slab_tag.json
 9c0045c6264b410b9e1098c037b1fbb4c1f48102 data\minecraft\tags\blocks\doors.json
-c97e11a6f27d6f110ce2dd22e1780f7ee5a948d1 data\glassworld\tags\blocks\glass_block_tag.json
-dbd3e26aa166b370c0ca59aead8e2cda6ad60cf9 data\minecraft\tags\blocks\stairs.json
-dbd3e26aa166b370c0ca59aead8e2cda6ad60cf9 data\glassworld\tags\blocks\glass_stairs_tag.json
-be7d56789f04ec34f5e8f53028c400f6d92d4367 data\minecraft\tags\blocks\slabs.json
+d194225ab1505013d1fb7f9b751d6b60f522c771 data\glassworld\tags\blocks\glass_block_tag.json
+6378864b8c25f379b7192d952c9c673bc22ed089 data\minecraft\tags\blocks\stairs.json
+6378864b8c25f379b7192d952c9c673bc22ed089 data\glassworld\tags\blocks\glass_stairs_tag.json
+81be8ad23bd0955da54b45be6bf8e143b27e7d1b data\minecraft\tags\blocks\slabs.json

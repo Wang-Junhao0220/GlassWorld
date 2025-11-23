@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "glassworld:block/glass",
+    "side": "glassworld:block/glass_slab",
+    "top": "glassworld:block/glass"
+  }
+}

@@ -1,4 +1,4 @@
-// 1.20.1	2025-11-22T14:50:05.8171319	GlassWorld/Block Loot Tables
+// 1.20.1	2025-11-23T12:51:10.8970479	GlassWorld/Block Loot Tables
 d48742613679e795550d73afc442faa3a984d832 data\glassworld\loot_tables\blocks\emerald_glass.json
 7a8d8842fd8b45217a95ea5ea6dea9d01ac53946 data\glassworld\loot_tables\blocks\diamond_sand.json
 34c13ad2ef4c6395a6157e52b9588aed74ef6950 data\glassworld\loot_tables\blocks\soft_diamond_glass.json
@@ -11,11 +11,13 @@ d02de9a47b76a970182cd89a3d3840ca198a6aa6 data\glassworld\loot_tables\blocks\reds
 86d9af56e581105ec4136f722b2cbedf064739b2 data\minecraft\loot_tables\blocks\glass.json
 cdbf7d57aab1b66cc49993ac5306baa3bd702e58 data\glassworld\loot_tables\blocks\redstone_glass.json
 2060496d3a4b01198b95a2b665228cdb70871024 data\glassworld\loot_tables\blocks\soft_ancient_glass.json
+684ca4fe9b14cda65179ae5cb9b492e3a59914d5 data\glassworld\loot_tables\blocks\glass_stairs.json
 c94659fb66b4f223481b8f20c31394627ba796cc data\glassworld\loot_tables\blocks\golden_glass.json
 9e7e79b34d4c946f37c6397f9fe23b50e30e4423 data\glassworld\loot_tables\blocks\purified_glass.json
 f7a840e992a3adfd2a41bc022e976317569cff50 data\glassworld\loot_tables\blocks\iron_sand.json
 225852e3011bbe17a1e07278ce12bcaf8f4c59a7 data\glassworld\loot_tables\blocks\emerald_sand.json
 aa56af6efc1f66a6c8728283c37c425610b474e3 data\glassworld\loot_tables\blocks\ancient_soul_sand.json
+99e19ffca33ed995e91ee5f01c508c423aee5e9d data\glassworld\loot_tables\blocks\glass_slab.json
 22e6b3a15a480f1d15c0ca0ae4c6987f530ce4c1 data\glassworld\loot_tables\blocks\soft_copper_glass.json
 065fe4d2a56acc5d0cc8d8d3669e3ec59b1eda6e data\glassworld\loot_tables\blocks\copper_sand.json
 9c8249b050de231a153f2dc86f822ea1521bafc0 data\glassworld\loot_tables\blocks\soft_golden_glass.json

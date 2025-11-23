@@ -3,14 +3,14 @@
   "package": "com.junhax.glassworld.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "DamageEnchantmentMixin",
-    "FrostWalkerEnchantmentMixin",
-    "KnockbackEnchantmentMixin",
-    "LuckEnchantmentMixin",
-    "ProtectionEnchantmentMixin",
-    "QuickChargeEnchantmentMixin",
-    "UnbreakingEnchantmentMixin",
-    "GlassBlockMixin"
+    "enchantment.DamageEnchantmentMixin",
+    "enchantment.FrostWalkerEnchantmentMixin",
+    "enchantment.KnockbackEnchantmentMixin",
+    "enchantment.LuckEnchantmentMixin",
+    "enchantment.ProtectionEnchantmentMixin",
+    "enchantment.QuickChargeEnchantmentMixin",
+    "enchantment.UnbreakingEnchantmentMixin",
+    "block.AbstractGlassBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1

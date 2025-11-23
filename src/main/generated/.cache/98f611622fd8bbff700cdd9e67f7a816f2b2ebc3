@@ -1,4 +1,4 @@
-// 1.20.1	2025-11-22T14:50:05.8181308	GlassWorld/Model Definitions
+// 1.20.1	2025-11-23T12:51:10.9030267	GlassWorld/Model Definitions
 a6dc9647940b71b4c9ef70f3f805ab732a79a423 assets\glassworld\blockstates\copper_glass.json
 8ef55df4740bf41e2a5bfebe228132ea72e611ee assets\glassworld\models\item\iron_sand.json
 3acfdfccae8c98eb5fbe1bc2c8c55d34b6a39543 assets\glassworld\models\block\ancient_soul_sand.json
@@ -26,8 +26,8 @@ a86468dfd5e5b936ce0d0e0024902311de7986e3 assets\glassworld\models\item\copper_gl
 9978ea2fe1caf2855a3bf2ecc994f6525f253534 assets\glassworld\models\item\soft_redstone_glass.json
 32b8cda96aeb191f18b803c84c4b8538833af949 assets\glassworld\models\block\soft_golden_glass.json
 5dd63441c2b8bf462079047fd40d6222c0540c7d assets\glassworld\models\item\soft_ancient_glass.json
-4cdea2d9efb377cfe507f00fe61ba6adc5b608fc assets\glassworld\blockstates\soft_copper_glass.json
 2058e9d750ef00706b5a3b7b43abdf9cdf26be51 assets\glassworld\blockstates\soft_diamond_glass.json
+4cdea2d9efb377cfe507f00fe61ba6adc5b608fc assets\glassworld\blockstates\soft_copper_glass.json
 345a3ba3213b192f2838ce694bd9eb41b71efbdf assets\glassworld\blockstates\soft_golden_glass.json
 df9643186bff40ece167cfaa657aea3af6c24ee3 assets\glassworld\models\block\iron_glass_door_bottom_left.json
 b35a3ce6a668e44056e4bfcd1e2d1c75189deb6f assets\glassworld\models\item\golden_glass.json
@@ -56,8 +56,8 @@ b75ae592f918289ec5a3e544050d379456ae6d59 assets\glassworld\models\item\copper_sa
 eaafa67e505fa1e9b7b8b02895cf21c896272eaa assets\glassworld\models\block\redstone_sand.json
 047d7700c05af429637ee61589f6eacc61eafdca assets\glassworld\models\block\diamond_glass.json
 97d8d36c2b5c41fadda7124551f6831d73703804 assets\glassworld\models\item\ancient_soul_sand.json
-54bc1927436adbe8852a09ff3595c76f0839d276 assets\glassworld\models\item\diamond_glass_chestplate.json
 412d1da110ec859a9fdc160eb582fc67b96adb20 assets\glassworld\models\item\ancient_glass_shovel.json
+54bc1927436adbe8852a09ff3595c76f0839d276 assets\glassworld\models\item\diamond_glass_chestplate.json
 cd09d597bff2632537b7c347f7e3b68542fc3295 assets\glassworld\models\block\iron_glass_door_top_right.json
 25f25fbfe37d36e8de03724da30e95f27f346e9d assets\glassworld\models\item\redstone_glass.json
 6859f155896d34e4dec8ea769b2bd044a8446d68 assets\glassworld\blockstates\redstone_glass.json
@@ -85,8 +85,8 @@ d2d64f4ae1170b004cc61ddc8ffed635abbdc70b assets\glassworld\models\block\purified
 4dd0f2e661e255784b8021791fba17b5a79371c2 assets\glassworld\models\block\iron_sand.json
 1d04a1021f2b103c832198877ea7bfee86000944 assets\glassworld\models\block\soft_emerald_glass.json
 ae6f26cf38609a250e0a3fab9d1e8c94b810aabb assets\glassworld\models\block\emerald_glass.json
-f902bfb628d48d9774225ea9db2169d233782eb0 assets\glassworld\models\item\ancient_glass_sword.json
 6cb9934353241546a54faa24a131fb74367b99b0 assets\glassworld\models\item\golden_sand.json
+f902bfb628d48d9774225ea9db2169d233782eb0 assets\glassworld\models\item\ancient_glass_sword.json
 c4cc3f6f9275a10631ed80fa32c07d4580b85072 assets\glassworld\models\item\ancient_glass_leggings.json
 d1e0037f7c0c07b129895471f1000a0ed76ee48f assets\glassworld\models\block\soft_iron_glass.json
 ffd2611337b504d5817cf3a41694dfb7d3f390f8 assets\glassworld\models\block\redstone_glass.json

@@ -61,6 +61,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.IRON_GLASS_STAIRS);
         addDrop(ModBlocks.IRON_GLASS_SLAB, slabDrops(ModBlocks.IRON_GLASS_SLAB));
         addDrop(ModBlocks.IRON_GLASS_DOOR, doorDrops(ModBlocks.IRON_GLASS_DOOR));
+
+        addDrop(ModBlocks.GLASS_STAIRS);
+        addDrop(ModBlocks.GLASS_SLAB, slabDrops(ModBlocks.GLASS_SLAB));
     }
 
     public static LootTable.Builder glassBreakerDrops(ItemConvertible drop) {

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "glassworld:block/glass_slab"
+    },
+    "type=top": {
+      "model": "glassworld:block/glass_slab_top"
+    },
+    "type=double": {
+      "model": "glassworld:block/glass_slab_full"
+    }
+  }
+}
