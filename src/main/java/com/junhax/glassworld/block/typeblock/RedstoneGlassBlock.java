@@ -18,7 +18,7 @@ public class RedstoneGlassBlock extends GlassBlock {
     }
 
     public int getWeakRedstonePower(BlockState state, BlockView world, BlockPos pos, Direction direction) {
-        return 15;
+        return 15000;
     }
 }
 

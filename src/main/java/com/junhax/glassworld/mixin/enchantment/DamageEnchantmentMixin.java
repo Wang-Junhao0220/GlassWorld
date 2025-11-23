@@ -15,20 +15,7 @@ import org.spongepowered.asm.mixin.Unique;
 
 @Mixin(DamageEnchantment.class)
 public abstract class DamageEnchantmentMixin extends Enchantment{
-    @Unique
-    private static final int ALL_INDEX = 0;
-    @Unique
-    private static final int UNDEAD_INDEX = 1;
-    @Unique
-    private static final int ARTHROPODS_INDEX = 2;
-    @Unique
-    private static final String[] TYPE_NAMES = new String[]{"all", "undead", "arthropods"};
-    @Unique
-    private static final int[] BASE_POWERS = new int[]{1, 5, 5};
-    @Unique
-    private static final int[] POWERS_PER_LEVEL = new int[]{11, 8, 8};
-    @Unique
-    private static final int[] MIN_MAX_POWER_DIFFERENCES = new int[]{20, 20, 20};
+
     @Unique
     public final int typeIndex;
 

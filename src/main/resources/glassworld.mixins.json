@@ -10,7 +10,8 @@
     "enchantment.ProtectionEnchantmentMixin",
     "enchantment.QuickChargeEnchantmentMixin",
     "enchantment.UnbreakingEnchantmentMixin",
-    "block.AbstractGlassBlockMixin"
+    "block.AbstractGlassBlockMixin",
+    "block.RedstoneBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1

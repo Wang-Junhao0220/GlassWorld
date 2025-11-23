@@ -86,8 +86,7 @@ public abstract class AbstractGlassStairsBlock extends StairsBlock {
             if(typeFrom == SlabType.BOTTOM && half == BlockHalf.BOTTOM)
                 return true;
 
-            if(typeFrom == SlabType.TOP && half == BlockHalf.TOP)
-                return true;
+            return typeFrom == SlabType.TOP && half == BlockHalf.TOP;
         }
 
         return false;
@@ -316,9 +315,8 @@ public abstract class AbstractGlassStairsBlock extends StairsBlock {
                         && shape != StairShape.INNER_RIGHT)
                     return true;
 
-            if(facingFrom == facing.getOpposite()
-                    && shape == StairShape.OUTER_LEFT)
-                return true;
+            return facingFrom == facing.getOpposite()
+                    && shape == StairShape.OUTER_LEFT;
         }
 
         return false;
@@ -334,9 +332,9 @@ public abstract class AbstractGlassStairsBlock extends StairsBlock {
         return 1.0F;
     }
 
-    public boolean isTransparent(BlockState state) {
+    @Override
+    public boolean isTransparent(BlockState state, BlockView world, BlockPos pos) {
         return true;
     }
-
 
 }
