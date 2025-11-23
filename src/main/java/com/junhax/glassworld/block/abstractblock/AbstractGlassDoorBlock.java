@@ -12,7 +12,7 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
 @SuppressWarnings("deprecation")
-public class AbstractGlassDoorBlock extends DoorBlock {
+public abstract class AbstractGlassDoorBlock extends DoorBlock {
 
     public AbstractGlassDoorBlock(Settings settings,BlockSetType blockSetType) {
         super(settings,blockSetType);
