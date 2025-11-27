@@ -26,15 +26,10 @@ public class GlassWorld implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOGGER.warn("Initializing Enchantments");
         ModEnchantments.initialize();
-        LOGGER.warn("Initializing Items");
         ModItems.initialize();
-        LOGGER.warn("Initializing Blocks");
         ModBlocks.initialize();
-        LOGGER.warn("Initializing Effects");
         ModEffects.initialize();
-        LOGGER.warn("Initializing Ores");
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, DIAMOND_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, GOLD_BLOCK_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, ANCIENT_DEBRIS_PLACED_KEY);

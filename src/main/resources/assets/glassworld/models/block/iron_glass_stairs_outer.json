@@ -2,7 +2,7 @@
   "parent": "minecraft:block/outer_stairs",
   "textures": {
     "bottom": "glassworld:block/iron_glass",
-    "side": "glassworld:block/iron_glass_side",
+    "side": "glassworld:block/iron_glass",
     "top": "glassworld:block/iron_glass"
   }
 }

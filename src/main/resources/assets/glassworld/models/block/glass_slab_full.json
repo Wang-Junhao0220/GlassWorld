@@ -1,9 +1,9 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
-    "bottom": "glassworld:block/glass",
-    "top": "glassworld:block/glass",
-    "side": "glassworld:block/glass"
+    "bottom": "minecraft:block/glass",
+    "top": "minecraft:block/glass",
+    "side": "minecraft:block/glass"
   },
   "render_type": "cutout"
 }
