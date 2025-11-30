@@ -1,4 +1,4 @@
-package com.junhax.glassworld.block.typeblock;
+package com.junhax.glassworld.block.glass;
 
 import net.minecraft.block.GlassBlock;
 

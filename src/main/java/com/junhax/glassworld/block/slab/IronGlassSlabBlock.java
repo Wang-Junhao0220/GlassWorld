@@ -1,4 +1,4 @@
-package com.junhax.glassworld.block.typeblock.slab;
+package com.junhax.glassworld.block.slab;
 
 import com.junhax.glassworld.block.abstractblock.AbstractGlassSlabBlock;
 

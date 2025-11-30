@@ -27,6 +27,9 @@ public class BlockId {
 
     public static final String GLASS_STAIRS = "glass_stairs";
     public static final String GLASS_SLAB = "glass_slab";
+    public static final String GLASS_DOOR = "glass_door";
+
+    public static final String OAK_GLASS_DOOR = "oak_glass_door";
 
     // Types: Stairs Slab Button PressurePlate Fence FenceGate Wall Door Trapdoor
     public static final String IRON_GLASS_STAIRS = "iron_glass_stairs";

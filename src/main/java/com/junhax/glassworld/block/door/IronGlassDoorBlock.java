@@ -1,4 +1,4 @@
-package com.junhax.glassworld.block.typeblock.door;
+package com.junhax.glassworld.block.door;
 
 import com.junhax.glassworld.block.abstractblock.AbstractGlassDoorBlock;
 import net.minecraft.block.BlockSetType;

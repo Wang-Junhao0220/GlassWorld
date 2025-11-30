@@ -43,6 +43,8 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ANCIENT_SOUL_SAND);
 
         blockStateModelGenerator.registerDoor(ModBlocks.IRON_GLASS_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.GLASS_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.OAK_GLASS_DOOR);
     }
 
     @Override
