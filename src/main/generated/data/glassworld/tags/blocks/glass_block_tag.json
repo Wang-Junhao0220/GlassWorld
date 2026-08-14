@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "minecraft:glass",
+    "glassworld:glass_slab",
+    "glassworld:glass_stairs",
+    "glassworld:glass_door",
     "glassworld:purified_glass",
     "glassworld:iron_glass",
     "glassworld:iron_glass_slab",

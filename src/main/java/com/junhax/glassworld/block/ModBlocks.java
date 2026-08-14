@@ -1,18 +1,12 @@
 package com.junhax.glassworld.block;
 
 //import com.junhax.glassworld.block.door.GlassDoorBlock;
-import com.junhax.glassworld.block.door.GlassDoorBlock;
-import com.junhax.glassworld.block.door.GoldenGlassDoorBlock;
-import com.junhax.glassworld.block.door.IronGlassDoorBlock;
+import com.junhax.glassworld.block.door.*;
 import com.junhax.glassworld.block.glass.*;
 //import com.junhax.glassworld.block.slab.GlassSlabBlock;
 //import com.junhax.glassworld.block.stairs.GlassStairsBlock;
-import com.junhax.glassworld.block.slab.GlassSlabBlock;
-import com.junhax.glassworld.block.slab.GoldenGlassSlabBlock;
-import com.junhax.glassworld.block.slab.IronGlassSlabBlock;
-import com.junhax.glassworld.block.stairs.GlassStairsBlock;
-import com.junhax.glassworld.block.stairs.GoldenGlassStairsBlock;
-import com.junhax.glassworld.block.stairs.IronGlassStairsBlock;
+import com.junhax.glassworld.block.slab.*;
+import com.junhax.glassworld.block.stairs.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
@@ -482,6 +476,136 @@ public class ModBlocks {
             true
     );
 
+    public static final Block DIAMOND_GLASS_STAIRS = register(
+            new DiamondGlassStairsBlock(
+                    DIAMOND_GLASS.getDefaultState(),
+                    AbstractBlock.Settings.copy(DIAMOND_GLASS)
+            ),
+            BlockId.DIAMOND_GLASS_STAIRS,
+            true
+    );
+
+    public static final Block DIAMOND_GLASS_SLAB = register(
+            new DiamondGlassSlabBlock(
+                    AbstractBlock.Settings.copy(DIAMOND_GLASS)
+            ),
+            BlockId.DIAMOND_GLASS_SLAB,
+            true
+    );
+
+    public static final Block DIAMOND_GLASS_DOOR = register(
+            new DiamondGlassDoorBlock(
+                    AbstractBlock.Settings.copy(DIAMOND_GLASS),
+                    BlockSetType.STONE
+            ),
+            BlockId.DIAMOND_GLASS_DOOR,
+            true
+    );
+
+    public static final Block ANCIENT_GLASS_STAIRS = register(
+            new AncientGlassStairsBlock(
+                    ANCIENT_GLASS.getDefaultState(),
+                    AbstractBlock.Settings.copy(ANCIENT_GLASS)
+            ),
+            BlockId.ANCIENT_GLASS_STAIRS,
+            true
+    );
+
+    public static final Block ANCIENT_GLASS_SLAB = register(
+            new AncientGlassSlabBlock(
+                    AbstractBlock.Settings.copy(ANCIENT_GLASS)
+            ),
+            BlockId.ANCIENT_GLASS_SLAB,
+            true
+    );
+
+    public static final Block ANCIENT_GLASS_DOOR = register(
+            new AncientGlassDoorBlock(
+                    AbstractBlock.Settings.copy(ANCIENT_GLASS),
+                    BlockSetType.STONE
+            ),
+            BlockId.ANCIENT_GLASS_DOOR,
+            true
+    );
+
+    public static final Block EMERALD_GLASS_STAIRS = register(
+            new EmeraldGlassStairsBlock(
+                    EMERALD_GLASS.getDefaultState(),
+                    AbstractBlock.Settings.copy(EMERALD_GLASS)
+            ),
+            BlockId.EMERALD_GLASS_STAIRS,
+            true
+    );
+
+    public static final Block EMERALD_GLASS_SLAB = register(
+            new EmeraldGlassSlabBlock(
+                    AbstractBlock.Settings.copy(EMERALD_GLASS)
+            ),
+            BlockId.EMERALD_GLASS_SLAB,
+            true
+    );
+
+    public static final Block EMERALD_GLASS_DOOR = register(
+            new EmeraldGlassDoorBlock(
+                    AbstractBlock.Settings.copy(EMERALD_GLASS),
+                    BlockSetType.STONE
+            ),
+            BlockId.EMERALD_GLASS_DOOR,
+            true
+    );
+
+    public static final Block REDSTONE_GLASS_STAIRS = register(
+            new RedstoneGlassStairsBlock(
+                    REDSTONE_GLASS.getDefaultState(),
+                    AbstractBlock.Settings.copy(REDSTONE_GLASS)
+            ),
+            BlockId.REDSTONE_GLASS_STAIRS,
+            true
+    );
+
+    public static final Block REDSTONE_GLASS_SLAB = register(
+            new RedstoneGlassSlabBlock(
+                    AbstractBlock.Settings.copy(REDSTONE_GLASS)
+            ),
+            BlockId.REDSTONE_GLASS_SLAB,
+            true
+    );
+
+    public static final Block REDSTONE_GLASS_DOOR = register(
+            new RedstoneGlassDoorBlock(
+                    AbstractBlock.Settings.copy(REDSTONE_GLASS),
+                    BlockSetType.STONE
+            ),
+            BlockId.REDSTONE_GLASS_DOOR,
+            true
+    );
+
+    public static final Block COPPER_GLASS_STAIRS = register(
+            new CopperGlassStairsBlock(
+                    COPPER_GLASS.getDefaultState(),
+                    AbstractBlock.Settings.copy(COPPER_GLASS)
+            ),
+            BlockId.COPPER_GLASS_STAIRS,
+            true
+    );
+
+    public static final Block COPPER_GLASS_SLAB = register(
+            new CopperGlassSlabBlock(
+                    AbstractBlock.Settings.copy(COPPER_GLASS)
+            ),
+            BlockId.COPPER_GLASS_SLAB,
+            true
+    );
+
+    public static final Block COPPER_GLASS_DOOR = register(
+            new CopperGlassDoorBlock(
+                    AbstractBlock.Settings.copy(COPPER_GLASS),
+                    BlockSetType.STONE
+            ),
+            BlockId.COPPER_GLASS_DOOR,
+            true
+    );
+
     public static <T extends Block> T register(T block, String name, boolean shouldRegisterItem) {
         Identifier id = new Identifier("glassworld", name);
 
@@ -545,14 +669,27 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((entries) -> {
             entries.addAfter(Blocks.IRON_DOOR.asItem(), ModBlocks.GLASS_DOOR.asItem());
             entries.addAfter(ModBlocks.GLASS_DOOR.asItem(), ModBlocks.IRON_GLASS_DOOR.asItem());
+            entries.addAfter(ModBlocks.IRON_GLASS_DOOR.asItem(), ModBlocks.GOLDEN_GLASS_DOOR.asItem());
+            entries.addAfter(ModBlocks.GOLDEN_GLASS_DOOR.asItem(), ModBlocks.REDSTONE_GLASS_DOOR.asItem());
+            entries.addAfter(ModBlocks.REDSTONE_GLASS_DOOR.asItem(), ModBlocks.EMERALD_GLASS_DOOR.asItem());
+            entries.addAfter(ModBlocks.EMERALD_GLASS_DOOR.asItem(), ModBlocks.COPPER_GLASS_DOOR.asItem());
+
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((entries) -> {
             entries.addAfter(Blocks.SANDSTONE_STAIRS.asItem(), ModBlocks.GLASS_STAIRS.asItem());
             entries.addAfter(ModBlocks.GLASS_STAIRS.asItem(), ModBlocks.IRON_GLASS_STAIRS.asItem());
+            entries.addAfter(ModBlocks.IRON_GLASS_STAIRS.asItem(), ModBlocks.GOLDEN_GLASS_STAIRS.asItem());
+            entries.addAfter(ModBlocks.GOLDEN_GLASS_STAIRS.asItem(), ModBlocks.REDSTONE_GLASS_STAIRS.asItem());
+            entries.addAfter(ModBlocks.REDSTONE_GLASS_STAIRS.asItem(), ModBlocks.EMERALD_GLASS_STAIRS.asItem());
+            entries.addAfter(ModBlocks.EMERALD_GLASS_STAIRS.asItem(), ModBlocks.COPPER_GLASS_STAIRS.asItem());
 
             entries.addAfter(Blocks.SANDSTONE_SLAB.asItem(), ModBlocks.GLASS_SLAB.asItem());
             entries.addAfter(ModBlocks.GLASS_SLAB.asItem(), ModBlocks.IRON_GLASS_SLAB.asItem());
+            entries.addAfter(ModBlocks.IRON_GLASS_SLAB.asItem(), ModBlocks.GOLDEN_GLASS_SLAB.asItem());
+            entries.addAfter(ModBlocks.GOLDEN_GLASS_SLAB.asItem(), ModBlocks.REDSTONE_GLASS_SLAB.asItem());
+            entries.addAfter(ModBlocks.REDSTONE_GLASS_SLAB.asItem(), ModBlocks.EMERALD_GLASS_SLAB.asItem());
+            entries.addAfter(ModBlocks.EMERALD_GLASS_SLAB.asItem(), ModBlocks.COPPER_GLASS_SLAB.asItem());
         });
     }
 }

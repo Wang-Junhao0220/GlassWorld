@@ -49,6 +49,26 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.GOLDEN_GLASS_SLAB, "镀金玻璃台阶");
         translationBuilder.add(ModBlocks.GOLDEN_GLASS_DOOR, "镀金玻璃门");
 
+        translationBuilder.add(ModBlocks.EMERALD_GLASS_STAIRS, "绿石玻璃楼梯");
+        translationBuilder.add(ModBlocks.EMERALD_GLASS_SLAB, "绿石玻璃台阶");
+        translationBuilder.add(ModBlocks.EMERALD_GLASS_DOOR, "绿石玻璃门");
+
+        translationBuilder.add(ModBlocks.COPPER_GLASS_STAIRS, "镀铜玻璃楼梯");
+        translationBuilder.add(ModBlocks.COPPER_GLASS_SLAB, "镀铜玻璃台阶");
+        translationBuilder.add(ModBlocks.COPPER_GLASS_DOOR, "镀铜玻璃门");
+
+        translationBuilder.add(ModBlocks.REDSTONE_GLASS_STAIRS, "红石玻璃楼梯");
+        translationBuilder.add(ModBlocks.REDSTONE_GLASS_SLAB, "红石玻璃台阶");
+        translationBuilder.add(ModBlocks.REDSTONE_GLASS_DOOR, "红石玻璃门");
+
+        translationBuilder.add(ModBlocks.DIAMOND_GLASS_STAIRS, "钻石玻璃楼梯");
+        translationBuilder.add(ModBlocks.DIAMOND_GLASS_SLAB, "钻石玻璃台阶");
+        translationBuilder.add(ModBlocks.DIAMOND_GLASS_DOOR, "钻石玻璃门");
+
+        translationBuilder.add(ModBlocks.ANCIENT_GLASS_STAIRS, "远古玻璃楼梯");
+        translationBuilder.add(ModBlocks.ANCIENT_GLASS_SLAB, "远古玻璃台阶");
+        translationBuilder.add(ModBlocks.ANCIENT_GLASS_DOOR, "远古玻璃门");
+
         // 物品翻译
         translationBuilder.add(ModItems.DIAMOND_GLASS_SWORD, "钻石玻璃剑");
         translationBuilder.add(ModItems.DIAMOND_GLASS_HOE, "钻石玻璃锄");

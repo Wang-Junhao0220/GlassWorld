@@ -59,16 +59,37 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.GLASS_DOOR)
                 .add(ModBlocks.PURIFIED_GLASS)
                 .add(ModBlocks.COPPER_GLASS)
+                .add(ModBlocks.COPPER_GLASS_SLAB)
+                .add(ModBlocks.COPPER_GLASS_STAIRS)
+                .add(ModBlocks.COPPER_GLASS_DOOR)
                 .add(ModBlocks.IRON_GLASS)
                 .add(ModBlocks.IRON_GLASS_SLAB)
                 .add(ModBlocks.IRON_GLASS_STAIRS)
                 .add(ModBlocks.IRON_GLASS_DOOR)
                 .add(ModBlocks.GOLDEN_GLASS)
+                .add(ModBlocks.GOLDEN_GLASS_SLAB)
+                .add(ModBlocks.GOLDEN_GLASS_STAIRS)
+                .add(ModBlocks.GOLDEN_GLASS_DOOR)
                 .add(ModBlocks.EMERALD_GLASS)
+                .add(ModBlocks.EMERALD_GLASS_SLAB)
+                .add(ModBlocks.EMERALD_GLASS_STAIRS)
+                .add(ModBlocks.EMERALD_GLASS_DOOR)
                 .add(ModBlocks.DIAMOND_GLASS)
+                .add(ModBlocks.DIAMOND_GLASS_SLAB)
+                .add(ModBlocks.DIAMOND_GLASS_STAIRS)
+                .add(ModBlocks.DIAMOND_GLASS_DOOR)
                 .add(ModBlocks.COPPER_GLASS)
+                .add(ModBlocks.COPPER_GLASS_SLAB)
+                .add(ModBlocks.COPPER_GLASS_STAIRS)
+                .add(ModBlocks.COPPER_GLASS_DOOR)
                 .add(ModBlocks.REDSTONE_GLASS)
+                .add(ModBlocks.REDSTONE_GLASS_SLAB)
+                .add(ModBlocks.REDSTONE_GLASS_STAIRS)
+                .add(ModBlocks.REDSTONE_GLASS_DOOR)
                 .add(ModBlocks.ANCIENT_GLASS)
+                .add(ModBlocks.ANCIENT_GLASS_SLAB)
+                .add(ModBlocks.ANCIENT_GLASS_STAIRS)
+                .add(ModBlocks.ANCIENT_GLASS_DOOR)
                 .add(ModBlocks.SOFT_IRON_GLASS)
                 .add(ModBlocks.SOFT_GOLDEN_GLASS)
                 .add(ModBlocks.SOFT_EMERALD_GLASS)
@@ -79,22 +100,52 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(ModBlocks.IRON_GLASS_SLAB)
-                .add(ModBlocks.GLASS_SLAB);
+                .add(ModBlocks.GLASS_SLAB)
+                .add(ModBlocks.COPPER_GLASS_SLAB)
+                .add(ModBlocks.GOLDEN_GLASS_SLAB)
+                .add(ModBlocks.EMERALD_GLASS_SLAB)
+                .add(ModBlocks.DIAMOND_GLASS_SLAB)
+                .add(ModBlocks.REDSTONE_GLASS_SLAB)
+                .add(ModBlocks.ANCIENT_GLASS_SLAB);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(ModBlocks.IRON_GLASS_STAIRS)
-                .add(ModBlocks.GLASS_STAIRS);
+                .add(ModBlocks.GLASS_STAIRS)
+                .add(ModBlocks.COPPER_GLASS_STAIRS)
+                .add(ModBlocks.GOLDEN_GLASS_STAIRS)
+                .add(ModBlocks.EMERALD_GLASS_STAIRS)
+                .add(ModBlocks.DIAMOND_GLASS_STAIRS)
+                .add(ModBlocks.REDSTONE_GLASS_STAIRS)
+                .add(ModBlocks.ANCIENT_GLASS_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.DOORS)
                 .add(ModBlocks.IRON_GLASS_DOOR)
-                .add(ModBlocks.GLASS_DOOR);
+                .add(ModBlocks.GLASS_DOOR)
+                .add(ModBlocks.COPPER_GLASS_DOOR)
+                .add(ModBlocks.GOLDEN_GLASS_DOOR)
+                .add(ModBlocks.EMERALD_GLASS_DOOR)
+                .add(ModBlocks.DIAMOND_GLASS_DOOR)
+                .add(ModBlocks.REDSTONE_GLASS_DOOR)
+                .add(ModBlocks.ANCIENT_GLASS_DOOR);
 
         getOrCreateTagBuilder(ModTags.GLASS_SLAB_TAG)
                 .add(ModBlocks.IRON_GLASS_SLAB)
-                .add(ModBlocks.GLASS_SLAB);
+                .add(ModBlocks.GLASS_SLAB)
+                .add(ModBlocks.COPPER_GLASS_SLAB)
+                .add(ModBlocks.GOLDEN_GLASS_SLAB)
+                .add(ModBlocks.EMERALD_GLASS_SLAB)
+                .add(ModBlocks.DIAMOND_GLASS_SLAB)
+                .add(ModBlocks.REDSTONE_GLASS_SLAB)
+                .add(ModBlocks.ANCIENT_GLASS_SLAB);
 
         getOrCreateTagBuilder(ModTags.GLASS_STAIRS_TAG)
                 .add(ModBlocks.IRON_GLASS_STAIRS)
-                .add(ModBlocks.GLASS_STAIRS);
+                .add(ModBlocks.GLASS_STAIRS)
+                .add(ModBlocks.COPPER_GLASS_STAIRS)
+                .add(ModBlocks.GOLDEN_GLASS_STAIRS)
+                .add(ModBlocks.EMERALD_GLASS_STAIRS)
+                .add(ModBlocks.DIAMOND_GLASS_STAIRS)
+                .add(ModBlocks.REDSTONE_GLASS_STAIRS)
+                .add(ModBlocks.ANCIENT_GLASS_STAIRS);
     }
 }

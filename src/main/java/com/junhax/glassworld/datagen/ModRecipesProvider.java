@@ -536,5 +536,93 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.GOLDEN_GLASS), conditionsFromItem(ModBlocks.GOLDEN_GLASS))
                 .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "golden_glass_stairs"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIAMOND_GLASS_DOOR,1)
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("## ")
+                .input('#',ModBlocks.DIAMOND_GLASS)
+                .criterion(hasItem(ModBlocks.DIAMOND_GLASS), conditionsFromItem(ModBlocks.DIAMOND_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "diamond_glass_door"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIAMOND_GLASS_SLAB,1)
+                .pattern("###")
+                .input('#',ModBlocks.DIAMOND_GLASS)
+                .criterion(hasItem(ModBlocks.DIAMOND_GLASS), conditionsFromItem(ModBlocks.DIAMOND_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "diamond_glass_slab"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIAMOND_GLASS_STAIRS,1)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .input('#',ModBlocks.DIAMOND_GLASS)
+                .criterion(hasItem(ModBlocks.DIAMOND_GLASS), conditionsFromItem(ModBlocks.DIAMOND_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "diamond_glass_stairs"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EMERALD_GLASS_DOOR,1)
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("## ")
+                .input('#',ModBlocks.EMERALD_GLASS)
+                .criterion(hasItem(ModBlocks.EMERALD_GLASS), conditionsFromItem(ModBlocks.EMERALD_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "emerald_glass_door"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EMERALD_GLASS_SLAB,1)
+                .pattern("###")
+                .input('#',ModBlocks.EMERALD_GLASS)
+                .criterion(hasItem(ModBlocks.EMERALD_GLASS), conditionsFromItem(ModBlocks.EMERALD_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "emerald_glass_slab"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EMERALD_GLASS_STAIRS,1)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .input('#',ModBlocks.EMERALD_GLASS)
+                .criterion(hasItem(ModBlocks.EMERALD_GLASS), conditionsFromItem(ModBlocks.EMERALD_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "emerald_glass_stairs"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.REDSTONE_GLASS_DOOR,1)
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("## ")
+                .input('#',ModBlocks.REDSTONE_GLASS)
+                .criterion(hasItem(ModBlocks.REDSTONE_GLASS), conditionsFromItem(ModBlocks.REDSTONE_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "redstone_glass_door"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.REDSTONE_GLASS_SLAB,1)
+                .pattern("###")
+                .input('#',ModBlocks.REDSTONE_GLASS)
+                .criterion(hasItem(ModBlocks.REDSTONE_GLASS), conditionsFromItem(ModBlocks.REDSTONE_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "redstone_glass_slab"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.REDSTONE_GLASS_STAIRS,1)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .input('#',ModBlocks.REDSTONE_GLASS)
+                .criterion(hasItem(ModBlocks.REDSTONE_GLASS), conditionsFromItem(ModBlocks.REDSTONE_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "redstone_glass_stairs"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COPPER_GLASS_DOOR,1)
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("## ")
+                .input('#',ModBlocks.COPPER_GLASS)
+                .criterion(hasItem(ModBlocks.COPPER_GLASS), conditionsFromItem(ModBlocks.COPPER_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "copper_glass_door"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COPPER_GLASS_SLAB,1)
+                .pattern("###")
+                .input('#',ModBlocks.COPPER_GLASS)
+                .criterion(hasItem(ModBlocks.COPPER_GLASS), conditionsFromItem(ModBlocks.COPPER_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "copper_glass_slab"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COPPER_GLASS_STAIRS,1)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .input('#',ModBlocks.COPPER_GLASS)
+                .criterion(hasItem(ModBlocks.COPPER_GLASS), conditionsFromItem(ModBlocks.COPPER_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "copper_glass_stairs"));
+
     }
 }

@@ -1,6 +1,13 @@
 {
   "replace": false,
   "values": [
-    "glassworld:iron_glass_door"
+    "glassworld:iron_glass_door",
+    "glassworld:glass_door",
+    "glassworld:copper_glass_door",
+    "glassworld:golden_glass_door",
+    "glassworld:emerald_glass_door",
+    "glassworld:diamond_glass_door",
+    "glassworld:redstone_glass_door",
+    "glassworld:ancient_glass_door"
   ]
 }

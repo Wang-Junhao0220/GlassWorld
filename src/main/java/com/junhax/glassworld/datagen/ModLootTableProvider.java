@@ -65,6 +65,34 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.GLASS_STAIRS);
         addDrop(ModBlocks.GLASS_SLAB, slabDrops(ModBlocks.GLASS_SLAB));
         addDrop(ModBlocks.GLASS_DOOR, doorDrops(ModBlocks.GLASS_DOOR));
+
+        addDrop(ModBlocks.GOLDEN_GLASS_STAIRS);
+        addDrop(ModBlocks.GOLDEN_GLASS_SLAB, slabDrops(ModBlocks.GOLDEN_GLASS_SLAB));
+        addDrop(ModBlocks.GOLDEN_GLASS_DOOR, doorDrops(ModBlocks.GOLDEN_GLASS_DOOR));
+
+        addDrop(ModBlocks.GOLDEN_GLASS_STAIRS);
+        addDrop(ModBlocks.GOLDEN_GLASS_SLAB, slabDrops(ModBlocks.GOLDEN_GLASS_SLAB));
+        addDrop(ModBlocks.GOLDEN_GLASS_DOOR, doorDrops(ModBlocks.GOLDEN_GLASS_DOOR));
+
+        addDrop(ModBlocks.DIAMOND_GLASS_STAIRS);
+        addDrop(ModBlocks.DIAMOND_GLASS_SLAB, slabDrops(ModBlocks.DIAMOND_GLASS_SLAB));
+        addDrop(ModBlocks.DIAMOND_GLASS_DOOR, doorDrops(ModBlocks.DIAMOND_GLASS_DOOR));
+
+        addDrop(ModBlocks.ANCIENT_GLASS_STAIRS);
+        addDrop(ModBlocks.ANCIENT_GLASS_SLAB, slabDrops(ModBlocks.ANCIENT_GLASS_SLAB));
+        addDrop(ModBlocks.ANCIENT_GLASS_DOOR, doorDrops(ModBlocks.ANCIENT_GLASS_DOOR));
+
+        addDrop(ModBlocks.COPPER_GLASS_STAIRS);
+        addDrop(ModBlocks.COPPER_GLASS_SLAB, slabDrops(ModBlocks.COPPER_GLASS_SLAB));
+        addDrop(ModBlocks.COPPER_GLASS_DOOR, doorDrops(ModBlocks.COPPER_GLASS_DOOR));
+
+        addDrop(ModBlocks.REDSTONE_GLASS_STAIRS);
+        addDrop(ModBlocks.REDSTONE_GLASS_SLAB, slabDrops(ModBlocks.REDSTONE_GLASS_SLAB));
+        addDrop(ModBlocks.REDSTONE_GLASS_DOOR, doorDrops(ModBlocks.REDSTONE_GLASS_DOOR));
+
+        addDrop(ModBlocks.EMERALD_GLASS_STAIRS);
+        addDrop(ModBlocks.EMERALD_GLASS_SLAB, slabDrops(ModBlocks.EMERALD_GLASS_SLAB));
+        addDrop(ModBlocks.EMERALD_GLASS_DOOR, doorDrops(ModBlocks.EMERALD_GLASS_DOOR));
     }
 
     public static LootTable.Builder glassBreakerDrops(ItemConvertible drop) {

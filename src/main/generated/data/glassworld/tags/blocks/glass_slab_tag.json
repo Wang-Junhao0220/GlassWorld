@@ -2,6 +2,12 @@
   "replace": false,
   "values": [
     "glassworld:iron_glass_slab",
-    "glassworld:glass_slab"
+    "glassworld:glass_slab",
+    "glassworld:copper_glass_slab",
+    "glassworld:golden_glass_slab",
+    "glassworld:emerald_glass_slab",
+    "glassworld:diamond_glass_slab",
+    "glassworld:redstone_glass_slab",
+    "glassworld:ancient_glass_slab"
   ]
 }

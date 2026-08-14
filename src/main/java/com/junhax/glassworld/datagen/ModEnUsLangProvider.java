@@ -49,6 +49,26 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.GOLDEN_GLASS_SLAB, "Golden Glass Slab");
         translationBuilder.add(ModBlocks.GOLDEN_GLASS_DOOR, "Golden Glass Axe");
 
+        translationBuilder.add(ModBlocks.EMERALD_GLASS_STAIRS, "Emerald Glass Stairs");
+        translationBuilder.add(ModBlocks.EMERALD_GLASS_SLAB, "Emerald Glass Slab");
+        translationBuilder.add(ModBlocks.EMERALD_GLASS_DOOR, "Emerald Glass Door");
+
+        translationBuilder.add(ModBlocks.DIAMOND_GLASS_STAIRS, "Diamond Glass Stairs");
+        translationBuilder.add(ModBlocks.DIAMOND_GLASS_SLAB, "Diamond Glass Slab");
+        translationBuilder.add(ModBlocks.DIAMOND_GLASS_DOOR, "Diamond Glass Door");
+
+        translationBuilder.add(ModBlocks.COPPER_GLASS_STAIRS, "Copper Glass Stairs");
+        translationBuilder.add(ModBlocks.COPPER_GLASS_SLAB, "Copper Glass Slab");
+        translationBuilder.add(ModBlocks.COPPER_GLASS_DOOR, "Copper Glass Door");
+
+        translationBuilder.add(ModBlocks.REDSTONE_GLASS_STAIRS, "Redstone Glass Stairs");
+        translationBuilder.add(ModBlocks.REDSTONE_GLASS_SLAB, "Redstone Glass Slab");
+        translationBuilder.add(ModBlocks.REDSTONE_GLASS_DOOR, "Redstone Glass Door");
+
+        translationBuilder.add(ModBlocks.ANCIENT_GLASS_STAIRS, "Ancient Glass Stairs");
+        translationBuilder.add(ModBlocks.ANCIENT_GLASS_SLAB, "Ancient Glass Slab");
+        translationBuilder.add(ModBlocks.ANCIENT_GLASS_DOOR, "Ancient Glass Door");
+
         // 添加物品翻译
         translationBuilder.add(ModItems.DIAMOND_GLASS_SWORD, "Diamond Glass Sword");
         translationBuilder.add(ModItems.DIAMOND_GLASS_HOE, "Diamond Glass Hoe");

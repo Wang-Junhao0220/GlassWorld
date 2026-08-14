@@ -43,4 +43,34 @@ public class ModBlockFamilies {
             .stairs(ModBlocks.GOLDEN_GLASS_STAIRS)
             .door(ModBlocks.GOLDEN_GLASS_DOOR)
             .build();
+
+    public static final BlockFamily ANCIENT_GLASS = register(ModBlocks.ANCIENT_GLASS)
+            .slab(ModBlocks.ANCIENT_GLASS_SLAB)
+            .stairs(ModBlocks.ANCIENT_GLASS_STAIRS)
+            .door(ModBlocks.ANCIENT_GLASS_DOOR)
+            .build();
+
+    public static final BlockFamily DIAMOND_GLASS = register(ModBlocks.DIAMOND_GLASS)
+            .slab(ModBlocks.DIAMOND_GLASS_SLAB)
+            .stairs(ModBlocks.DIAMOND_GLASS_STAIRS)
+            .door(ModBlocks.DIAMOND_GLASS_DOOR)
+            .build();
+
+    public static final BlockFamily EMERALD_GLASS = register(ModBlocks.EMERALD_GLASS)
+            .slab(ModBlocks.EMERALD_GLASS_SLAB)
+            .stairs(ModBlocks.EMERALD_GLASS_STAIRS)
+            .door(ModBlocks.EMERALD_GLASS_DOOR)
+            .build();
+
+    public static final BlockFamily REDSTONE_GLASS = register(ModBlocks.REDSTONE_GLASS)
+            .slab(ModBlocks.REDSTONE_GLASS_SLAB)
+            .stairs(ModBlocks.REDSTONE_GLASS_STAIRS)
+            .door(ModBlocks.REDSTONE_GLASS_DOOR)
+            .build();
+
+    public static final BlockFamily COPPER_GLASS = register(ModBlocks.COPPER_GLASS)
+            .slab(ModBlocks.COPPER_GLASS_SLAB)
+            .stairs(ModBlocks.COPPER_GLASS_STAIRS)
+            .door(ModBlocks.COPPER_GLASS_DOOR)
+            .build();
 }

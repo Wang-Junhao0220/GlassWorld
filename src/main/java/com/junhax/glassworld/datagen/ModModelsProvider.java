@@ -19,19 +19,19 @@ public class ModModelsProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         // Add all blocks
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURIFIED_GLASS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DIAMOND_GLASS);
+//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DIAMOND_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_DIAMOND_GLASS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ANCIENT_GLASS);
+//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ANCIENT_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_ANCIENT_GLASS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GOLDEN_GLASS);
+//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GOLDEN_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_GOLDEN_GLASS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REDSTONE_GLASS);
+//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REDSTONE_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_REDSTONE_GLASS);
 //        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IRON_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_IRON_GLASS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EMERALD_GLASS);
+//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EMERALD_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_EMERALD_GLASS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COPPER_GLASS);
+//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COPPER_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_COPPER_GLASS);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IRON_SAND);
@@ -51,7 +51,20 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GOLDEN_GLASS)
                 .family(ModBlockFamilies.GOLDEN_GLASS);
 
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DIAMOND_GLASS)
+                .family(ModBlockFamilies.DIAMOND_GLASS);
 
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.EMERALD_GLASS)
+                .family(ModBlockFamilies.EMERALD_GLASS);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REDSTONE_GLASS)
+                .family(ModBlockFamilies.REDSTONE_GLASS);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COPPER_GLASS)
+                .family(ModBlockFamilies.COPPER_GLASS);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ANCIENT_GLASS)
+                .family(ModBlockFamilies.ANCIENT_GLASS);
 
 //        blockStateModelGenerator.registerDoor(ModBlocks.IRON_GLASS_DOOR);
 //        blockStateModelGenerator.registerDoor(ModBlocks.GLASS_DOOR);
