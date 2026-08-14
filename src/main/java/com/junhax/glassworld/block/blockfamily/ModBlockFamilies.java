@@ -37,4 +37,10 @@ public class ModBlockFamilies {
             .stairs(ModBlocks.GLASS_STAIRS)
             .door(ModBlocks.GLASS_DOOR)
             .build();
+
+    public static final BlockFamily GOLDEN_GLASS = register(ModBlocks.PURIFIED_GLASS)
+            .slab(ModBlocks.GOLDEN_GLASS_SLAB)
+            .stairs(ModBlocks.GOLDEN_GLASS_STAIRS)
+            .door(ModBlocks.GOLDEN_GLASS_DOOR)
+            .build();
 }

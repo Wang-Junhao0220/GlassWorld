@@ -43,6 +43,11 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModBlocks.GLASS_STAIRS, "Glass Stairs");
         translationBuilder.add(ModBlocks.GLASS_SLAB, "Glass Slab");
+        translationBuilder.add(ModBlocks.GLASS_DOOR, "Glass Door");
+
+        translationBuilder.add(ModBlocks.GOLDEN_GLASS_STAIRS, "Golden Glass Stairs");
+        translationBuilder.add(ModBlocks.GOLDEN_GLASS_SLAB, "Golden Glass Slab");
+        translationBuilder.add(ModBlocks.GOLDEN_GLASS_DOOR, "Golden Glass Axe");
 
         // 添加物品翻译
         translationBuilder.add(ModItems.DIAMOND_GLASS_SWORD, "Diamond Glass Sword");

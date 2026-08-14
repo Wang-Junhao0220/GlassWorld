@@ -20,8 +20,9 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.GLASS_BLOCK_TAG)
                 .add(Blocks.GLASS)
-//                .add(ModBlocks.GLASS_SLAB)
-//                .add(ModBlocks.GLASS_STAIRS)
+                .add(ModBlocks.GLASS_SLAB)
+                .add(ModBlocks.GLASS_STAIRS)
+                .add(ModBlocks.GLASS_DOOR)
                 .add(ModBlocks.PURIFIED_GLASS)
                 .add(ModBlocks.IRON_GLASS)
                 .add(ModBlocks.IRON_GLASS_SLAB)
@@ -55,6 +56,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.GLASS)
                 .add(ModBlocks.GLASS_SLAB)
                 .add(ModBlocks.GLASS_STAIRS)
+                .add(ModBlocks.GLASS_DOOR)
                 .add(ModBlocks.PURIFIED_GLASS)
                 .add(ModBlocks.COPPER_GLASS)
                 .add(ModBlocks.IRON_GLASS)
@@ -84,7 +86,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.GLASS_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.DOORS)
-                .add(ModBlocks.IRON_GLASS_DOOR);
+                .add(ModBlocks.IRON_GLASS_DOOR)
+                .add(ModBlocks.GLASS_DOOR);
 
         getOrCreateTagBuilder(ModTags.GLASS_SLAB_TAG)
                 .add(ModBlocks.IRON_GLASS_SLAB)

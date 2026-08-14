@@ -2,13 +2,16 @@ package com.junhax.glassworld.block;
 
 //import com.junhax.glassworld.block.door.GlassDoorBlock;
 import com.junhax.glassworld.block.door.GlassDoorBlock;
+import com.junhax.glassworld.block.door.GoldenGlassDoorBlock;
 import com.junhax.glassworld.block.door.IronGlassDoorBlock;
 import com.junhax.glassworld.block.glass.*;
 //import com.junhax.glassworld.block.slab.GlassSlabBlock;
 //import com.junhax.glassworld.block.stairs.GlassStairsBlock;
 import com.junhax.glassworld.block.slab.GlassSlabBlock;
+import com.junhax.glassworld.block.slab.GoldenGlassSlabBlock;
 import com.junhax.glassworld.block.slab.IronGlassSlabBlock;
 import com.junhax.glassworld.block.stairs.GlassStairsBlock;
+import com.junhax.glassworld.block.stairs.GoldenGlassStairsBlock;
 import com.junhax.glassworld.block.stairs.IronGlassStairsBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -453,6 +456,31 @@ public class ModBlocks {
             true
     );
 
+    public static final Block GOLDEN_GLASS_STAIRS = register(
+            new GoldenGlassStairsBlock(
+                    GOLDEN_GLASS.getDefaultState(),
+                    AbstractBlock.Settings.copy(GOLDEN_GLASS)
+            ),
+            BlockId.GOLDEN_GLASS_STAIRS,
+            true
+    );
+
+    public static final Block GOLDEN_GLASS_SLAB = register(
+            new GoldenGlassSlabBlock(
+                    AbstractBlock.Settings.copy(GOLDEN_GLASS)
+            ),
+            BlockId.GOLDEN_GLASS_SLAB,
+            true
+    );
+
+    public static final Block GOLDEN_GLASS_DOOR = register(
+            new GoldenGlassDoorBlock(
+                    AbstractBlock.Settings.copy(GOLDEN_GLASS),
+                    BlockSetType.STONE
+            ),
+            BlockId.GOLDEN_GLASS_DOOR,
+            true
+    );
 
     public static <T extends Block> T register(T block, String name, boolean shouldRegisterItem) {
         Identifier id = new Identifier("glassworld", name);

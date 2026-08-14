@@ -514,5 +514,27 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.IRON_GLASS), conditionsFromItem(ModBlocks.IRON_GLASS))
                 .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "iron_glass_stairs"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLDEN_GLASS_DOOR,1)
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("## ")
+                .input('#',ModBlocks.GOLDEN_GLASS)
+                .criterion(hasItem(ModBlocks.GOLDEN_GLASS), conditionsFromItem(ModBlocks.GOLDEN_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "golden_glass_door"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLDEN_GLASS_SLAB,1)
+                .pattern("###")
+                .input('#',ModBlocks.GOLDEN_GLASS)
+                .criterion(hasItem(ModBlocks.GOLDEN_GLASS), conditionsFromItem(ModBlocks.GOLDEN_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "golden_glass_slab"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLDEN_GLASS_STAIRS,1)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .input('#',ModBlocks.GOLDEN_GLASS)
+                .criterion(hasItem(ModBlocks.GOLDEN_GLASS), conditionsFromItem(ModBlocks.GOLDEN_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "golden_glass_stairs"));
+
     }
 }

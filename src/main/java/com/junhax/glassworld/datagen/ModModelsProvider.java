@@ -48,6 +48,9 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.GLASS)
                 .family(ModBlockFamilies.GLASS);
 
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GOLDEN_GLASS)
+                .family(ModBlockFamilies.GOLDEN_GLASS);
+
 
 
 //        blockStateModelGenerator.registerDoor(ModBlocks.IRON_GLASS_DOOR);
