@@ -51,7 +51,7 @@ public class ModItems {
         entries.add(GLASS_STAIRS);
         entries.add(GLASS_SLAB);
         entries.add(GLASS_DOOR);
-        entries.add(OAK_GLASS_DOOR);
+//        entries.add(OAK_GLASS_DOOR);
         entries.add(PURIFIED_GLASS);
         entries.add(DIAMOND_GLASS);
         entries.add(SOFT_DIAMOND_GLASS);

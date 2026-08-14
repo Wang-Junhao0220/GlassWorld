@@ -20,8 +20,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.GLASS_BLOCK_TAG)
                 .add(Blocks.GLASS)
-                .add(ModBlocks.GLASS_SLAB)
-                .add(ModBlocks.GLASS_STAIRS)
+//                .add(ModBlocks.GLASS_SLAB)
+//                .add(ModBlocks.GLASS_STAIRS)
                 .add(ModBlocks.PURIFIED_GLASS)
                 .add(ModBlocks.IRON_GLASS)
                 .add(ModBlocks.IRON_GLASS_SLAB)

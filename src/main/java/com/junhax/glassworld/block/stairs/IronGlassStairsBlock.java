@@ -3,8 +3,8 @@ package com.junhax.glassworld.block.stairs;
 import com.junhax.glassworld.block.abstractblock.AbstractGlassStairsBlock;
 import net.minecraft.block.BlockState;
 
-public class GlassStairsBlock extends AbstractGlassStairsBlock {
-    public GlassStairsBlock(BlockState blockState, Settings settings) {
+public class IronGlassStairsBlock extends AbstractGlassStairsBlock {
+    public IronGlassStairsBlock(BlockState blockState,Settings settings) {
         super(blockState,settings);
     }
 }

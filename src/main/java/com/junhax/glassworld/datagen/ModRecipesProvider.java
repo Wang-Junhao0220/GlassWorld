@@ -470,5 +470,13 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.ANCIENT_GLASS), conditionsFromItem(ModBlocks.ANCIENT_GLASS))
                 .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "ancient_glass_boots"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,ModBlocks.GLASS_DOOR,1)
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("## ")
+                .input('#',Blocks.GLASS)
+                .criterion(hasItem(Blocks.GLASS), conditionsFromItem(Blocks.GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "glass_door"));
+
     }
 }

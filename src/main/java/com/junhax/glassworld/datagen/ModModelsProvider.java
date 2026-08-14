@@ -1,14 +1,14 @@
 package com.junhax.glassworld.datagen;
 
-import com.junhax.glassworld.block.ModBlockFamilies;
 import com.junhax.glassworld.block.ModBlocks;
+import com.junhax.glassworld.block.blockfamily.ModBlockFamilies;
 import com.junhax.glassworld.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
-import net.minecraft.data.family.BlockFamily;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output) {
@@ -27,7 +27,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_GOLDEN_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REDSTONE_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_REDSTONE_GLASS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IRON_GLASS);
+//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IRON_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_IRON_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EMERALD_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOFT_EMERALD_GLASS);
@@ -42,10 +42,20 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DIAMOND_SAND);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ANCIENT_SOUL_SAND);
 
-        blockStateModelGenerator.registerDoor(ModBlocks.IRON_GLASS_DOOR);
-        blockStateModelGenerator.registerDoor(ModBlocks.GLASS_DOOR);
-        blockStateModelGenerator.registerDoor(ModBlocks.OAK_GLASS_DOOR);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.IRON_GLASS)
+                .family(ModBlockFamilies.IRON_GLASS);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.GLASS)
+                .family(ModBlockFamilies.GLASS);
+
+
+
+//        blockStateModelGenerator.registerDoor(ModBlocks.IRON_GLASS_DOOR);
+//        blockStateModelGenerator.registerDoor(ModBlocks.GLASS_DOOR);
+//        blockStateModelGenerator.registerDoor(ModBlocks.OAK_GLASS_DOOR);
     }
+
+
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {

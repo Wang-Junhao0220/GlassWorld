@@ -1,7 +1,9 @@
-package com.junhax.glassworld.block;
+package com.junhax.glassworld.block.blockfamily;
 
 import com.google.common.collect.Maps;
+import com.junhax.glassworld.block.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.registry.Registries;
 
@@ -28,5 +30,11 @@ public class ModBlockFamilies {
             .slab(ModBlocks.IRON_GLASS_SLAB)
             .stairs(ModBlocks.IRON_GLASS_STAIRS)
             .door(ModBlocks.IRON_GLASS_DOOR)
+            .build();
+
+    public static final BlockFamily GLASS = register(Blocks.GLASS)
+            .slab(ModBlocks.GLASS_SLAB)
+            .stairs(ModBlocks.GLASS_STAIRS)
+            .door(ModBlocks.GLASS_DOOR)
             .build();
 }
