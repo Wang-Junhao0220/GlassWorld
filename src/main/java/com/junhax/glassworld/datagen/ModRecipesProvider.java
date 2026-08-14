@@ -478,5 +478,41 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.GLASS), conditionsFromItem(Blocks.GLASS))
                 .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "glass_door"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,ModBlocks.GLASS_SLAB,1)
+                .pattern("###")
+                .input('#',Blocks.GLASS)
+                .criterion(hasItem(Blocks.GLASS), conditionsFromItem(Blocks.GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "glass_slab"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,ModBlocks.GLASS_STAIRS,1)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .input('#',Blocks.GLASS)
+                .criterion(hasItem(Blocks.GLASS), conditionsFromItem(Blocks.GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "glass_stairs"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_GLASS_DOOR,1)
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("## ")
+                .input('#',ModBlocks.IRON_GLASS)
+                .criterion(hasItem(ModBlocks.IRON_GLASS), conditionsFromItem(ModBlocks.IRON_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "iron_glass_door"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_GLASS_SLAB,1)
+                .pattern("###")
+                .input('#',ModBlocks.IRON_GLASS)
+                .criterion(hasItem(ModBlocks.IRON_GLASS), conditionsFromItem(ModBlocks.IRON_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "iron_glass_slab"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_GLASS_STAIRS,1)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .input('#',ModBlocks.IRON_GLASS)
+                .criterion(hasItem(ModBlocks.IRON_GLASS), conditionsFromItem(ModBlocks.IRON_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "iron_glass_stairs"));
+
     }
 }
