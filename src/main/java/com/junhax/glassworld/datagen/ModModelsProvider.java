@@ -42,6 +42,8 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DIAMOND_SAND);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ANCIENT_SOUL_SAND);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GLASS_LAMP);
+
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.IRON_GLASS)
                 .family(ModBlockFamilies.IRON_GLASS);
 

@@ -1,8 +1,9 @@
 package com.junhax.glassworld.datagen;
 
 import com.junhax.glassworld.block.ModBlocks;
-import com.junhax.glassworld.item.ModItems;
 import com.junhax.glassworld.effect.ModEffects;
+import com.junhax.glassworld.enchantment.ModEnchantments;
+import com.junhax.glassworld.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 
@@ -43,7 +44,7 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModBlocks.GLASS_STAIRS, "玻璃楼梯");
         translationBuilder.add(ModBlocks.GLASS_SLAB, "玻璃台阶");
-        translationBuilder.add(ModBlocks.GLASS_DOOR,"玻璃门");
+        translationBuilder.add(ModBlocks.GLASS_DOOR, "玻璃门");
 
         translationBuilder.add(ModBlocks.GOLDEN_GLASS_STAIRS, "镀金玻璃楼梯");
         translationBuilder.add(ModBlocks.GOLDEN_GLASS_SLAB, "镀金玻璃台阶");
@@ -68,6 +69,8 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ANCIENT_GLASS_STAIRS, "远古玻璃楼梯");
         translationBuilder.add(ModBlocks.ANCIENT_GLASS_SLAB, "远古玻璃台阶");
         translationBuilder.add(ModBlocks.ANCIENT_GLASS_DOOR, "远古玻璃门");
+
+        translationBuilder.add(ModBlocks.GLASS_LAMP, "玻璃灯");
 
         // 物品翻译
         translationBuilder.add(ModItems.DIAMOND_GLASS_SWORD, "钻石玻璃剑");
@@ -95,7 +98,8 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModEffects.DYING, "濒死");
 
         // 附魔翻译
-        translationBuilder.add("enchantment.glassworld.super_kill", "秒杀");
+        translationBuilder.add(ModEnchantments.SUPER_KILL, "秒杀");
+        translationBuilder.add(ModEnchantments.GLASS_BREAKER, "玻璃挖掘");
 
         // 物品组翻译
         translationBuilder.add("itemGroup.glassworld.more_glass", "更多玻璃");

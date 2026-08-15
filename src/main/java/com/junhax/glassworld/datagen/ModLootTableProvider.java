@@ -58,6 +58,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SOFT_REDSTONE_GLASS, glassBlockDrops(ModBlocks.SOFT_REDSTONE_GLASS));
         addDrop(ModBlocks.SOFT_ANCIENT_GLASS, glassBlockDrops(ModBlocks.SOFT_ANCIENT_GLASS));
 
+        addDrop(ModBlocks.GLASS_LAMP,glassBreakerDrops(ModBlocks.GLASS_LAMP));
+
         addDrop(ModBlocks.IRON_GLASS_STAIRS);
         addDrop(ModBlocks.IRON_GLASS_SLAB, slabDrops(ModBlocks.IRON_GLASS_SLAB));
         addDrop(ModBlocks.IRON_GLASS_DOOR, doorDrops(ModBlocks.IRON_GLASS_DOOR));
@@ -94,6 +96,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.EMERALD_GLASS_SLAB, slabDrops(ModBlocks.EMERALD_GLASS_SLAB));
         addDrop(ModBlocks.EMERALD_GLASS_DOOR, doorDrops(ModBlocks.EMERALD_GLASS_DOOR));
     }
+
+    //todo: test drop of all glass blocks
 
     public static LootTable.Builder glassBreakerDrops(ItemConvertible drop) {
         return LootTable.builder().pool(LootPool.builder().conditionally(WITH_GLASS_BREAKER).rolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(drop)));

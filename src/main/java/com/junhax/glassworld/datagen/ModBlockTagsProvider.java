@@ -40,7 +40,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SOFT_COPPER_GLASS)
                 .add(ModBlocks.SOFT_GOLDEN_GLASS)
                 .add(ModBlocks.SOFT_REDSTONE_GLASS)
-                .add(ModBlocks.SOFT_ANCIENT_GLASS);
+                .add(ModBlocks.SOFT_ANCIENT_GLASS)
+                .add(ModBlocks.GLASS_LAMP);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(ModBlocks.IRON_SAND)
@@ -96,7 +97,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SOFT_DIAMOND_GLASS)
                 .add(ModBlocks.SOFT_COPPER_GLASS)
                 .add(ModBlocks.SOFT_REDSTONE_GLASS)
-                .add(ModBlocks.SOFT_ANCIENT_GLASS);
+                .add(ModBlocks.SOFT_ANCIENT_GLASS)
+                .add(ModBlocks.GLASS_LAMP);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(ModBlocks.IRON_GLASS_SLAB)
@@ -147,5 +149,11 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DIAMOND_GLASS_STAIRS)
                 .add(ModBlocks.REDSTONE_GLASS_STAIRS)
                 .add(ModBlocks.ANCIENT_GLASS_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.DRAGON_TRANSPARENT)
+                .add(ModBlocks.GLASS_LAMP);
+
+        getOrCreateTagBuilder(BlockTags.ENCHANTMENT_POWER_TRANSMITTER)
+                .add(ModBlocks.GLASS_LAMP);
     }
 }

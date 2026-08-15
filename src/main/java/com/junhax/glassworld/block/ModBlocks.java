@@ -5,6 +5,7 @@ import com.junhax.glassworld.block.door.*;
 import com.junhax.glassworld.block.glass.*;
 //import com.junhax.glassworld.block.slab.GlassSlabBlock;
 //import com.junhax.glassworld.block.stairs.GlassStairsBlock;
+import com.junhax.glassworld.block.lamp.GlassLampBlock;
 import com.junhax.glassworld.block.slab.*;
 import com.junhax.glassworld.block.stairs.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -606,6 +607,14 @@ public class ModBlocks {
             true
     );
 
+    public static final Block GLASS_LAMP = register(
+            new GlassLampBlock(
+                    AbstractBlock.Settings.copy(ModBlocks.PURIFIED_GLASS)
+            ),
+            BlockId.GLASS_LAMP,
+            true
+    );
+
     public static <T extends Block> T register(T block, String name, boolean shouldRegisterItem) {
         Identifier id = new Identifier("glassworld", name);
 
@@ -616,7 +625,6 @@ public class ModBlocks {
 
         return Registry.register(Registries.BLOCK, id, block);
     }
-
 
     public static void initialize() {
 
@@ -673,6 +681,8 @@ public class ModBlocks {
             entries.addAfter(ModBlocks.GOLDEN_GLASS_DOOR.asItem(), ModBlocks.REDSTONE_GLASS_DOOR.asItem());
             entries.addAfter(ModBlocks.REDSTONE_GLASS_DOOR.asItem(), ModBlocks.EMERALD_GLASS_DOOR.asItem());
             entries.addAfter(ModBlocks.EMERALD_GLASS_DOOR.asItem(), ModBlocks.COPPER_GLASS_DOOR.asItem());
+
+            entries.addAfter(Blocks.REDSTONE_LAMP.asItem(), ModBlocks.GLASS_LAMP.asItem());
 
         });
 

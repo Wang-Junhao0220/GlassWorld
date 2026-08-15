@@ -26,7 +26,7 @@ public class SuperKillEnchantment extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if (target instanceof LivingEntity) {
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 200 * 2 * level, level * 2));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 200 * 2 * level, level));
         }
 
         super.onTargetDamaged(user, target, level);

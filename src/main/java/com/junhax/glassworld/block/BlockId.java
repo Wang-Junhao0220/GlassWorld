@@ -95,4 +95,6 @@ public class BlockId {
     public static final String ANCIENT_GLASS_DOOR = "ancient_glass_door";
     public static final String ANCIENT_GLASS_TRAPDOOR = "ancient_glass_trapdoor";
     public static final String ANCIENT_GLASS_FENCE_GATE = "ancient_glass_fence_gate";
+
+    public static final String GLASS_LAMP = "glass_lamp";
 }

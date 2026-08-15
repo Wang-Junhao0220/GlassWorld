@@ -624,5 +624,14 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.COPPER_GLASS), conditionsFromItem(ModBlocks.COPPER_GLASS))
                 .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "copper_glass_stairs"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,ModBlocks.GLASS_LAMP,1)
+                .pattern(" # ")
+                .pattern("#&#")
+                .pattern(" # ")
+                .input('#',ModBlocks.PURIFIED_GLASS)
+                .input('&',Items.GLOWSTONE_DUST)
+                .criterion(hasItem(ModBlocks.PURIFIED_GLASS), conditionsFromItem(ModBlocks.PURIFIED_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "glass_lamp"));
+
     }
 }

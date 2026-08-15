@@ -88,6 +88,7 @@ public class ModItems {
         entries.add(COPPER_GLASS_SLAB);
         entries.add(COPPER_GLASS_DOOR);
         entries.add(SOFT_COPPER_GLASS);
+        entries.add(GLASS_LAMP);
         // Sand blocks
         entries.add(IRON_SAND);
         entries.add(COPPER_SAND);

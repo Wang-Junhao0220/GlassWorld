@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 
 public class GlassWorldClient implements ClientModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("glassworld");
+
     public void onInitializeClient() {
         LOGGER.info("GlassWorld Client Initializing");
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PURIFIED_GLASS, RenderLayer.getCutout());
@@ -27,6 +28,8 @@ public class GlassWorldClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SOFT_IRON_GLASS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SOFT_EMERALD_GLASS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SOFT_COPPER_GLASS, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GLASS_LAMP, RenderLayer.getTranslucent());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GLASS_STAIRS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GLASS_SLAB, RenderLayer.getCutout());
