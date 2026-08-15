@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_left",
-  "textures": {
-    "bottom": "glassworld:block/glass_door_bottom",
-    "top": "glassworld:block/glass_door_top"
-  }
-}

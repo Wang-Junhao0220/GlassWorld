@@ -1,9 +1,0 @@
-// 1.20.1	2026-08-14T21:46:25.7788422	GlassWorld/Tags for minecraft:block
-6ec45a42042fb99cc939af0c7d168b32249c2af5 data\minecraft\tags\blocks\mineable\shovel.json
-826cdb8fca13316b82c8b5974910e04ef431981a data\glassworld\tags\blocks\glass_slab_tag.json
-f0a823830008fd015ea571098f584f8664d5b5e0 data\minecraft\tags\blocks\mineable\pickaxe.json
-2ea03c24be548468d1cc7e84a7658cb39bedac67 data\minecraft\tags\blocks\doors.json
-af2d532b06708932854eae9295bf9517334115ca data\glassworld\tags\blocks\glass_block_tag.json
-2c5f41e1bdf5e94f2561db9d53883639f3602622 data\minecraft\tags\blocks\stairs.json
-2c5f41e1bdf5e94f2561db9d53883639f3602622 data\glassworld\tags\blocks\glass_stairs_tag.json
-826cdb8fca13316b82c8b5974910e04ef431981a data\minecraft\tags\blocks\slabs.json
