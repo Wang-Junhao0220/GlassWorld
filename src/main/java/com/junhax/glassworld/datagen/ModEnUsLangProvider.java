@@ -30,12 +30,15 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.SOFT_EMERALD_GLASS, "Soft Emerald Glass");
         translationBuilder.add(ModBlocks.COPPER_GLASS, "Copper Glass");
         translationBuilder.add(ModBlocks.SOFT_COPPER_GLASS, "Soft Copper Glass");
+        translationBuilder.add(ModBlocks.LAPIS_GLASS, "Lapis Glass");
+        translationBuilder.add(ModBlocks.SOFT_LAPIS_GLASS, "Soft Lapis Glass");
         translationBuilder.add(ModBlocks.IRON_SAND, "Iron Sand");
         translationBuilder.add(ModBlocks.COPPER_SAND, "Copper Sand");
         translationBuilder.add(ModBlocks.GOLDEN_SAND, "Golden Sand");
         translationBuilder.add(ModBlocks.REDSTONE_SAND, "Redstone Sand");
         translationBuilder.add(ModBlocks.EMERALD_SAND, "Emerald Sand");
         translationBuilder.add(ModBlocks.DIAMOND_SAND, "Diamond Sand");
+        translationBuilder.add(ModBlocks.LAPIS_SAND, "Lapis Sand");
         translationBuilder.add(ModBlocks.ANCIENT_SOUL_SAND, "Ancient Soul Sand");
 
         translationBuilder.add(ModBlocks.IRON_GLASS_STAIRS, "Iron Glass Stairs");
@@ -65,6 +68,10 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.REDSTONE_GLASS_STAIRS, "Redstone Glass Stairs");
         translationBuilder.add(ModBlocks.REDSTONE_GLASS_SLAB, "Redstone Glass Slab");
         translationBuilder.add(ModBlocks.REDSTONE_GLASS_DOOR, "Redstone Glass Door");
+
+        translationBuilder.add(ModBlocks.LAPIS_GLASS_STAIRS, "Lapis Glass Stairs");
+        translationBuilder.add(ModBlocks.LAPIS_GLASS_SLAB, "Lapis Glass Slab");
+        translationBuilder.add(ModBlocks.LAPIS_GLASS_DOOR, "Lapis Glass Door");
 
         translationBuilder.add(ModBlocks.ANCIENT_GLASS_STAIRS, "Ancient Glass Stairs");
         translationBuilder.add(ModBlocks.ANCIENT_GLASS_SLAB, "Ancient Glass Slab");

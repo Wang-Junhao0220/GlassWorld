@@ -16,6 +16,8 @@ public class BlockId {
     public static final String SOFT_EMERALD_GLASS = "soft_emerald_glass";
     public static final String COPPER_GLASS = "copper_glass";
     public static final String SOFT_COPPER_GLASS = "soft_copper_glass";
+    public static final String LAPIS_GLASS = "lapis_glass";
+    public static final String SOFT_LAPIS_GLASS = "soft_lapis_glass";
 
     public static final String IRON_SAND = "iron_sand";
     public static final String COPPER_SAND = "copper_sand";
@@ -24,6 +26,7 @@ public class BlockId {
     public static final String EMERALD_SAND = "emerald_sand";
     public static final String DIAMOND_SAND = "diamond_sand";
     public static final String ANCIENT_SOUL_SAND = "ancient_soul_sand";
+    public static final String LAPIS_SAND = "lapis_sand";
 
     public static final String GLASS_STAIRS = "glass_stairs";
     public static final String GLASS_SLAB = "glass_slab";
@@ -95,6 +98,10 @@ public class BlockId {
     public static final String ANCIENT_GLASS_DOOR = "ancient_glass_door";
     public static final String ANCIENT_GLASS_TRAPDOOR = "ancient_glass_trapdoor";
     public static final String ANCIENT_GLASS_FENCE_GATE = "ancient_glass_fence_gate";
+
+    public static final String LAPIS_GLASS_STAIRS = "lapis_glass_stairs";
+    public static final String LAPIS_GLASS_SLAB = "lapis_glass_slab";
+    public static final String LAPIS_GLASS_DOOR = "lapis_glass_door";
 
     public static final String GLASS_LAMP = "glass_lamp";
 }

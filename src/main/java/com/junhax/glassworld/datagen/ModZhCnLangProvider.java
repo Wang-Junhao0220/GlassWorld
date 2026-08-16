@@ -30,12 +30,15 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.SOFT_EMERALD_GLASS, "软绿石玻璃");
         translationBuilder.add(ModBlocks.COPPER_GLASS, "镀铜玻璃");
         translationBuilder.add(ModBlocks.SOFT_COPPER_GLASS, "软镀铜玻璃");
+        translationBuilder.add(ModBlocks.LAPIS_GLASS, "青金玻璃");
+        translationBuilder.add(ModBlocks.SOFT_LAPIS_GLASS, "软青金玻璃");
         translationBuilder.add(ModBlocks.IRON_SAND, "铁砂");
         translationBuilder.add(ModBlocks.COPPER_SAND, "铜砂");
         translationBuilder.add(ModBlocks.GOLDEN_SAND, "金砂");
         translationBuilder.add(ModBlocks.REDSTONE_SAND, "赤石砂");
         translationBuilder.add(ModBlocks.EMERALD_SAND, "绿石砂");
         translationBuilder.add(ModBlocks.DIAMOND_SAND, "钻砂");
+        translationBuilder.add(ModBlocks.LAPIS_SAND, "青金砂");
         translationBuilder.add(ModBlocks.ANCIENT_SOUL_SAND, "远古灵魂沙");
 
         translationBuilder.add(ModBlocks.IRON_GLASS_STAIRS, "钢化玻璃楼梯");
@@ -69,6 +72,10 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ANCIENT_GLASS_STAIRS, "远古玻璃楼梯");
         translationBuilder.add(ModBlocks.ANCIENT_GLASS_SLAB, "远古玻璃台阶");
         translationBuilder.add(ModBlocks.ANCIENT_GLASS_DOOR, "远古玻璃门");
+
+        translationBuilder.add(ModBlocks.LAPIS_GLASS_STAIRS, "青金玻璃楼梯");
+        translationBuilder.add(ModBlocks.LAPIS_GLASS_SLAB, "青金玻璃台阶");
+        translationBuilder.add(ModBlocks.LAPIS_GLASS_DOOR, "青金玻璃门");
 
         translationBuilder.add(ModBlocks.GLASS_LAMP, "玻璃灯");
 

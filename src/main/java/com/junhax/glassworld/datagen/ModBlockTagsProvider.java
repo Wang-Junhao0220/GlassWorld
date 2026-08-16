@@ -29,11 +29,33 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.IRON_GLASS_STAIRS)
                 .add(ModBlocks.IRON_GLASS_DOOR)
                 .add(ModBlocks.COPPER_GLASS)
+                .add(ModBlocks.COPPER_GLASS_SLAB)
+                .add(ModBlocks.COPPER_GLASS_STAIRS)
+                .add(ModBlocks.COPPER_GLASS_DOOR)
                 .add(ModBlocks.GOLDEN_GLASS)
+                .add(ModBlocks.GOLDEN_GLASS_SLAB)
+                .add(ModBlocks.GOLDEN_GLASS_STAIRS)
+                .add(ModBlocks.GOLDEN_GLASS_DOOR)
                 .add(ModBlocks.EMERALD_GLASS)
+                .add(ModBlocks.EMERALD_GLASS_SLAB)
+                .add(ModBlocks.EMERALD_GLASS_STAIRS)
+                .add(ModBlocks.EMERALD_GLASS_DOOR)
                 .add(ModBlocks.DIAMOND_GLASS)
+                .add(ModBlocks.DIAMOND_GLASS_SLAB)
+                .add(ModBlocks.DIAMOND_GLASS_STAIRS)
+                .add(ModBlocks.DIAMOND_GLASS_DOOR)
                 .add(ModBlocks.REDSTONE_GLASS)
+                .add(ModBlocks.REDSTONE_GLASS_SLAB)
+                .add(ModBlocks.REDSTONE_GLASS_STAIRS)
+                .add(ModBlocks.REDSTONE_GLASS_DOOR)
                 .add(ModBlocks.ANCIENT_GLASS)
+                .add(ModBlocks.ANCIENT_GLASS_SLAB)
+                .add(ModBlocks.ANCIENT_GLASS_STAIRS)
+                .add(ModBlocks.ANCIENT_GLASS_DOOR)
+                .add(ModBlocks.LAPIS_GLASS)
+                .add(ModBlocks.LAPIS_GLASS_SLAB)
+                .add(ModBlocks.LAPIS_GLASS_STAIRS)
+                .add(ModBlocks.LAPIS_GLASS_DOOR)
                 .add(ModBlocks.SOFT_IRON_GLASS)
                 .add(ModBlocks.SOFT_EMERALD_GLASS)
                 .add(ModBlocks.SOFT_DIAMOND_GLASS)
@@ -41,6 +63,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SOFT_GOLDEN_GLASS)
                 .add(ModBlocks.SOFT_REDSTONE_GLASS)
                 .add(ModBlocks.SOFT_ANCIENT_GLASS)
+                .add(ModBlocks.SOFT_LAPIS_GLASS)
                 .add(ModBlocks.GLASS_LAMP);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
@@ -50,6 +73,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.REDSTONE_SAND)
                 .add(ModBlocks.EMERALD_SAND)
                 .add(ModBlocks.DIAMOND_SAND)
+                .add(ModBlocks.LAPIS_SAND)
                 .add(ModBlocks.ANCIENT_SOUL_SAND);
 
         // Pickaxe for all (soft) glass blocks
@@ -91,6 +115,10 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ANCIENT_GLASS_SLAB)
                 .add(ModBlocks.ANCIENT_GLASS_STAIRS)
                 .add(ModBlocks.ANCIENT_GLASS_DOOR)
+                .add(ModBlocks.LAPIS_GLASS)
+                .add(ModBlocks.LAPIS_GLASS_SLAB)
+                .add(ModBlocks.LAPIS_GLASS_STAIRS)
+                .add(ModBlocks.LAPIS_GLASS_DOOR)
                 .add(ModBlocks.SOFT_IRON_GLASS)
                 .add(ModBlocks.SOFT_GOLDEN_GLASS)
                 .add(ModBlocks.SOFT_EMERALD_GLASS)
@@ -98,6 +126,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SOFT_COPPER_GLASS)
                 .add(ModBlocks.SOFT_REDSTONE_GLASS)
                 .add(ModBlocks.SOFT_ANCIENT_GLASS)
+                .add(ModBlocks.SOFT_LAPIS_GLASS)
                 .add(ModBlocks.GLASS_LAMP);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
@@ -108,7 +137,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EMERALD_GLASS_SLAB)
                 .add(ModBlocks.DIAMOND_GLASS_SLAB)
                 .add(ModBlocks.REDSTONE_GLASS_SLAB)
-                .add(ModBlocks.ANCIENT_GLASS_SLAB);
+                .add(ModBlocks.ANCIENT_GLASS_SLAB)
+                .add(ModBlocks.LAPIS_GLASS_SLAB);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(ModBlocks.IRON_GLASS_STAIRS)
@@ -118,7 +148,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EMERALD_GLASS_STAIRS)
                 .add(ModBlocks.DIAMOND_GLASS_STAIRS)
                 .add(ModBlocks.REDSTONE_GLASS_STAIRS)
-                .add(ModBlocks.ANCIENT_GLASS_STAIRS);
+                .add(ModBlocks.ANCIENT_GLASS_STAIRS)
+                .add(ModBlocks.LAPIS_GLASS_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.DOORS)
                 .add(ModBlocks.IRON_GLASS_DOOR)
@@ -128,7 +159,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EMERALD_GLASS_DOOR)
                 .add(ModBlocks.DIAMOND_GLASS_DOOR)
                 .add(ModBlocks.REDSTONE_GLASS_DOOR)
-                .add(ModBlocks.ANCIENT_GLASS_DOOR);
+                .add(ModBlocks.ANCIENT_GLASS_DOOR)
+                .add(ModBlocks.LAPIS_GLASS_DOOR);
 
         getOrCreateTagBuilder(ModTags.GLASS_SLAB_TAG)
                 .add(ModBlocks.IRON_GLASS_SLAB)
@@ -138,7 +170,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EMERALD_GLASS_SLAB)
                 .add(ModBlocks.DIAMOND_GLASS_SLAB)
                 .add(ModBlocks.REDSTONE_GLASS_SLAB)
-                .add(ModBlocks.ANCIENT_GLASS_SLAB);
+                .add(ModBlocks.ANCIENT_GLASS_SLAB)
+                .add(ModBlocks.LAPIS_GLASS_SLAB);
 
         getOrCreateTagBuilder(ModTags.GLASS_STAIRS_TAG)
                 .add(ModBlocks.IRON_GLASS_STAIRS)
@@ -148,7 +181,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EMERALD_GLASS_STAIRS)
                 .add(ModBlocks.DIAMOND_GLASS_STAIRS)
                 .add(ModBlocks.REDSTONE_GLASS_STAIRS)
-                .add(ModBlocks.ANCIENT_GLASS_STAIRS);
+                .add(ModBlocks.ANCIENT_GLASS_STAIRS)
+                .add(ModBlocks.LAPIS_GLASS_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.DRAGON_TRANSPARENT)
                 .add(ModBlocks.GLASS_LAMP);

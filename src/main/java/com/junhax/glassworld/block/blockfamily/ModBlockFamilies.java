@@ -73,4 +73,10 @@ public class ModBlockFamilies {
             .stairs(ModBlocks.COPPER_GLASS_STAIRS)
             .door(ModBlocks.COPPER_GLASS_DOOR)
             .build();
+
+    public static final BlockFamily LAPIS_GLASS = register(ModBlocks.LAPIS_GLASS)
+            .slab(ModBlocks.LAPIS_GLASS_SLAB)
+            .stairs(ModBlocks.LAPIS_GLASS_STAIRS)
+            .door(ModBlocks.LAPIS_GLASS_DOOR)
+            .build();
 }

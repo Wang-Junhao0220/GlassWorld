@@ -28,6 +28,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
     public static final List<ItemConvertible> DIAMOND_GLASS = List.of(ModBlocks.DIAMOND_SAND);
     public static final List<ItemConvertible> EMERALD_GLASS = List.of(ModBlocks.EMERALD_SAND);
     public static final List<ItemConvertible> REDSTONE_GLASS = List.of(ModBlocks.REDSTONE_SAND);
+    public static final List<ItemConvertible> LAPIS_GLASS = List.of(ModBlocks.LAPIS_SAND);
     public static final List<ItemConvertible> PURIFIED_GLASS = List.of(Blocks.GLASS);
 
     public static final List<ItemConvertible> SOFT_ANCIENT_GLASS = List.of(ModBlocks.ANCIENT_GLASS);
@@ -37,6 +38,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
     public static final List<ItemConvertible> SOFT_EMERALD_GLASS = List.of(ModBlocks.EMERALD_GLASS);
     public static final List<ItemConvertible> SOFT_REDSTONE_GLASS = List.of(ModBlocks.REDSTONE_GLASS);
     public static final List<ItemConvertible> SOFT_COPPER_GLASS = List.of(ModBlocks.COPPER_GLASS);
+    public static final List<ItemConvertible> SOFT_LAPIS_GLASS = List.of(ModBlocks.LAPIS_GLASS);
 
 
 
@@ -49,6 +51,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         offerSmelting(exporter, DIAMOND_GLASS, RecipeCategory.MISC, ModBlocks.DIAMOND_GLASS, 0.7F, 150, "diamond_glass");
         offerSmelting(exporter, EMERALD_GLASS, RecipeCategory.MISC, ModBlocks.EMERALD_GLASS, 0.7F, 120, "emerald_glass");
         offerSmelting(exporter, REDSTONE_GLASS, RecipeCategory.MISC, ModBlocks.REDSTONE_GLASS, 0.7F, 80, "redstone_glass");
+        offerSmelting(exporter, LAPIS_GLASS, RecipeCategory.MISC, ModBlocks.LAPIS_GLASS, 0.7F, 90, "lapis_glass");
         offerSmelting(exporter, PURIFIED_GLASS, RecipeCategory.MISC, ModBlocks.PURIFIED_GLASS, 0.7F, 100, "purified_glass");
 
         offerSmelting(exporter, SOFT_ANCIENT_GLASS, RecipeCategory.MISC, ModBlocks.SOFT_ANCIENT_GLASS, 0.5F, 100, "soft_ancient_glass");
@@ -58,6 +61,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         offerSmelting(exporter, SOFT_EMERALD_GLASS, RecipeCategory.MISC, ModBlocks.SOFT_EMERALD_GLASS, 0.5F, 60, "soft_emerald_glass");
         offerSmelting(exporter, SOFT_REDSTONE_GLASS, RecipeCategory.MISC, ModBlocks.SOFT_REDSTONE_GLASS, 0.5F, 40, "soft_redstone_glass");
         offerSmelting(exporter, SOFT_COPPER_GLASS, RecipeCategory.MISC, ModBlocks.SOFT_COPPER_GLASS, 0.5F, 50, "soft_copper_glass");
+        offerSmelting(exporter, SOFT_LAPIS_GLASS, RecipeCategory.MISC, ModBlocks.SOFT_LAPIS_GLASS, 0.5F, 35, "soft_lapis_glass");
 
         offerBlasting(exporter, ANCIENT_GLASS, RecipeCategory.MISC, ModBlocks.ANCIENT_GLASS, 0.8F, 100, "ancient_glass");
         offerBlasting(exporter, IRON_GLASS, RecipeCategory.MISC, ModBlocks.IRON_GLASS, 0.8F, 50, "iron_glass");
@@ -66,6 +70,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         offerBlasting(exporter, DIAMOND_GLASS, RecipeCategory.MISC, ModBlocks.DIAMOND_GLASS, 0.8F, 75, "diamond_glass");
         offerBlasting(exporter, EMERALD_GLASS, RecipeCategory.MISC, ModBlocks.EMERALD_GLASS, 0.8F, 60, "emerald_glass");
         offerBlasting(exporter, REDSTONE_GLASS, RecipeCategory.MISC, ModBlocks.REDSTONE_GLASS, 0.8F, 40, "redstone_glass");
+        offerBlasting(exporter, LAPIS_GLASS, RecipeCategory.MISC, ModBlocks.LAPIS_GLASS, 0.8F, 35, "lapis_glass");
         offerBlasting(exporter, PURIFIED_GLASS, RecipeCategory.MISC, ModBlocks.PURIFIED_GLASS, 0.8F, 50, "purified_glass");
 
         offerBlasting(exporter, SOFT_ANCIENT_GLASS, RecipeCategory.MISC, ModBlocks.SOFT_ANCIENT_GLASS, 0.7F, 50, "soft_ancient_glass");
@@ -74,6 +79,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         offerBlasting(exporter, SOFT_DIAMOND_GLASS, RecipeCategory.MISC, ModBlocks.SOFT_DIAMOND_GLASS, 0.7F, 50, "soft_diamond_glass");
         offerBlasting(exporter, SOFT_EMERALD_GLASS, RecipeCategory.MISC, ModBlocks.SOFT_EMERALD_GLASS, 0.7F, 40, "soft_emerald_glass");
         offerBlasting(exporter, SOFT_REDSTONE_GLASS, RecipeCategory.MISC, ModBlocks.SOFT_REDSTONE_GLASS, 0.7F, 30, "soft_redstone_glass");
+        offerBlasting(exporter, SOFT_LAPIS_GLASS, RecipeCategory.MISC, ModBlocks.SOFT_LAPIS_GLASS, 0.7F, 20, "soft_lapis_glass");
         offerBlasting(exporter, SOFT_COPPER_GLASS, RecipeCategory.MISC, ModBlocks.SOFT_COPPER_GLASS, 0.7F, 25, "soft_copper_glass");
 
         /*
@@ -151,6 +157,15 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .input('@', Items.NETHERITE_SCRAP)
                 .criterion(hasItem(Blocks.SAND), conditionsFromItem(Blocks.SAND))
                 .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "ancient_soul_sand"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.LAPIS_SAND, 8)
+                .pattern("###")
+                .pattern("#@#")
+                .pattern("###")
+                .input('#', Blocks.SAND)
+                .input('@', Items.LAPIS_LAZULI)
+                .criterion(hasItem(Blocks.SAND), conditionsFromItem(Blocks.SAND))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "lapis_sand"));
 
         /*
         Recipes for armors and tools
@@ -623,6 +638,28 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .input('#',ModBlocks.COPPER_GLASS)
                 .criterion(hasItem(ModBlocks.COPPER_GLASS), conditionsFromItem(ModBlocks.COPPER_GLASS))
                 .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "copper_glass_stairs"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAPIS_GLASS_DOOR,1)
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("## ")
+                .input('#',ModBlocks.LAPIS_GLASS)
+                .criterion(hasItem(ModBlocks.LAPIS_GLASS), conditionsFromItem(ModBlocks.LAPIS_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "lapis_glass_door"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAPIS_GLASS_SLAB,1)
+                .pattern("###")
+                .input('#',ModBlocks.LAPIS_GLASS)
+                .criterion(hasItem(ModBlocks.LAPIS_GLASS), conditionsFromItem(ModBlocks.LAPIS_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "lapis_glass_slab"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAPIS_GLASS_STAIRS,1)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .input('#',ModBlocks.LAPIS_GLASS)
+                .criterion(hasItem(ModBlocks.LAPIS_GLASS), conditionsFromItem(ModBlocks.LAPIS_GLASS))
+                .offerTo(exporter, new Identifier(GlassWorld.MOD_ID, "lapis_glass_stairs"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,ModBlocks.GLASS_LAMP,1)
                 .pattern(" # ")

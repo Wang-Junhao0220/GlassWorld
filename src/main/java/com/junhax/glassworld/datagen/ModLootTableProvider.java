@@ -37,6 +37,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DIAMOND_SAND);
         addDrop(ModBlocks.COPPER_SAND);
         addDrop(ModBlocks.REDSTONE_SAND);
+        addDrop(ModBlocks.LAPIS_SAND);
         addDrop(ModBlocks.ANCIENT_SOUL_SAND);
         // Glasses
         addDrop(Blocks.GLASS, glassBlockDrops(Blocks.GLASS));
@@ -48,6 +49,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DIAMOND_GLASS, glassBlockDrops(ModBlocks.DIAMOND_GLASS));
         addDrop(ModBlocks.COPPER_GLASS, glassBlockDrops(ModBlocks.COPPER_GLASS));
         addDrop(ModBlocks.REDSTONE_GLASS, glassBlockDrops(ModBlocks.REDSTONE_GLASS));
+        addDrop(ModBlocks.LAPIS_GLASS, glassBlockDrops(ModBlocks.LAPIS_GLASS));
         addDrop(ModBlocks.ANCIENT_GLASS, glassBlockDrops(ModBlocks.ANCIENT_GLASS));
         // Soft Glasses
         addDrop(ModBlocks.SOFT_IRON_GLASS, glassBlockDrops(ModBlocks.SOFT_IRON_GLASS));
@@ -56,6 +58,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SOFT_DIAMOND_GLASS, glassBlockDrops(ModBlocks.SOFT_DIAMOND_GLASS));
         addDrop(ModBlocks.SOFT_COPPER_GLASS, glassBlockDrops(ModBlocks.SOFT_COPPER_GLASS));
         addDrop(ModBlocks.SOFT_REDSTONE_GLASS, glassBlockDrops(ModBlocks.SOFT_REDSTONE_GLASS));
+        addDrop(ModBlocks.SOFT_LAPIS_GLASS, glassBlockDrops(ModBlocks.SOFT_LAPIS_GLASS));
         addDrop(ModBlocks.SOFT_ANCIENT_GLASS, glassBlockDrops(ModBlocks.SOFT_ANCIENT_GLASS));
 
         addDrop(ModBlocks.GLASS_LAMP,glassBreakerDrops(ModBlocks.GLASS_LAMP));
@@ -95,9 +98,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.EMERALD_GLASS_STAIRS);
         addDrop(ModBlocks.EMERALD_GLASS_SLAB, slabDrops(ModBlocks.EMERALD_GLASS_SLAB));
         addDrop(ModBlocks.EMERALD_GLASS_DOOR, doorDrops(ModBlocks.EMERALD_GLASS_DOOR));
-    }
 
-    //todo: test drop of all glass blocks
+        addDrop(ModBlocks.LAPIS_GLASS_STAIRS);
+        addDrop(ModBlocks.LAPIS_GLASS_SLAB, slabDrops(ModBlocks.LAPIS_GLASS_SLAB));
+        addDrop(ModBlocks.LAPIS_GLASS_DOOR, doorDrops(ModBlocks.LAPIS_GLASS_DOOR));
+    }
 
     public static LootTable.Builder glassBreakerDrops(ItemConvertible drop) {
         return LootTable.builder().pool(LootPool.builder().conditionally(WITH_GLASS_BREAKER).rolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(drop)));

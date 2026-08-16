@@ -88,6 +88,11 @@ public class ModItems {
         entries.add(COPPER_GLASS_SLAB);
         entries.add(COPPER_GLASS_DOOR);
         entries.add(SOFT_COPPER_GLASS);
+        entries.add(LAPIS_GLASS);
+        entries.add(LAPIS_GLASS_STAIRS);
+        entries.add(LAPIS_GLASS_SLAB);
+        entries.add(LAPIS_GLASS_DOOR);
+        entries.add(SOFT_LAPIS_GLASS);
         entries.add(GLASS_LAMP);
         // Sand blocks
         entries.add(IRON_SAND);
@@ -96,6 +101,7 @@ public class ModItems {
         entries.add(REDSTONE_SAND);
         entries.add(EMERALD_SAND);
         entries.add(DIAMOND_SAND);
+        entries.add(LAPIS_SAND);
         entries.add(ANCIENT_SOUL_SAND);
         // Diamond Glass Tools & Armors
         entries.add(DIAMOND_GLASS_SHOVEL);

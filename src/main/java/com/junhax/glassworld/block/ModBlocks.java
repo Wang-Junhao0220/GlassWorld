@@ -292,6 +292,40 @@ public class ModBlocks {
             true
     );
 
+    public static final Block LAPIS_GLASS = register(
+            new LapisGlassBlock(
+                    AbstractBlock.Settings.create()
+                            .sounds(BlockSoundGroup.GLASS)
+                            .mapColor(MapColor.LAPIS_BLUE)
+                            .strength(2.5F,100F)
+                            .nonOpaque()
+                            .requiresTool()
+                            .allowsSpawning(Blocks::always)
+                            .solidBlock(Blocks::never)
+                            .suffocates(Blocks::never)
+                            .blockVision(Blocks::never)
+            ),
+            BlockId.LAPIS_GLASS,
+            true
+    );
+
+    public static final Block SOFT_LAPIS_GLASS = register(
+            new LapisGlassBlock(
+                    AbstractBlock.Settings.create()
+                            .sounds(BlockSoundGroup.GLASS)
+                            .mapColor(MapColor.LAPIS_BLUE)
+                            .strength(1F,100F)
+                            .nonOpaque()
+                            .requiresTool()
+                            .allowsSpawning(Blocks::always)
+                            .solidBlock(Blocks::never)
+                            .suffocates(Blocks::never)
+                            .blockVision(Blocks::never)
+            ),
+            BlockId.SOFT_LAPIS_GLASS,
+            true
+    );
+
 
     public static final Block IRON_SAND = register(
             new Block(
@@ -373,12 +407,20 @@ public class ModBlocks {
                             .strength(0.6F)
                             .velocityMultiplier(0.4f)
                             .requiresTool()
-                            .allowsSpawning(Blocks::always)
-                            .solidBlock(Blocks::always)
-                            .blockVision(Blocks::always)
-                            .suffocates(Blocks::always)
             ),
             BlockId.ANCIENT_SOUL_SAND,
+            true
+    );
+
+    public static final Block LAPIS_SAND = register(
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .sounds(BlockSoundGroup.SAND)
+                            .mapColor(MapColor.LAPIS_BLUE)
+                            .strength(0.6F)
+                            .requiresTool()
+            ),
+            BlockId.LAPIS_SAND,
             true
     );
 
@@ -607,6 +649,32 @@ public class ModBlocks {
             true
     );
 
+    public static final Block LAPIS_GLASS_STAIRS = register(
+            new LapisGlassStairsBlock(
+                    LAPIS_GLASS.getDefaultState(),
+                    AbstractBlock.Settings.copy(LAPIS_GLASS)
+            ),
+            BlockId.LAPIS_GLASS_STAIRS,
+            true
+    );
+
+    public static final Block LAPIS_GLASS_SLAB = register(
+            new LapisGlassSlabBlock(
+                    AbstractBlock.Settings.copy(LAPIS_GLASS)
+            ),
+            BlockId.LAPIS_GLASS_SLAB,
+            true
+    );
+
+    public static final Block LAPIS_GLASS_DOOR = register(
+            new LapisGlassDoorBlock(
+                    AbstractBlock.Settings.copy(LAPIS_GLASS),
+                    BlockSetType.STONE
+            ),
+            BlockId.LAPIS_GLASS_DOOR,
+            true
+    );
+
     public static final Block GLASS_LAMP = register(
             new GlassLampBlock(
                     AbstractBlock.Settings.copy(ModBlocks.PURIFIED_GLASS)
@@ -639,6 +707,7 @@ public class ModBlocks {
                     ModBlocks.IRON_GLASS.asItem(),
                     ModBlocks.EMERALD_GLASS.asItem(),
                     ModBlocks.COPPER_GLASS.asItem(),
+                    ModBlocks.LAPIS_GLASS.asItem(),
 
                     ModBlocks.SOFT_ANCIENT_GLASS.asItem(),
                     ModBlocks.SOFT_DIAMOND_GLASS.asItem(),
@@ -646,7 +715,8 @@ public class ModBlocks {
                     ModBlocks.SOFT_REDSTONE_GLASS.asItem(),
                     ModBlocks.SOFT_IRON_GLASS.asItem(),
                     ModBlocks.SOFT_EMERALD_GLASS.asItem(),
-                    ModBlocks.SOFT_COPPER_GLASS.asItem()
+                    ModBlocks.SOFT_COPPER_GLASS.asItem(),
+                    ModBlocks.SOFT_LAPIS_GLASS.asItem()
             );
 
             for (Item item : coloredItems) {
@@ -663,7 +733,8 @@ public class ModBlocks {
                     ModBlocks.GOLDEN_SAND.asItem(),
                     ModBlocks.REDSTONE_SAND.asItem(),
                     ModBlocks.EMERALD_SAND.asItem(),
-                    ModBlocks.DIAMOND_SAND.asItem()
+                    ModBlocks.DIAMOND_SAND.asItem(),
+                    ModBlocks.LAPIS_SAND.asItem()
             );
 
             for (Item item : sandItems) {
@@ -681,6 +752,7 @@ public class ModBlocks {
             entries.addAfter(ModBlocks.GOLDEN_GLASS_DOOR.asItem(), ModBlocks.REDSTONE_GLASS_DOOR.asItem());
             entries.addAfter(ModBlocks.REDSTONE_GLASS_DOOR.asItem(), ModBlocks.EMERALD_GLASS_DOOR.asItem());
             entries.addAfter(ModBlocks.EMERALD_GLASS_DOOR.asItem(), ModBlocks.COPPER_GLASS_DOOR.asItem());
+            entries.addAfter(ModBlocks.COPPER_GLASS_DOOR.asItem(), ModBlocks.LAPIS_GLASS_DOOR.asItem());
 
             entries.addAfter(Blocks.REDSTONE_LAMP.asItem(), ModBlocks.GLASS_LAMP.asItem());
 
@@ -693,6 +765,7 @@ public class ModBlocks {
             entries.addAfter(ModBlocks.GOLDEN_GLASS_STAIRS.asItem(), ModBlocks.REDSTONE_GLASS_STAIRS.asItem());
             entries.addAfter(ModBlocks.REDSTONE_GLASS_STAIRS.asItem(), ModBlocks.EMERALD_GLASS_STAIRS.asItem());
             entries.addAfter(ModBlocks.EMERALD_GLASS_STAIRS.asItem(), ModBlocks.COPPER_GLASS_STAIRS.asItem());
+            entries.addAfter(ModBlocks.COPPER_GLASS_STAIRS.asItem(), ModBlocks.LAPIS_GLASS_STAIRS.asItem());
 
             entries.addAfter(Blocks.SANDSTONE_SLAB.asItem(), ModBlocks.GLASS_SLAB.asItem());
             entries.addAfter(ModBlocks.GLASS_SLAB.asItem(), ModBlocks.IRON_GLASS_SLAB.asItem());
@@ -700,6 +773,7 @@ public class ModBlocks {
             entries.addAfter(ModBlocks.GOLDEN_GLASS_SLAB.asItem(), ModBlocks.REDSTONE_GLASS_SLAB.asItem());
             entries.addAfter(ModBlocks.REDSTONE_GLASS_SLAB.asItem(), ModBlocks.EMERALD_GLASS_SLAB.asItem());
             entries.addAfter(ModBlocks.EMERALD_GLASS_SLAB.asItem(), ModBlocks.COPPER_GLASS_SLAB.asItem());
+            entries.addAfter(ModBlocks.COPPER_GLASS_SLAB.asItem(), ModBlocks.LAPIS_GLASS_SLAB.asItem());
         });
     }
 }
